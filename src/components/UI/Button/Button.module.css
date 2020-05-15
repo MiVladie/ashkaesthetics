@@ -1,0 +1,27 @@
+.Button {
+  width: 11em;
+  height: 3.25em;
+  line-height: 3.25em;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.16);
+  text-transform: uppercase;
+  background-color: #D7C2A4;
+  border: 2px solid #D7C2A4;
+  color: white;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+}
+
+.Button:hover {
+  background-color: transparent;
+  color: #D7C2A4;
+}
+
+@media (min-width: 1025px) {
+  .Button {
+    font-size: 0.9em;
+  }
+}
+/*# sourceMappingURL=Button.module.css.map */

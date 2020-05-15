@@ -1,0 +1,12 @@
+.Line {
+  width: 2.25em;
+  height: 2px;
+  margin: 1em auto 2em;
+}
+
+@media (min-width: 1025px) {
+  .Line {
+    margin: 1.25em auto 3em;
+  }
+}
+/*# sourceMappingURL=Line.module.css.map */

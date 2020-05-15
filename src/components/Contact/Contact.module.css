@@ -1,0 +1,195 @@
+.Contact {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.Contact .Row {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.Contact .Row .Block {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  text-align: center;
+  margin-top: 2em;
+}
+
+.Contact .Row .Block .Name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.Contact .Row .Block .Description {
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.75em;
+  letter-spacing: 1px;
+  color: #444444;
+  margin-bottom: 2em;
+}
+
+.Contact .Row .Block .Methods {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: left;
+}
+
+.Contact .Row .Block .Methods .Method {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.75em 0;
+}
+
+.Contact .Row .Block .Methods .Method:first-of-type {
+  margin-top: 0;
+}
+
+.Contact .Row .Block .Methods .Method:last-of-type {
+  margin-bottom: 0;
+}
+
+.Contact .Row .Block .Methods .Method .Icon {
+  -webkit-filter: brightness(0.25);
+          filter: brightness(0.25);
+  width: 2em;
+  height: 2em;
+  margin-right: 1em;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Contact .Row .Block .Methods .Method .Info {
+  color: #444444;
+}
+
+.Contact .Row .Block .Form {
+  width: 100%;
+}
+
+.Contact .Map {
+  height: 40vh;
+  width: 100%;
+  margin-top: 2em;
+}
+
+@media (min-width: 720px) {
+  .Contact .Row {
+    width: 80%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .Contact .Row .Block .Methods {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .Contact .Row .Block .Methods .Method {
+    width: 45%;
+    margin: 0.75em 0;
+  }
+  .Contact .Row .Block .Methods .Method .Icon {
+    width: 1.75em;
+    height: 1.75em;
+  }
+  .Contact .Row .Block .Form {
+    width: 75%;
+  }
+  .Contact .Map {
+    height: 27vh;
+  }
+}
+
+@media (min-width: 1025px) {
+  .Contact {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .Contact .Row {
+    width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+  }
+  .Contact .Row .Block {
+    width: 47%;
+    margin-top: 3em;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
+  }
+  .Contact .Row .Block .Methods .Method {
+    width: 100%;
+  }
+  .Contact .Row .Block .Form {
+    width: 95%;
+  }
+  .Contact .Map {
+    height: 50vh;
+    margin-top: 3em;
+  }
+}
+/*# sourceMappingURL=Contact.module.css.map */

@@ -1,0 +1,197 @@
+$tundora: #444444;
+
+.Contact {
+    // Non-Styling
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-flow: column;
+
+    .Row {
+        // Non-Styling
+
+        width: 90%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        flex-flow: column;
+
+        .Block {
+            // Non-Styling
+            
+            width: 100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            flex-flow: column;
+
+            text-align: center;
+            margin-top: 2em;
+
+            .Name {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1.5em;
+
+                text-transform: uppercase;
+            }
+
+            .Description {                    
+                font-weight: 300;
+                font-size: 1em;
+                line-height: 1.75em;
+                letter-spacing: 1px;
+                color: $tundora;
+
+                // Non-styling
+
+                margin-bottom: 2em;
+            }
+
+            .Methods {
+                // Non-Styling
+
+                width: 100%;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                flex-wrap: wrap;
+
+                text-align: left;
+
+                .Method {
+                    // Non-Styling
+
+                    width: 100%;
+
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    margin: 0.75em 0;
+
+                    &:first-of-type {
+                        margin-top: 0;
+                    }
+
+                    &:last-of-type {
+                        margin-bottom: 0;
+                    }
+
+                    .Icon {
+                        filter: brightness(0.25); 
+
+                        // Non-Styling
+
+                        width: 2em;
+                        height: 2em;          
+                        
+                        margin-right: 1em;
+
+                        object-fit: contain;
+                        background-repeat: no-repeat;
+                        background-position: center; 
+                    }
+
+                    .Info {
+                        color: $tundora;
+                    }
+                }
+            }
+
+            .Form {
+                width: 100%;
+            }
+        }
+    }
+
+    .Map {
+        height: 40vh;
+
+        // Non-Styling
+
+        width: 100%;
+        margin-top: 2em;
+    }
+}
+
+@media (min-width: 720px) {
+    .Contact {
+        .Row {
+            width: 80%;
+            justify-content: space-between;
+
+            .Block {
+                .Methods {
+                    justify-content: space-between;
+
+                    .Method {
+                        width: 45%;
+
+                        margin: 0.75em 0;
+
+                        .Icon {
+                            width: 1.75em;
+                            height: 1.75em;
+                        }
+                    }
+                }
+
+                .Form {
+                    width: 75%;
+                }
+            }
+        }
+
+        .Map {
+            height: 27vh;
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    .Contact {
+        width: 85%;
+        margin: 0 auto;
+
+        .Row {
+            width: 100%;
+
+            align-items: flex-start;            
+            flex-flow: row;
+
+            .Block {
+                width: 47%;
+                margin-top: 3em;
+
+                align-items: flex-start;
+                text-align: left;
+
+                .Methods {
+                    .Method {
+                        width: 100%;
+                    }
+                }
+
+                .Form {
+                    width: 95%;
+                }
+            }
+        }
+
+        .Map {
+            height: 50vh;
+            
+            margin-top: 3em;
+        }
+    }
+}

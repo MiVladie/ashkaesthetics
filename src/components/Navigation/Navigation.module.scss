@@ -1,0 +1,389 @@
+$tundora: #444444;
+$akaroa: #D7C2A4;
+
+.Navigation {
+    width: 100%;
+
+    background-color: white;
+
+    z-index: 1000;
+
+    position: fixed;
+    top: 0;
+    
+    .Upper, .Line, .Lower .Links {
+        display: none;
+    }
+
+    .Lower {
+        width: 90%;
+        height: 4.5em;
+
+        margin: 0 auto;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .Logo {
+            width: 4.5em;
+            height: 3em;
+            
+            background-image: url('../../assets/icons/logo.png');
+
+            // Non-Styling
+
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;  
+            
+            outline: none;
+        }
+
+        .Menu {
+            background-image: url('../../assets/icons/menu.png');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            
+            border: none;
+            background-color: transparent;
+
+            filter: brightness(0.2);
+
+            width: 2em;
+            height: 2em;
+        }
+
+        .Links {
+            display: none;
+            position: fixed;
+            
+            width: 100%;
+
+            top: calc(4.5em - 2px);
+            left: 0;
+            
+            background-color: white;
+            
+            justify-content: center;
+            align-items: center;
+            flex-flow: column;
+
+            .Link {
+                margin: 1.5em 0;
+
+                a {
+                    padding: 0.5em 0;
+
+                    font-size: 1.25em;
+                    font-family: 'Montserrat', sans-serif;
+
+                    text-transform: uppercase;
+                    text-decoration: none;
+
+                    color: $tundora;
+                    
+                    outline: none;
+
+                    .Underline {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+
+                        height: 3px;
+
+                        margin: 0.75em auto 0;
+
+                        background-color: $akaroa;
+
+                        border-radius: 3px;
+
+                        width: 0;
+                    }
+                }
+
+                .Active {
+                    position: relative;
+
+                    &:hover {
+                        .Underline {
+                            background-color: $akaroa;
+                        }
+                    }
+
+                    .Underline {
+                        animation: underline 0.3s 0s ease forwards;
+
+                        @keyframes underline {
+                            from {
+                                width: 0;
+                            }
+
+                            to {
+                                width: 3em;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .Book {
+                margin-top: 3em;
+                
+                a {
+                    background-color: $akaroa;
+                    border-radius: 5em;
+
+                    font-size: 1.1em;
+                    color: white;
+
+                    padding: 0.85em 2em;
+
+                    transition: all 0.15s;
+
+                    &:hover {
+                        background-color: darken($akaroa, 10);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.Scrolled {
+    position: fixed;
+    top: 0;
+
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.10);
+    background-color: white;
+
+    animation: appear 0.3s 0s ease forwards;
+    
+    .Upper, .Line {
+        display: none;
+    }
+
+    @keyframes appear {
+        from {
+            transform: translateY(-100%);
+        }
+        
+        to {
+            transform: translateY(0);
+        }
+    }
+}
+
+.Reveal {
+    position: fixed;
+
+    .Lower {
+        box-shadow: none;
+
+        .Links {
+            display: flex;
+            animation: expand 0.3s 0s ease-out forwards;
+
+            @keyframes expand {
+                from {
+                    height: 0;
+                    opacity: 0;
+                }
+
+                to {
+                    height: calc(100vh - 4.5em + 2px);
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 720px) {
+    .Navigation {
+        .Lower {
+            height: 5em;
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    .Navigation {
+        position: relative;
+        
+        .Upper {
+            height: 5.5em;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .Social {
+                width: 4.5em;
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .Facebook, .Instagram {
+                    width: 1.15em;
+                    height: 1.15em;                    
+
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+
+                    filter: brightness(0.75);
+                    
+                    outline: none;
+                    transition: all 0.15s;
+
+                    &:hover {
+                        filter: brightness(0.25);                        
+                    }
+                }
+
+                .Facebook {
+                    background-image: url('../../assets/icons/facebook.png');
+                }
+                
+                .Instagram {
+                    background-image: url('../../assets/icons/instagram.png');
+                }
+            }
+
+            .Logo {
+                width: 5em;
+                height: 5em;
+                
+                background-image: url('../../assets/icons/logo.png');
+    
+                // Non-Styling
+    
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;  
+                
+                outline: none;
+
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+
+            .Contacts {
+                display: flex;
+                align-items: center;
+
+                .Contact {
+                    display: flex;
+                    align-items: center;
+                    
+                    transition: all 0.15s;
+
+                    &:hover {
+                        .Icon {
+                            filter: brightness(0.25);  
+                        }
+
+                        .Info {
+                            color: black;
+                        }
+                    }
+
+                    .Icon {
+                        width: 1.35em;
+                        height: 1.35em;          
+                        
+                        margin: 0 0.5em 0 1.25em;
+    
+                        object-fit: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+    
+                        transition: all 0.15s;
+                        filter: brightness(0.75);                        
+                    }
+
+                    .Info {
+                        font-size: 0.9em;
+                        text-transform: none;
+                        text-decoration: none;
+
+                        color: $tundora;
+                        
+                        outline: none;
+                        transition: all 0.15s;
+                    }
+                }
+            }
+        }
+
+        .Line {
+            display: block;
+
+            width: 100%;
+            height: 2px;
+
+            border-radius: 2px;
+
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+
+        .Lower {
+            height: 4.5em;
+
+            .Logo, .Menu {
+                display: none;
+            }
+
+            .Links {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+
+                flex-flow: row;
+
+                position: relative;
+                top: 0;
+
+                .Link {
+                    a {
+                        position: relative;
+                        font-size: 0.75em;
+
+                        .Underline {
+                            height: 2px;
+                        }
+
+                        &:hover {
+                            .Underline {
+                                background-color: rgba(0, 0, 0, 0.05);
+                            }
+                        }
+                    }
+                }
+
+                .Book {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .Scrolled {
+        position: fixed;
+        left: 50%;
+
+        width: 92%;
+        margin-left: -46%;
+
+        box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
+
+        .Upper, .Line {
+            display: none;
+        }
+    }
+}

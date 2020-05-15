@@ -1,0 +1,101 @@
+$akaroa: #D7C2A4;
+$tundora: #444444;
+
+.Testimonials {
+    // Non-Styling
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-flow: column;
+
+    .Testimonial {
+        // Non-Styling
+
+        width: 90%;
+
+        .Review {
+            font-weight: 300;
+            font-size: 1em;
+            line-height: 1.75em;
+            letter-spacing: 1px;
+            color: $tundora;
+
+            // Non-styling
+
+            text-align: center;
+        }
+
+        .Author {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.25em;
+            text-transform: uppercase;
+            color: $tundora;
+
+            // Non-styling
+
+            text-align: center;
+            margin-top: 2em;
+        }
+    }
+
+    .Selection {
+        // Non-Styling
+
+        margin-top: 1.25em;
+
+        .Select {
+            background-color: white;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.04);
+
+            // Non-Styling
+            
+            width: 0.85em;
+            height: 0.85em;
+
+            margin: 0 0.25em;
+
+            transition: all 0.3s;
+            border: none;
+
+            &:hover {
+                background-color: lighten($akaroa, 10);
+            }
+        }
+
+        .Active {
+            background-color: $akaroa;
+            
+            &:hover {
+                background-color: $akaroa;
+            }
+        }
+    }
+}
+
+@media (min-width: 720px) {
+    .Testimonials {
+        .Testimonial {
+            width: 85%;
+
+            .Review {
+                min-height: 12em;
+            }
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    .Testimonials {
+        .Testimonial {
+            width: 80%;
+            
+            .Review {
+                min-height: 8em;
+            }
+        }
+    }
+}

@@ -1,0 +1,168 @@
+.Gallery {
+  width: 100%;
+  margin-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Gallery .Picture {
+  margin: 0.5em 0;
+  width: 90vw;
+  height: 90vw;
+  overflow: hidden;
+}
+
+.Gallery .Picture:hover .Expand {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  opacity: 1;
+}
+
+.Gallery .Picture .Image {
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Gallery .Picture .Expand {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  color: #444444;
+  background-color: rgba(255, 255, 255, 0.9);
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.Gallery .Modal {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Gallery .Modal .Wrapper {
+  position: relative;
+}
+
+.Gallery .Modal .Wrapper img {
+  max-width: 85vw;
+  max-height: 85vh;
+  -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.04);
+          box-shadow: 0 0 12px rgba(0, 0, 0, 0.04);
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Gallery .Modal .Wrapper .Close {
+  width: 1.75em;
+  height: 1.75em;
+  background-color: white;
+  -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.04);
+          box-shadow: 0 0 12px rgba(0, 0, 0, 0.04);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: calc(1.75em / -2);
+  right: calc(1.75em / -2);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.Gallery .Modal .Wrapper .Close:hover {
+  background-color: #D7C2A4;
+}
+
+.Gallery .Modal .Wrapper .Close:hover img {
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
+}
+
+.Gallery .Modal .Wrapper .Close img {
+  width: 37%;
+  height: 37%;
+  -webkit-filter: brightness(0.25);
+          filter: brightness(0.25);
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 720px) {
+  .Gallery .Picture {
+    width: 28vw;
+    height: 28vw;
+    margin: 0 0.35em;
+  }
+  .Gallery .Modal .Wrapper .Close {
+    width: 2.5em;
+    height: 2.5em;
+    top: calc(2.5em / -2);
+    right: calc(2.5em / -2);
+  }
+}
+
+@media (min-width: 1025px) {
+  .Gallery .Picture {
+    width: 23vw;
+    height: 23vw;
+  }
+  .Gallery .Modal .Wrapper .Close {
+    width: 2em;
+    height: 2em;
+    top: calc(2em / -2);
+    right: calc(2em / -2);
+  }
+}
+/*# sourceMappingURL=Gallery.module.css.map */

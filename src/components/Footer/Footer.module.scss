@@ -1,0 +1,100 @@
+$tundora: #444444;
+
+.Footer {
+    background-color: #F8F8F8;
+    
+    // Non-Styling
+    
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+
+    padding: 2em 0;
+
+    .Line {
+        height: 2px;
+        background-color: #EBEBEB;
+        
+        // Non-Styling
+        
+        width: 90%;
+        margin-bottom: 2.25em;
+    }
+
+    .Links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-bottom: 2em;
+
+        .Link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 2.5em;
+            height: 2.5em;
+
+            margin: 0 0.5em;
+
+            border-radius: 50%;
+            background-color: #EBEEF2;
+            transition: all 0.15s;
+
+            &:hover {
+                background-color: darken(#EBEEF2, 10);
+            }
+
+            .Icon {
+                width: 40%;
+                height: 40%;
+
+                object-fit: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                
+                filter: brightness(0.25);
+            }
+        }
+    }
+
+    .Content {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 1.5em;
+        color: $tundora;
+
+        a {
+            color: $tundora;
+        }
+    }
+}
+
+@media (min-width: 720px) {
+    .Footer {
+        padding: 3em 0;
+
+        .Line {
+            margin-bottom: 2.5em;
+        }
+        
+        .Content {
+            .Break {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    .Footer {
+        .Links {
+            margin-bottom: 2.75em;
+        }
+    }
+}

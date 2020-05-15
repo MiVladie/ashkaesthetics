@@ -1,0 +1,62 @@
+$tundora: #444444;
+$akaroa: #D7C2A4;
+
+.Form {
+    // Non-Styling
+
+    width: 100%;
+    position: relative;
+
+    .Area {
+        width: 100%;
+    }
+
+    .Result {
+        width: 100%;
+        margin: 0.5em 0 1em;
+        color: $tundora;
+    }
+
+    .Submit {
+        width: 11em;
+        height: 3.25em;
+
+        font-family: 'Open Sans', sans-serif;
+        text-transform: uppercase;
+        text-shadow: 0 0 20px rgba(0, 0, 0, 0.16);
+
+        border: 1.5px solid $tundora;
+        color: $tundora;
+
+        // Non-Styling
+
+        background: none;
+        transition: all 0.15s;
+        margin-top: 1em;
+
+        &:hover {
+            border-color: $akaroa;
+            background-color: $akaroa;
+            color: white;
+        }
+    }
+
+    .Modal {
+        background-color: white;
+        opacity: 0.8;
+
+        // Non-Styling
+
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

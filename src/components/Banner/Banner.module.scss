@@ -1,0 +1,239 @@
+$navigationHeight: 4.5em;
+$tundora: #444444;
+
+.Banner {
+    width: 100%;
+    height: calc(100vh - #{ $navigationHeight });
+
+    margin-top: $navigationHeight;
+
+    /*position: absolute;
+    top: #{ $navigationHeight };
+    left: 0;*/
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
+    position: relative;
+
+    overflow: hidden;
+
+    .Image {
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        img {
+            opacity: 0.9;
+
+            // Non-Styling
+
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .Wrapper {
+        text-align: center;
+        position: relative;
+
+        width: 90%;
+        margin: 0 auto;
+
+        .Main {
+            font-family: 'Josefin Slab', sans-serif;
+            font-size: 8vh;
+            color: white;
+
+            // Non-Styling
+
+            line-height: 1.125em;
+            text-transform: uppercase;
+            text-shadow: 0 0 20px rgba(0, 0, 0, 0.16);
+        }
+
+        .Line {
+            width: 5em;
+            height: 2.5px;
+
+            background-color: white;
+
+            // Non-Styling
+
+            margin: 1em auto 2em;
+        }
+
+        .Description {
+            display: none;
+        }
+    }
+
+    .Links {
+        position: relative;
+        
+        .Left, .Right {
+            display: block;
+
+            width: 11em;
+            height: 3.25em;
+
+            line-height: 3.25em;
+
+            text-shadow: 0 0 20px rgba(0, 0, 0, 0.16);
+            text-transform: uppercase;
+            text-decoration: none;
+            text-align: center;
+
+            transition: all 0.15s;
+        }
+
+        .Left {
+            color: white;
+            border: 2px solid white;
+
+            margin-bottom: 1em;
+
+            &:hover {
+                background-color: white;
+                color: $tundora;
+            }
+        }
+
+        .Right {
+            color: $tundora;
+            border: 2px solid white;
+
+            background-color: white;
+
+            &:hover {
+                background-color: transparent;
+                color: white;
+            }
+        }
+    }
+
+    .Scroll {
+        position: absolute;
+        bottom: -0.5em;
+        left: 50%;
+        transform: translateX(-50%);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+
+        transition: all 0.15s ease-out;
+        overflow: hidden;
+        cursor: pointer;
+
+        &:hover {
+            bottom: 0;
+        }
+
+        .Circle {
+            display: block;
+
+            width: 1.5em;
+            height: 1.5em;
+
+            border: 2.5px solid white;
+            border-radius: 2em;
+
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        }
+
+        .Knob {
+            width: 2.5px;
+            height: 1.75em;
+
+            background-color: white;
+
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        }
+    }
+}
+
+@media (min-width: 720px) {
+    $navigationHeight: 5em;
+
+    .Banner {
+        height: calc(100vh - #{ $navigationHeight });
+        margin-top: $navigationHeight;
+
+        .Wrapper {
+            width: 90%;
+            margin-bottom: 3em;
+
+            .Main {
+                font-size: 7.5vh;
+            }
+
+            .Line {
+                margin-bottom: 2em;
+            }
+
+            .Description {
+                display: block;
+                width: 80%;
+                margin: 0 auto;
+
+                font-size: 1.25em;
+                font-weight: 300;
+
+                text-shadow: 0 0 20px rgba(0, 0, 0, 0.16);
+                line-height: 1.5em;
+                
+                color: white;
+            }
+        }
+
+        .Links {
+            .Left, .Right {
+                display: inline-block;
+                margin: 0 0.75em;
+            }
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    $navigationHeight: calc(10em + 2px);
+
+    .Banner {
+        width: 100%;
+        height: calc(100vh - #{ $navigationHeight });
+        margin: 0;
+
+        left: 50%;
+        transform: translateX(-50%);
+
+        .Wrapper {
+            width: 70%;
+
+            .Main {
+                font-size: 4.5em;
+            }
+
+            .Description {
+                width: 70%;
+            }
+        }
+
+        .Links {
+            .Left, .Right {
+                font-size: 0.9em;
+            }
+        }
+    }
+}
