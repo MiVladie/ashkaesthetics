@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/ashkaesthetics/static/css/main.93195fab.chunk.css",
-    "main.js": "/ashkaesthetics/static/js/main.7cf2121e.chunk.js",
-    "main.js.map": "/ashkaesthetics/static/js/main.7cf2121e.chunk.js.map",
+    "main.css": "/ashkaesthetics/static/css/main.9d219a75.chunk.css",
+    "main.js": "/ashkaesthetics/static/js/main.2c4944e0.chunk.js",
+    "main.js.map": "/ashkaesthetics/static/js/main.2c4944e0.chunk.js.map",
     "runtime-main.js": "/ashkaesthetics/static/js/runtime-main.0f82de44.js",
     "runtime-main.js.map": "/ashkaesthetics/static/js/runtime-main.0f82de44.js.map",
-    "static/js/2.bf0cca7d.chunk.js": "/ashkaesthetics/static/js/2.bf0cca7d.chunk.js",
-    "static/js/2.bf0cca7d.chunk.js.map": "/ashkaesthetics/static/js/2.bf0cca7d.chunk.js.map",
+    "static/js/2.74b27577.chunk.js": "/ashkaesthetics/static/js/2.74b27577.chunk.js",
+    "static/js/2.74b27577.chunk.js.map": "/ashkaesthetics/static/js/2.74b27577.chunk.js.map",
     "index.html": "/ashkaesthetics/index.html",
-    "precache-manifest.179f6a98a5931fe1c211b1b68dbba8d2.js": "/ashkaesthetics/precache-manifest.179f6a98a5931fe1c211b1b68dbba8d2.js",
+    "precache-manifest.edbd466010bccd5e6e32ef907a8c46b2.js": "/ashkaesthetics/precache-manifest.edbd466010bccd5e6e32ef907a8c46b2.js",
     "service-worker.js": "/ashkaesthetics/service-worker.js",
-    "static/css/main.93195fab.chunk.css.map": "/ashkaesthetics/static/css/main.93195fab.chunk.css.map",
-    "static/js/2.bf0cca7d.chunk.js.LICENSE.txt": "/ashkaesthetics/static/js/2.bf0cca7d.chunk.js.LICENSE.txt",
+    "static/css/main.9d219a75.chunk.css.map": "/ashkaesthetics/static/css/main.9d219a75.chunk.css.map",
+    "static/js/2.74b27577.chunk.js.LICENSE.txt": "/ashkaesthetics/static/js/2.74b27577.chunk.js.LICENSE.txt",
     "static/media/1.jpg": "/ashkaesthetics/static/media/1.224c62d5.jpg",
     "static/media/4.jpg": "/ashkaesthetics/static/media/4.8efcd138.jpg",
     "static/media/5.jpg": "/ashkaesthetics/static/media/5.8ca8f6d5.jpg",
@@ -20,19 +20,24 @@
     "static/media/8.jpg": "/ashkaesthetics/static/media/8.1df87984.jpg",
     "static/media/9.jpg": "/ashkaesthetics/static/media/9.482423a2.jpg",
     "static/media/brows and lash.png": "/ashkaesthetics/static/media/brows and lash.56ac8eb9.png",
+    "static/media/eyes & brows 2.jpg": "/ashkaesthetics/static/media/eyes & brows 2.f32c624b.jpg",
+    "static/media/eyes & brows.jpg": "/ashkaesthetics/static/media/eyes & brows.0e9d414e.jpg",
     "static/media/home01.jpg": "/ashkaesthetics/static/media/home01.db98a300.jpg",
     "static/media/home02.jpg": "/ashkaesthetics/static/media/home02.5bb8e2b0.jpg",
     "static/media/home03.jpg": "/ashkaesthetics/static/media/home03.e18a1f99.jpg",
     "static/media/home04.jpg": "/ashkaesthetics/static/media/home04.0d8c42ae.jpg",
     "static/media/Navigation.module.css": "/ashkaesthetics/static/media/logo.8040c9d4.png",
+    "static/media/mens treatments.jpg": "/ashkaesthetics/static/media/mens treatments.955d329b.jpg",
     "static/media/mens treatments.png": "/ashkaesthetics/static/media/mens treatments.991580c7.png",
+    "static/media/microblading.jpg": "/ashkaesthetics/static/media/microblading.138ad3e5.jpg",
     "static/media/microblading.png": "/ashkaesthetics/static/media/microblading.d764724e.png",
-    "static/media/waxing.png": "/ashkaesthetics/static/media/waxing.4309db38.png"
+    "static/media/waxing.png": "/ashkaesthetics/static/media/waxing.4309db38.png",
+    "static/media/waxing.jpg": "/ashkaesthetics/static/media/waxing.c0eed510.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.0f82de44.js",
-    "static/js/2.bf0cca7d.chunk.js",
-    "static/css/main.93195fab.chunk.css",
-    "static/js/main.7cf2121e.chunk.js"
+    "static/js/2.74b27577.chunk.js",
+    "static/css/main.9d219a75.chunk.css",
+    "static/js/main.2c4944e0.chunk.js"
   ]
 }
