@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/ashkaesthetics/static/css/main.9d219a75.chunk.css",
-    "main.js": "/ashkaesthetics/static/js/main.2c4944e0.chunk.js",
-    "main.js.map": "/ashkaesthetics/static/js/main.2c4944e0.chunk.js.map",
+    "main.css": "/ashkaesthetics/static/css/main.7604fe9d.chunk.css",
+    "main.js": "/ashkaesthetics/static/js/main.5f65a52c.chunk.js",
+    "main.js.map": "/ashkaesthetics/static/js/main.5f65a52c.chunk.js.map",
     "runtime-main.js": "/ashkaesthetics/static/js/runtime-main.0f82de44.js",
     "runtime-main.js.map": "/ashkaesthetics/static/js/runtime-main.0f82de44.js.map",
-    "static/js/2.74b27577.chunk.js": "/ashkaesthetics/static/js/2.74b27577.chunk.js",
-    "static/js/2.74b27577.chunk.js.map": "/ashkaesthetics/static/js/2.74b27577.chunk.js.map",
+    "static/js/2.5e8684de.chunk.js": "/ashkaesthetics/static/js/2.5e8684de.chunk.js",
+    "static/js/2.5e8684de.chunk.js.map": "/ashkaesthetics/static/js/2.5e8684de.chunk.js.map",
     "index.html": "/ashkaesthetics/index.html",
-    "precache-manifest.edbd466010bccd5e6e32ef907a8c46b2.js": "/ashkaesthetics/precache-manifest.edbd466010bccd5e6e32ef907a8c46b2.js",
+    "precache-manifest.70456ff0e130f70a8a336f5c725f9362.js": "/ashkaesthetics/precache-manifest.70456ff0e130f70a8a336f5c725f9362.js",
     "service-worker.js": "/ashkaesthetics/service-worker.js",
-    "static/css/main.9d219a75.chunk.css.map": "/ashkaesthetics/static/css/main.9d219a75.chunk.css.map",
-    "static/js/2.74b27577.chunk.js.LICENSE.txt": "/ashkaesthetics/static/js/2.74b27577.chunk.js.LICENSE.txt",
+    "static/css/main.7604fe9d.chunk.css.map": "/ashkaesthetics/static/css/main.7604fe9d.chunk.css.map",
+    "static/js/2.5e8684de.chunk.js.LICENSE.txt": "/ashkaesthetics/static/js/2.5e8684de.chunk.js.LICENSE.txt",
     "static/media/1.jpg": "/ashkaesthetics/static/media/1.224c62d5.jpg",
     "static/media/4.jpg": "/ashkaesthetics/static/media/4.8efcd138.jpg",
+    "static/media/404.jpg": "/ashkaesthetics/static/media/404.a3314edd.jpg",
     "static/media/5.jpg": "/ashkaesthetics/static/media/5.8ca8f6d5.jpg",
     "static/media/6.jpg": "/ashkaesthetics/static/media/6.27441557.jpg",
     "static/media/7.jpg": "/ashkaesthetics/static/media/7.c390105f.jpg",
@@ -36,8 +37,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.0f82de44.js",
-    "static/js/2.74b27577.chunk.js",
-    "static/css/main.9d219a75.chunk.css",
-    "static/js/main.2c4944e0.chunk.js"
+    "static/js/2.5e8684de.chunk.js",
+    "static/css/main.7604fe9d.chunk.css",
+    "static/js/main.5f65a52c.chunk.js"
   ]
 }

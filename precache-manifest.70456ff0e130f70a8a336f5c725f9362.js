@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6a7988a590a6eea91af14a1910a75927",
+    "revision": "35d4e06fb84c95e93bb3f6fdd13f02a7",
     "url": "/ashkaesthetics/index.html"
   },
   {
-    "revision": "b9ef125108ca6d1baf00",
-    "url": "/ashkaesthetics/static/css/main.9d219a75.chunk.css"
+    "revision": "e4a799cd305a41945e11",
+    "url": "/ashkaesthetics/static/css/main.7604fe9d.chunk.css"
   },
   {
-    "revision": "a5b990439b80a3fe9e2d",
-    "url": "/ashkaesthetics/static/js/2.74b27577.chunk.js"
+    "revision": "667e392f536059ccf70f",
+    "url": "/ashkaesthetics/static/js/2.5e8684de.chunk.js"
   },
   {
     "revision": "031b62b957b4fb917cd0ec81e2c8bd7b",
-    "url": "/ashkaesthetics/static/js/2.74b27577.chunk.js.LICENSE.txt"
+    "url": "/ashkaesthetics/static/js/2.5e8684de.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b9ef125108ca6d1baf00",
-    "url": "/ashkaesthetics/static/js/main.2c4944e0.chunk.js"
+    "revision": "e4a799cd305a41945e11",
+    "url": "/ashkaesthetics/static/js/main.5f65a52c.chunk.js"
   },
   {
     "revision": "2238fc9e102d5c2c517a",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8efcd1382c918bbf78c776ecee0088f9",
     "url": "/ashkaesthetics/static/media/4.8efcd138.jpg"
+  },
+  {
+    "revision": "a3314eddcfd58af56b4900baa68290a4",
+    "url": "/ashkaesthetics/static/media/404.a3314edd.jpg"
   },
   {
     "revision": "8ca8f6d505d5a31b646bffa8b169e212",
