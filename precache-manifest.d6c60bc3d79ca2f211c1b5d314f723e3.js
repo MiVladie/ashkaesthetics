@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c42569503cb9d5122f2c720822390da1",
+    "revision": "dae40d59fdb70391355cb16a85484dc4",
     "url": "/ashkaesthetics/index.html"
   },
   {
-    "revision": "1b075f8392efe48fc4ad",
-    "url": "/ashkaesthetics/static/css/main.82458e6a.chunk.css"
+    "revision": "56dba5b3c4094754a95c",
+    "url": "/ashkaesthetics/static/css/main.4caf5c15.chunk.css"
   },
   {
-    "revision": "af7a3964c7f28e87b9ad",
-    "url": "/ashkaesthetics/static/js/2.616e64d0.chunk.js"
+    "revision": "10d938eda7a46fd9901f",
+    "url": "/ashkaesthetics/static/js/2.3b89c18c.chunk.js"
   },
   {
     "revision": "031b62b957b4fb917cd0ec81e2c8bd7b",
-    "url": "/ashkaesthetics/static/js/2.616e64d0.chunk.js.LICENSE.txt"
+    "url": "/ashkaesthetics/static/js/2.3b89c18c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1b075f8392efe48fc4ad",
-    "url": "/ashkaesthetics/static/js/main.8febff67.chunk.js"
+    "revision": "56dba5b3c4094754a95c",
+    "url": "/ashkaesthetics/static/js/main.a4dedcbb.chunk.js"
   },
   {
     "revision": "2238fc9e102d5c2c517a",
@@ -26,6 +26,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "224c62d5ed06e4c6872b57bc54c6cc10",
     "url": "/ashkaesthetics/static/media/1.224c62d5.jpg"
+  },
+  {
+    "revision": "d0722437b4215e397df33c45e368bb7f",
+    "url": "/ashkaesthetics/static/media/2.d0722437.jpg"
+  },
+  {
+    "revision": "819fdc96b5a50622bc93a91a4af84eab",
+    "url": "/ashkaesthetics/static/media/3.819fdc96.jpg"
   },
   {
     "revision": "8efcd1382c918bbf78c776ecee0088f9",
@@ -84,8 +92,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ashkaesthetics/static/media/home04.0d8c42ae.jpg"
   },
   {
-    "revision": "8040c9d4c8bbd801bbcabbbf2099efe6",
-    "url": "/ashkaesthetics/static/media/logo.8040c9d4.png"
+    "revision": "3f0b4435c1d6717f4490f32183e2c0ba",
+    "url": "/ashkaesthetics/static/media/logo.3f0b4435.png"
   },
   {
     "revision": "955d329bea1db5742cb99baca2e157fb",
@@ -102,6 +110,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d764724ece33d13a820563e20b9e9e9e",
     "url": "/ashkaesthetics/static/media/microblading.d764724e.png"
+  },
+  {
+    "revision": "3e0decdca8277250d60ba3bc2bfe6b47",
+    "url": "/ashkaesthetics/static/media/packages.3e0decdc.jpg"
   },
   {
     "revision": "4309db38420bb1ca8223f5bb27ab13af",
