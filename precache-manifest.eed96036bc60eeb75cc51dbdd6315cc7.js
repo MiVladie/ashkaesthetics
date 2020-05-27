@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dae40d59fdb70391355cb16a85484dc4",
+    "revision": "0ee9abb7bd96ebc2da0e2ddcf982ae27",
     "url": "/ashkaesthetics/index.html"
   },
   {
-    "revision": "56dba5b3c4094754a95c",
-    "url": "/ashkaesthetics/static/css/main.4caf5c15.chunk.css"
+    "revision": "8c30eeffbb3c041e1e4a",
+    "url": "/ashkaesthetics/static/css/main.5869309d.chunk.css"
   },
   {
-    "revision": "10d938eda7a46fd9901f",
-    "url": "/ashkaesthetics/static/js/2.3b89c18c.chunk.js"
+    "revision": "ba50109067d1e7d9bdc2",
+    "url": "/ashkaesthetics/static/js/2.143ea57b.chunk.js"
   },
   {
     "revision": "031b62b957b4fb917cd0ec81e2c8bd7b",
-    "url": "/ashkaesthetics/static/js/2.3b89c18c.chunk.js.LICENSE.txt"
+    "url": "/ashkaesthetics/static/js/2.143ea57b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "56dba5b3c4094754a95c",
-    "url": "/ashkaesthetics/static/js/main.a4dedcbb.chunk.js"
+    "revision": "8c30eeffbb3c041e1e4a",
+    "url": "/ashkaesthetics/static/js/main.44edcd95.chunk.js"
   },
   {
     "revision": "2238fc9e102d5c2c517a",
@@ -96,12 +96,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ashkaesthetics/static/media/logo.3f0b4435.png"
   },
   {
-    "revision": "955d329bea1db5742cb99baca2e157fb",
-    "url": "/ashkaesthetics/static/media/mens treatments.955d329b.jpg"
+    "revision": "922d4acb154333a16bca1bc414e813e8",
+    "url": "/ashkaesthetics/static/media/mens treatments.922d4acb.png"
   },
   {
-    "revision": "991580c7c8d813cbc328b4059a7b637a",
-    "url": "/ashkaesthetics/static/media/mens treatments.991580c7.png"
+    "revision": "955d329bea1db5742cb99baca2e157fb",
+    "url": "/ashkaesthetics/static/media/mens treatments.955d329b.jpg"
   },
   {
     "revision": "138ad3e5feb842f2c2d05d4dcfd57f31",
@@ -112,12 +112,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ashkaesthetics/static/media/microblading.d764724e.png"
   },
   {
+    "revision": "a1db064d0ffbf53dc9c525b8122bc6cb",
+    "url": "/ashkaesthetics/static/media/microblading02.a1db064d.jpg"
+  },
+  {
     "revision": "3e0decdca8277250d60ba3bc2bfe6b47",
     "url": "/ashkaesthetics/static/media/packages.3e0decdc.jpg"
   },
   {
-    "revision": "4309db38420bb1ca8223f5bb27ab13af",
-    "url": "/ashkaesthetics/static/media/waxing.4309db38.png"
+    "revision": "5a15ed9fbc262855ff9edf9e33d6ab63",
+    "url": "/ashkaesthetics/static/media/waxing.5a15ed9f.png"
   },
   {
     "revision": "c0eed510ede1238af9aa445c041a73af",
