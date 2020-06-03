@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0ee9abb7bd96ebc2da0e2ddcf982ae27",
+    "revision": "085e6b74f0a24dc3d7cd29a6d072b61b",
     "url": "/ashkaesthetics/index.html"
   },
   {
-    "revision": "8c30eeffbb3c041e1e4a",
-    "url": "/ashkaesthetics/static/css/main.5869309d.chunk.css"
+    "revision": "601c25441d97f4bee14c",
+    "url": "/ashkaesthetics/static/css/main.76360767.chunk.css"
   },
   {
-    "revision": "ba50109067d1e7d9bdc2",
-    "url": "/ashkaesthetics/static/js/2.143ea57b.chunk.js"
+    "revision": "3a6e433b083c0b1b4933",
+    "url": "/ashkaesthetics/static/js/2.da27ea80.chunk.js"
   },
   {
     "revision": "031b62b957b4fb917cd0ec81e2c8bd7b",
-    "url": "/ashkaesthetics/static/js/2.143ea57b.chunk.js.LICENSE.txt"
+    "url": "/ashkaesthetics/static/js/2.da27ea80.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8c30eeffbb3c041e1e4a",
-    "url": "/ashkaesthetics/static/js/main.44edcd95.chunk.js"
+    "revision": "601c25441d97f4bee14c",
+    "url": "/ashkaesthetics/static/js/main.15b88f3d.chunk.js"
   },
   {
     "revision": "2238fc9e102d5c2c517a",
@@ -38,10 +38,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8efcd1382c918bbf78c776ecee0088f9",
     "url": "/ashkaesthetics/static/media/4.8efcd138.jpg"
-  },
-  {
-    "revision": "a3314eddcfd58af56b4900baa68290a4",
-    "url": "/ashkaesthetics/static/media/404.a3314edd.jpg"
   },
   {
     "revision": "8ca8f6d505d5a31b646bffa8b169e212",
@@ -76,22 +72,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ashkaesthetics/static/media/eyes & brows.0e9d414e.jpg"
   },
   {
-    "revision": "db98a300667c28b78c3fb4777d687956",
-    "url": "/ashkaesthetics/static/media/home01.db98a300.jpg"
-  },
-  {
-    "revision": "5bb8e2b014fe425e785988c5e366c705",
-    "url": "/ashkaesthetics/static/media/home02.5bb8e2b0.jpg"
-  },
-  {
-    "revision": "e18a1f99ae7120818b140b461c00d74d",
-    "url": "/ashkaesthetics/static/media/home03.e18a1f99.jpg"
-  },
-  {
-    "revision": "0d8c42aee7fe51de51b56d86390e3e32",
-    "url": "/ashkaesthetics/static/media/home04.0d8c42ae.jpg"
-  },
-  {
     "revision": "3f0b4435c1d6717f4490f32183e2c0ba",
     "url": "/ashkaesthetics/static/media/logo.3f0b4435.png"
   },
@@ -118,6 +98,26 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3e0decdca8277250d60ba3bc2bfe6b47",
     "url": "/ashkaesthetics/static/media/packages.3e0decdc.jpg"
+  },
+  {
+    "revision": "a3314eddcfd58af56b4900baa68290a4",
+    "url": "/ashkaesthetics/static/media/page_404.a3314edd.jpg"
+  },
+  {
+    "revision": "0d8c42aee7fe51de51b56d86390e3e32",
+    "url": "/ashkaesthetics/static/media/page_contact.0d8c42ae.jpg"
+  },
+  {
+    "revision": "1ac79e252d6f1e63d7fff57350661886",
+    "url": "/ashkaesthetics/static/media/page_gallery.1ac79e25.jpg"
+  },
+  {
+    "revision": "db98a300667c28b78c3fb4777d687956",
+    "url": "/ashkaesthetics/static/media/page_home.db98a300.jpg"
+  },
+  {
+    "revision": "57d1ab52ca2fba54b5e1ad3e56ffa2b7",
+    "url": "/ashkaesthetics/static/media/page_services.57d1ab52.jpg"
   },
   {
     "revision": "5a15ed9fbc262855ff9edf9e33d6ab63",
