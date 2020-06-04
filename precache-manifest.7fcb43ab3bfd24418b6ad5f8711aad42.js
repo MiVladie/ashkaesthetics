@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "085e6b74f0a24dc3d7cd29a6d072b61b",
+    "revision": "b8c9144d2125ef185e05f010a827dfd8",
     "url": "/ashkaesthetics/index.html"
   },
   {
-    "revision": "601c25441d97f4bee14c",
+    "revision": "eafce257d47973848a2e",
     "url": "/ashkaesthetics/static/css/main.76360767.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ashkaesthetics/static/js/2.da27ea80.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "601c25441d97f4bee14c",
-    "url": "/ashkaesthetics/static/js/main.15b88f3d.chunk.js"
+    "revision": "eafce257d47973848a2e",
+    "url": "/ashkaesthetics/static/js/main.f025657b.chunk.js"
   },
   {
     "revision": "2238fc9e102d5c2c517a",
