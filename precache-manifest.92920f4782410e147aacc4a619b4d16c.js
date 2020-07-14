@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "625ac6a00f693db87bd2baadffb4a2ba",
+    "revision": "bece1640c24c4f31bc78024dfe1bdd48",
     "url": "/index.html"
   },
   {
-    "revision": "04a30d460153ddf67763",
-    "url": "/static/css/main.32ea8e8d.chunk.css"
+    "revision": "d94356d1b598e019f45e",
+    "url": "/static/css/main.3e649671.chunk.css"
   },
   {
     "revision": "b996b2ecd48eae2a7404",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.07fdaf92.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "04a30d460153ddf67763",
-    "url": "/static/js/main.b0b49472.chunk.js"
+    "revision": "d94356d1b598e019f45e",
+    "url": "/static/js/main.b67dc767.chunk.js"
   },
   {
     "revision": "c775272e315b3764768c",
@@ -84,8 +84,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/mens treatments.955d329b.jpg"
   },
   {
-    "revision": "138ad3e5feb842f2c2d05d4dcfd57f31",
-    "url": "/static/media/microblading.138ad3e5.jpg"
+    "revision": "ad87d4df55843b0acc70ef713ad13a02",
+    "url": "/static/media/microblading.ad87d4df.jpg"
   },
   {
     "revision": "d764724ece33d13a820563e20b9e9e9e",

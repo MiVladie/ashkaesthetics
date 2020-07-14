@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.32ea8e8d.chunk.css",
-    "main.js": "/static/js/main.b0b49472.chunk.js",
-    "main.js.map": "/static/js/main.b0b49472.chunk.js.map",
+    "main.css": "/static/css/main.3e649671.chunk.css",
+    "main.js": "/static/js/main.b67dc767.chunk.js",
+    "main.js.map": "/static/js/main.b67dc767.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b7449702.js",
     "runtime-main.js.map": "/static/js/runtime-main.b7449702.js.map",
     "static/js/2.07fdaf92.chunk.js": "/static/js/2.07fdaf92.chunk.js",
     "static/js/2.07fdaf92.chunk.js.map": "/static/js/2.07fdaf92.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.ee53ab3c80af9300b01d57a134cc4297.js": "/precache-manifest.ee53ab3c80af9300b01d57a134cc4297.js",
+    "precache-manifest.92920f4782410e147aacc4a619b4d16c.js": "/precache-manifest.92920f4782410e147aacc4a619b4d16c.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.32ea8e8d.chunk.css.map": "/static/css/main.32ea8e8d.chunk.css.map",
+    "static/css/main.3e649671.chunk.css.map": "/static/css/main.3e649671.chunk.css.map",
     "static/js/2.07fdaf92.chunk.js.LICENSE.txt": "/static/js/2.07fdaf92.chunk.js.LICENSE.txt",
     "static/media/1.jpg": "/static/media/1.224c62d5.jpg",
     "static/media/2.jpg": "/static/media/2.d0722437.jpg",
@@ -27,7 +27,7 @@
     "static/media/Navigation.module.css": "/static/media/logo.3f0b4435.png",
     "static/media/mens treatments.png": "/static/media/mens treatments.922d4acb.png",
     "static/media/mens treatments.jpg": "/static/media/mens treatments.955d329b.jpg",
-    "static/media/microblading.jpg": "/static/media/microblading.138ad3e5.jpg",
+    "static/media/microblading.jpg": "/static/media/microblading.ad87d4df.jpg",
     "static/media/microblading.png": "/static/media/microblading.d764724e.png",
     "static/media/microblading02.jpg": "/static/media/microblading02.a1db064d.jpg",
     "static/media/packages.jpg": "/static/media/packages.3e0decdc.jpg",
@@ -42,7 +42,7 @@
   "entrypoints": [
     "static/js/runtime-main.b7449702.js",
     "static/js/2.07fdaf92.chunk.js",
-    "static/css/main.32ea8e8d.chunk.css",
-    "static/js/main.b0b49472.chunk.js"
+    "static/css/main.3e649671.chunk.css",
+    "static/js/main.b67dc767.chunk.js"
   ]
 }
