@@ -1,0 +1,37 @@
+$tundora: #444444;
+
+.Descriptive {
+    // Non-Styling
+    
+    width: 100%;
+
+    .Paragraph {
+        // Non-Styling
+
+        width: 100%;
+        margin-bottom: 2em;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .Name {
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+
+            // Non-Styling
+
+            margin-bottom: 1em;
+        }
+
+        .Description {
+            font-weight: 300;
+            color: $tundora;
+            
+            // Non-Styling
+
+            line-height: 1.75em;
+            letter-spacing: 1px;
+        }
+    }
+}

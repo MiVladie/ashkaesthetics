@@ -1,10 +1,6 @@
 .Banner {
   width: 100%;
   height: calc(100vh - 4.5em);
-  margin-top: 4.5em;
-  /*position: absolute;
-    top: 4.5em;
-    left: 0;*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,21 +45,29 @@
 
 .Banner .Wrapper .Main {
   font-family: 'Josefin Slab', sans-serif;
-  font-size: 8vh;
+  font-size: 7vh;
   color: white;
+  -webkit-animation: fadeIn 0.75s 0s ease-out forwards;
+          animation: fadeIn 0.75s 0s ease-out forwards;
   line-height: 1.125em;
   text-transform: uppercase;
   text-shadow: 0 0 20px rgba(0, 0, 0, 0.16);
 }
 
 .Banner .Wrapper .Line {
-  width: 5em;
-  height: 2.5px;
+  width: 4em;
+  height: 2px;
   background-color: white;
-  margin: 1em auto 2em;
+  opacity: 0;
+  -webkit-animation: fadeIn 0.75s 0s ease-out forwards;
+          animation: fadeIn 0.75s 0s ease-out forwards;
+  margin: 0.75em auto 2em;
 }
 
 .Banner .Wrapper .Description {
+  opacity: 0;
+  -webkit-animation: fadeIn 0.75s 0.25s ease-out forwards;
+          animation: fadeIn 0.75s 0.25s ease-out forwards;
   display: none;
 }
 
@@ -72,12 +76,15 @@
 }
 
 .Banner .Links .Left, .Banner .Links .Right {
-  display: block;
   width: 11em;
   height: 3.25em;
   line-height: 3.25em;
   text-shadow: 0 0 20px rgba(0, 0, 0, 0.16);
   text-transform: uppercase;
+  opacity: 0;
+  -webkit-animation: fadeIn 0.75s 0.5s ease-out forwards;
+          animation: fadeIn 0.75s 0.5s ease-out forwards;
+  display: block;
   text-decoration: none;
   text-align: center;
   -webkit-transition: all 0.15s;
@@ -96,6 +103,7 @@
 }
 
 .Banner .Links .Right {
+  font-weight: 600;
   color: #444444;
   border: 2px solid white;
   background-color: white;
@@ -127,8 +135,10 @@
           flex-flow: column;
   -webkit-transition: all 0.15s ease-out;
   transition: all 0.15s ease-out;
-  overflow: hidden;
   cursor: pointer;
+  border: none;
+  background: none;
+  overflow: hidden;
 }
 
 .Banner .Scroll:hover {
@@ -136,13 +146,16 @@
 }
 
 .Banner .Scroll .Circle {
-  display: block;
   width: 1.5em;
   height: 1.5em;
   border: 2.5px solid white;
   border-radius: 2em;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  opacity: 0;
+  -webkit-animation: fadeIn 0.75s 0.75s ease-out forwards;
+          animation: fadeIn 0.75s 0.75s ease-out forwards;
+  display: block;
 }
 
 .Banner .Scroll .Knob {
@@ -151,22 +164,52 @@
   background-color: white;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  opacity: 0;
+  -webkit-animation: fadeIn 0.75s 0.75s ease-out forwards;
+          animation: fadeIn 0.75s 0.75s ease-out forwards;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    -webkit-transform: translateY(0.5em);
+            transform: translateY(0.5em);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    -webkit-transform: translateY(0.5em);
+            transform: translateY(0.5em);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @media (min-width: 720px) {
   .Banner {
-    height: calc(100vh - 5em);
-    margin-top: 5em;
+    width: 100%;
+    height: calc(100vh - calc(10em + 2px));
+    margin: 0;
   }
   .Banner .Wrapper {
     width: 90%;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
   }
   .Banner .Wrapper .Main {
-    font-size: 7.5vh;
+    font-size: 7vh;
   }
   .Banner .Wrapper .Line {
-    margin-bottom: 2em;
+    margin-bottom: 1.75em;
   }
   .Banner .Wrapper .Description {
     display: block;
@@ -197,13 +240,19 @@
     width: 70%;
   }
   .Banner .Wrapper .Main {
-    font-size: 4.5em;
+    font-size: 4em;
   }
   .Banner .Wrapper .Description {
     width: 70%;
   }
   .Banner .Links .Left, .Banner .Links .Right {
     font-size: 0.9em;
+  }
+}
+
+@media (max-height: 680px) {
+  .Banner .Scroll {
+    display: none;
   }
 }
 /*# sourceMappingURL=Banner.module.css.map */

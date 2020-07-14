@@ -34,7 +34,7 @@ const footer = () => (
 
             <a
                 className = { classes.Link }
-                href = 'mailto:ashk.about@gmail.com'>
+                href = 'mailto:ask@ashk-aesthetics.co.uk'>
                 <img className = { classes.Icon } src = { emailIcon } alt = 'Email Icon' />
             </a>
         </div>

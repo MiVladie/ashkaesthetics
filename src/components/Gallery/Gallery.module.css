@@ -69,7 +69,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 700;
+  z-index: 500;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,11 +83,15 @@
 
 .Gallery .Modal .Wrapper {
   position: relative;
+  -webkit-animation: expand 0.25s 0s ease-out forwards;
+          animation: expand 0.25s 0s ease-out forwards;
 }
 
 .Gallery .Modal .Wrapper img {
-  max-width: 85vw;
-  max-height: 85vh;
+  min-width: 3em;
+  min-height: 3em;
+  max-width: 82.5vw;
+  max-height: 82.5vh;
   -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.04);
           box-shadow: 0 0 12px rgba(0, 0, 0, 0.04);
   -o-object-fit: cover;
@@ -114,42 +118,127 @@
   position: absolute;
   top: calc(1.75em / -2);
   right: calc(1.75em / -2);
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
   cursor: pointer;
+  border: none;
 }
 
 .Gallery .Modal .Wrapper .Close:hover {
   background-color: #D7C2A4;
 }
 
-.Gallery .Modal .Wrapper .Close:hover img {
+.Gallery .Modal .Wrapper .Close:hover .Icon {
   -webkit-filter: brightness(1);
           filter: brightness(1);
 }
 
-.Gallery .Modal .Wrapper .Close img {
-  width: 37%;
-  height: 37%;
-  -webkit-filter: brightness(0.25);
-          filter: brightness(0.25);
-  -o-object-fit: contain;
-     object-fit: contain;
+.Gallery .Modal .Wrapper .Close .Icon {
+  background-image: url("../../assets/icons/close.png");
+  width: 65%;
+  height: 65%;
+  -webkit-filter: brightness(0.2);
+          filter: brightness(0.2);
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+}
+
+.Gallery .Modal .Wrapper .Previous, .Gallery .Modal .Wrapper .Next {
+  width: 1.75em;
+  height: 75%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.Gallery .Modal .Wrapper .Previous:hover i, .Gallery .Modal .Wrapper .Next:hover i {
+  -webkit-filter: brightness(0.8);
+          filter: brightness(0.8);
+}
+
+.Gallery .Modal .Wrapper .Previous i, .Gallery .Modal .Wrapper .Next i {
+  background-image: url("../../assets/icons/arrow.png");
+  width: 100%;
+  height: 2em;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+}
+
+.Gallery .Modal .Wrapper .Previous {
+  left: -1.75em;
+}
+
+.Gallery .Modal .Wrapper .Previous i {
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+}
+
+.Gallery .Modal .Wrapper .Next {
+  right: -1.75em;
+}
+
+@-webkit-keyframes expand {
+  from {
+    -webkit-transform: translateY(-6em);
+            transform: translateY(-6em);
+    opacity: 0.25;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes expand {
+  from {
+    -webkit-transform: translateY(-6em);
+            transform: translateY(-6em);
+    opacity: 0.25;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @media (min-width: 720px) {
   .Gallery .Picture {
     width: 28vw;
     height: 28vw;
-    margin: 0 0.35em;
+    margin: 0.35em;
   }
   .Gallery .Modal .Wrapper .Close {
     width: 2.5em;
     height: 2.5em;
     top: calc(2.5em / -2);
     right: calc(2.5em / -2);
+  }
+  .Gallery .Modal .Wrapper .Previous, .Gallery .Modal .Wrapper .Next {
+    width: 2em;
+  }
+  .Gallery .Modal .Wrapper .Previous {
+    left: -2em;
+  }
+  .Gallery .Modal .Wrapper .Next {
+    right: -2em;
   }
 }
 

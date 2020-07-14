@@ -1,7 +1,7 @@
 {
   "name": "ashk-aesthetics",
   "version": "0.1.0",
-  "homepage": "https://mivladie.github.io/ashkaesthetics/",
+  "homepage": "https://ashk-aesthetics.co.uk/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -10,6 +10,7 @@
     "axios": "^0.19.2",
     "gh-pages": "^2.2.0",
     "react": "^16.13.1",
+    "react-app-polyfill": "^1.0.6",
     "react-dom": "^16.13.1",
     "react-google-maps": "^9.4.5",
     "react-router-dom": "^5.1.2",
@@ -33,9 +34,15 @@
       "not op_mini all"
     ],
     "development": [
+      "ie 11",
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ],
+    "browserslist": [
+      ">0.2%",
+      "not dead",
+      "ie >= 9"
     ]
   }
 }

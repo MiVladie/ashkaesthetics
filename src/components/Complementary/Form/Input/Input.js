@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import classes from './Input.module.css';
 
-const Input = ({ type, placeholder, value, required, onChange }) => {
+const input = ({ type, placeholder, value, required, onChange }) => {
     let element;
 
     switch (type) {        
@@ -30,4 +30,4 @@ const Input = ({ type, placeholder, value, required, onChange }) => {
     return element
 };
 
-export default Input;
+export default input;

@@ -1,15 +1,11 @@
-$navigationHeight: 4.5em;
 $tundora: #444444;
+$navigationHeight: 4.5em;
 
 .Banner {
+    // Non-Styling
+
     width: 100%;
     height: calc(100vh - #{ $navigationHeight });
-
-    margin-top: $navigationHeight;
-
-    /*position: absolute;
-    top: #{ $navigationHeight };
-    left: 0;*/
     
     display: flex;
     justify-content: center;
@@ -17,10 +13,11 @@ $tundora: #444444;
     flex-flow: column;
 
     position: relative;
-
     overflow: hidden;
 
     .Image {
+        // Non-Styling
+
         position: absolute;
 
         top: 0;
@@ -45,6 +42,9 @@ $tundora: #444444;
 
     .Wrapper {
         text-align: center;
+        
+        // Non-Styling
+
         position: relative;
 
         width: 90%;
@@ -52,8 +52,10 @@ $tundora: #444444;
 
         .Main {
             font-family: 'Josefin Slab', sans-serif;
-            font-size: 8vh;
+            font-size: 7vh;
             color: white;
+
+            animation: fadeIn 0.75s 0s ease-out forwards;
 
             // Non-Styling
 
@@ -63,34 +65,49 @@ $tundora: #444444;
         }
 
         .Line {
-            width: 5em;
-            height: 2.5px;
+            width: 4em;
+            height: 2px;
 
             background-color: white;
 
+            opacity: 0;
+            animation: fadeIn 0.75s 0s ease-out forwards;
+
             // Non-Styling
 
-            margin: 1em auto 2em;
+            margin: 0.75em auto 2em;
         }
 
         .Description {
+            opacity: 0;
+            animation: fadeIn 0.75s 0.25s ease-out forwards;
+
+            // Non-Styling
+
             display: none;
         }
     }
 
     .Links {
+        // Non-Styling
+        
         position: relative;
         
         .Left, .Right {
-            display: block;
-
             width: 11em;
             height: 3.25em;
-
             line-height: 3.25em;
 
             text-shadow: 0 0 20px rgba(0, 0, 0, 0.16);
             text-transform: uppercase;
+            
+            opacity: 0;
+            animation: fadeIn 0.75s 0.5s ease-out forwards;
+
+            // Non-Styling
+
+            display: block;
+
             text-decoration: none;
             text-align: center;
 
@@ -100,6 +117,8 @@ $tundora: #444444;
         .Left {
             color: white;
             border: 2px solid white;
+            
+            // Non-Styling
 
             margin-bottom: 1em;
 
@@ -110,6 +129,7 @@ $tundora: #444444;
         }
 
         .Right {
+            font-weight: 600;
             color: $tundora;
             border: 2px solid white;
 
@@ -122,7 +142,9 @@ $tundora: #444444;
         }
     }
 
-    .Scroll {
+    .Scroll {        
+        // Non-Styling
+        
         position: absolute;
         bottom: -0.5em;
         left: 50%;
@@ -134,16 +156,17 @@ $tundora: #444444;
         flex-flow: column;
 
         transition: all 0.15s ease-out;
-        overflow: hidden;
         cursor: pointer;
+
+        border: none;
+        background: none;
+        overflow: hidden;
 
         &:hover {
             bottom: 0;
         }
 
         .Circle {
-            display: block;
-
             width: 1.5em;
             height: 1.5em;
 
@@ -151,6 +174,13 @@ $tundora: #444444;
             border-radius: 2em;
 
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+            
+            opacity: 0;
+            animation: fadeIn 0.75s 0.75s ease-out forwards;
+
+            // Non-Styling
+            
+            display: block;
         }
 
         .Knob {
@@ -158,29 +188,46 @@ $tundora: #444444;
             height: 1.75em;
 
             background-color: white;
-
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+            
+            opacity: 0;
+            animation: fadeIn 0.75s 0.75s ease-out forwards;
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            transform: translateY(0.5em);
+            opacity: 0;
+        }
+    
+        to { 
+            transform: translateY(0);
+            opacity: 1;
         }
     }
 }
 
 @media (min-width: 720px) {
-    $navigationHeight: 5em;
+    //$navigationHeight: 5em;
+    $navigationHeight: calc(10em + 2px);
 
     .Banner {
+        //height: calc(100vh - #{ $navigationHeight });
+        width: 100%;
         height: calc(100vh - #{ $navigationHeight });
-        margin-top: $navigationHeight;
+        margin: 0;
 
         .Wrapper {
             width: 90%;
-            margin-bottom: 3em;
+            margin-bottom: 2em;
 
             .Main {
-                font-size: 7.5vh;
+                font-size: 7vh;
             }
 
             .Line {
-                margin-bottom: 2em;
+                margin-bottom: 1.75em;
             }
 
             .Description {
@@ -222,7 +269,7 @@ $tundora: #444444;
             width: 70%;
 
             .Main {
-                font-size: 4.5em;
+                font-size: 4em;
             }
 
             .Description {
@@ -234,6 +281,14 @@ $tundora: #444444;
             .Left, .Right {
                 font-size: 0.9em;
             }
+        }
+    }
+}
+
+@media (max-height: 680px) {
+    .Banner {
+        .Scroll {
+            display: none;
         }
     }
 }

@@ -51,6 +51,7 @@
   background-color: #EBEEF2;
   -webkit-transition: all 0.15s;
   transition: all 0.15s;
+  outline: none;
 }
 
 .Footer .Links .Link:hover {

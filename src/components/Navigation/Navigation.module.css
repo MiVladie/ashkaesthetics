@@ -1,18 +1,20 @@
-.Navigation {
-  width: 100%;
-  background-color: white;
-  z-index: 1000;
-  position: fixed;
-  top: 0;
+body {
+  margin-top: 4.5em;
 }
 
-.Navigation .Upper, .Navigation .Line, .Navigation .Lower .Links {
+.Upper, .Line, .Lower .Links {
   display: none;
 }
 
-.Navigation .Lower {
+.Lower {
   width: 90%;
   height: 4.5em;
+  padding: 0 5%;
+  background-color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  position: fixed;
+  top: 0;
+  z-index: 250;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -25,36 +27,85 @@
           align-items: center;
 }
 
-.Navigation .Lower .Logo {
-  width: 4.5em;
-  height: 3em;
+.Lower .Social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Lower .Social .Facebook, .Lower .Social .Instagram, .Lower .Social .Phone {
+  width: 1.35em;
+  height: 1.35em;
+  -webkit-filter: brightness(0.65);
+          filter: brightness(0.65);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  outline: none;
+  -webkit-transition: all 0.15s;
+  transition: all 0.15s;
+}
+
+.Lower .Social .Facebook:hover, .Lower .Social .Instagram:hover, .Lower .Social .Phone:hover {
+  -webkit-filter: brightness(0.25);
+          filter: brightness(0.25);
+}
+
+.Lower .Social .Facebook {
+  background-image: url("../../assets/icons/facebook.png");
+}
+
+.Lower .Social .Instagram {
+  margin: 0 0.75em;
+  background-image: url("../../assets/icons/instagram.png");
+}
+
+.Lower .Social .Phone {
+  background-image: url("../../assets/icons/phone.png");
+}
+
+.Lower .Logo {
+  width: 5.5em;
+  height: 4em;
   background-image: url("../../assets/icons/logo.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+  z-index: 1000;
   outline: none;
 }
 
-.Navigation .Lower .Menu {
+.Lower .Menu {
   background-image: url("../../assets/icons/menu.png");
+  -webkit-filter: brightness(0.2);
+          filter: brightness(0.2);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   border: none;
   background-color: transparent;
-  -webkit-filter: brightness(0.2);
-          filter: brightness(0.2);
   width: 2em;
   height: 2em;
 }
 
-.Navigation .Lower .Links {
+.Lower .Links {
+  background-color: white;
   display: none;
   position: fixed;
   width: 100%;
-  top: calc(4.5em - 2px);
+  top: 0;
   left: 0;
-  background-color: white;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -67,40 +118,40 @@
           flex-flow: column;
 }
 
-.Navigation .Lower .Links .Link {
+.Lower .Links .Link {
   margin: 1.5em 0;
 }
 
-.Navigation .Lower .Links .Link a {
-  padding: 0.5em 0;
+.Lower .Links .Link a {
   font-size: 1.25em;
   font-family: 'Montserrat', sans-serif;
+  color: #444444;
+  padding: 0.5em 0;
   text-transform: uppercase;
   text-decoration: none;
-  color: #444444;
   outline: none;
 }
 
-.Navigation .Lower .Links .Link a .Underline {
-  position: absolute;
-  left: 0;
-  right: 0;
+.Lower .Links .Link a .Underline {
   height: 3px;
   margin: 0.75em auto 0;
   background-color: #D7C2A4;
   border-radius: 3px;
   width: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
-.Navigation .Lower .Links .Link .Active {
+.Lower .Links .Link .Active {
   position: relative;
 }
 
-.Navigation .Lower .Links .Link .Active:hover .Underline {
+.Lower .Links .Link .Active:hover .Underline {
   background-color: #D7C2A4;
 }
 
-.Navigation .Lower .Links .Link .Active .Underline {
+.Lower .Links .Link .Active .Underline {
   -webkit-animation: underline 0.3s 0s ease forwards;
           animation: underline 0.3s 0s ease forwards;
 }
@@ -123,11 +174,11 @@
   }
 }
 
-.Navigation .Lower .Links .Book {
+.Lower .Links .Book {
   margin-top: 3em;
 }
 
-.Navigation .Lower .Links .Book a {
+.Lower .Links .Book a {
   background-color: #D7C2A4;
   border-radius: 5em;
   font-size: 1.1em;
@@ -137,56 +188,15 @@
   transition: all 0.15s;
 }
 
-.Navigation .Lower .Links .Book a:hover {
+.Lower .Links .Book a:hover {
   background-color: #c7aa81;
 }
 
-.Scrolled {
-  position: fixed;
-  top: 0;
-  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-  background-color: white;
-  -webkit-animation: appear 0.3s 0s ease forwards;
-          animation: appear 0.3s 0s ease forwards;
-}
-
-.Scrolled .Upper, .Scrolled .Line {
-  display: none;
-}
-
-@-webkit-keyframes appear {
-  from {
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-  }
-  to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@keyframes appear {
-  from {
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-  }
-  to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
 .Reveal {
-  position: fixed;
+  border-bottom: none;
 }
 
-.Reveal .Lower {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.Reveal .Lower .Links {
+.Reveal .Links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -200,7 +210,7 @@
     opacity: 0;
   }
   to {
-    height: calc(100vh - 4.5em + 2px);
+    height: 100vh;
     opacity: 1;
   }
 }
@@ -211,23 +221,24 @@
     opacity: 0;
   }
   to {
-    height: calc(100vh - 4.5em + 2px);
+    height: 100vh;
     opacity: 1;
   }
 }
 
-@media (min-width: 720px) {
-  .Navigation .Lower {
-    height: 5em;
-  }
+.Reveal .Menu {
+  background-image: url("../../assets/icons/close.png");
 }
 
-@media (min-width: 1025px) {
-  .Navigation {
-    position: relative;
+@media (min-width: 720px) {
+  body {
+    margin: 0;
   }
-  .Navigation .Upper {
+  .Upper {
     height: 5.5em;
+    background-color: white;
+    width: 92%;
+    margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -238,7 +249,7 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .Navigation .Upper .Social {
+  .Upper .Social {
     width: 4.5em;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -250,29 +261,29 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .Navigation .Upper .Social .Facebook, .Navigation .Upper .Social .Instagram {
+  .Upper .Social .Facebook, .Upper .Social .Instagram {
     width: 1.15em;
     height: 1.15em;
+    -webkit-filter: brightness(0.75);
+            filter: brightness(0.75);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    -webkit-filter: brightness(0.75);
-            filter: brightness(0.75);
     outline: none;
     -webkit-transition: all 0.15s;
     transition: all 0.15s;
   }
-  .Navigation .Upper .Social .Facebook:hover, .Navigation .Upper .Social .Instagram:hover {
+  .Upper .Social .Facebook:hover, .Upper .Social .Instagram:hover {
     -webkit-filter: brightness(0.25);
             filter: brightness(0.25);
   }
-  .Navigation .Upper .Social .Facebook {
+  .Upper .Social .Facebook {
     background-image: url("../../assets/icons/facebook.png");
   }
-  .Navigation .Upper .Social .Instagram {
+  .Upper .Social .Instagram {
     background-image: url("../../assets/icons/instagram.png");
   }
-  .Navigation .Upper .Logo {
+  .Upper .Logo {
     width: 5em;
     height: 5em;
     background-image: url("../../assets/icons/logo.png");
@@ -285,15 +296,19 @@
     right: 0;
     margin: auto;
   }
-  .Navigation .Upper .Contacts {
+  .Upper .Contacts {
+    width: 4.5em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  .Navigation .Upper .Contacts .Contact {
+  .Upper .Contacts .Contact {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -302,56 +317,64 @@
             align-items: center;
     -webkit-transition: all 0.15s;
     transition: all 0.15s;
+    cursor: pointer;
   }
-  .Navigation .Upper .Contacts .Contact:hover .Icon {
+  .Upper .Contacts .Contact:hover .Icon {
     -webkit-filter: brightness(0.25);
             filter: brightness(0.25);
   }
-  .Navigation .Upper .Contacts .Contact:hover .Info {
+  .Upper .Contacts .Contact:hover .Info {
     color: black;
   }
-  .Navigation .Upper .Contacts .Contact .Icon {
+  .Upper .Contacts .Contact .Icon {
     width: 1.35em;
     height: 1.35em;
-    margin: 0 0.5em 0 1.25em;
+    -webkit-filter: brightness(0.75);
+            filter: brightness(0.75);
     -o-object-fit: contain;
        object-fit: contain;
     background-repeat: no-repeat;
     background-position: center;
     -webkit-transition: all 0.15s;
     transition: all 0.15s;
-    -webkit-filter: brightness(0.75);
-            filter: brightness(0.75);
   }
-  .Navigation .Upper .Contacts .Contact .Info {
+  .Upper .Contacts .Contact .Info {
+    display: none;
     font-size: 0.9em;
+    color: #444444;
     text-transform: none;
     text-decoration: none;
-    color: #444444;
     outline: none;
     -webkit-transition: all 0.15s;
     transition: all 0.15s;
   }
-  .Navigation .Line {
-    display: block;
-    width: 100%;
+  .Line {
     height: 2px;
     border-radius: 2px;
     background-color: rgba(0, 0, 0, 0.05);
+    display: block;
+    width: 100%;
   }
-  .Navigation .Lower {
+  .Lower {
+    position: -webkit-sticky;
+    position: sticky;
+    top: -2px;
+    width: 80%;
     height: 4.5em;
+    padding: 0 10%;
   }
-  .Navigation .Lower .Logo, .Navigation .Lower .Menu {
+  .Lower .Social {
     display: none;
   }
-  .Navigation .Lower .Links {
+  .Lower .Logo, .Lower .Menu {
+    display: none;
+  }
+  .Lower .Links {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -362,29 +385,37 @@
     position: relative;
     top: 0;
   }
-  .Navigation .Lower .Links .Link a {
-    position: relative;
+  .Lower .Links .Link a {
     font-size: 0.75em;
+    position: relative;
   }
-  .Navigation .Lower .Links .Link a .Underline {
+  .Lower .Links .Link a .Underline {
     height: 2px;
   }
-  .Navigation .Lower .Links .Link a:hover .Underline {
+  .Lower .Links .Link a:hover .Underline {
     background-color: rgba(0, 0, 0, 0.05);
   }
-  .Navigation .Lower .Links .Book {
+  .Lower .Links .Book {
     margin: 0;
   }
-  .Scrolled {
-    position: fixed;
-    left: 50%;
-    width: 92%;
-    margin-left: -46%;
-    -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
-            box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+@media (min-width: 1025px) {
+  .Upper {
+    width: 100%;
   }
-  .Scrolled .Upper, .Scrolled .Line {
-    display: none;
+  .Upper .Logo {
+    width: 5.25em;
+    height: 5.25em;
+  }
+  .Upper .Contacts {
+    width: auto;
+  }
+  .Upper .Contacts .Contact .Icon {
+    margin: 0 0.5em 0 1.25em;
+  }
+  .Upper .Contacts .Contact .Info {
+    display: block;
   }
 }
 /*# sourceMappingURL=Navigation.module.css.map */

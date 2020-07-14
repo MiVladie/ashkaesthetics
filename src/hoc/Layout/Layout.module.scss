@@ -1,11 +1,12 @@
 .Layout {
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto;  
 }
 
 @media (min-width: 1025px) {
     .Layout {
         width: 92%;
+        max-width: 2048px;
     }
 }
 

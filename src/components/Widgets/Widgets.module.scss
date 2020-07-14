@@ -31,6 +31,7 @@ $tundora: #444444;
             align-items: center;
             
             transition: all 0.3s;
+            cursor: pointer;
 
             &:hover {
                 background-color: lighten($akaroa, 10);
@@ -64,6 +65,8 @@ $tundora: #444444;
             text-align: center;
 
             margin: 2em 0 0;
+            
+            cursor: pointer;
         }
     }
 }
@@ -84,11 +87,11 @@ $tundora: #444444;
 @media (min-width: 1025px) {
     .Widgets {
         .Widget {
-            width: 17.5vw;
+            width: 16em;
             margin: 0 2em;
 
             .Icon {
-                height: 17.5vw;
+                height: 16em;
             }
         }
     }

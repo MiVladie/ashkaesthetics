@@ -1,10 +1,11 @@
 import React from 'react';
 
 import Line from '../UI/Line/Line';
+import Animation from '../../hoc/Animation/Animation';
 
 import classes from './Introduction.module.css';
 
-const introduction = ({ id, meta, main, description }) => {
+const introduction = ({ meta, main, description }) => {
     const splitDescription = () => {
         return description = ("" + description).split('\n').flatMap((value, index, array) =>
             array.length - 1 !== index
@@ -16,12 +17,14 @@ const introduction = ({ id, meta, main, description }) => {
     return (
         <div className = { classes.Introduction }>
             <div className = { classes.Wrapper }>
-                { meta && <h2 className = { classes.Meta }>{ meta }</h2> }
-                <h1 className = { classes.Main }>{ main }</h1>
+                { meta && <Animation><h2 className = { classes.Meta }>{ meta }</h2></Animation> }
 
-                <Line color = '#B8925D' />
-                
-                { description && <p className = { classes.Description }>{ splitDescription() }</p> }
+                <Animation>
+                    <h1 className = { classes.Main }>{ main }</h1>
+                    <Line color = '#B87332' />
+                </Animation>
+
+                { description && <Animation style = {{ width: '100%' }}><p className = { classes.Description }>{ splitDescription() }</p></Animation> }
             </div>
         </div>
     )

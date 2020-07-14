@@ -8,7 +8,7 @@ import Gallery from '../../components/Gallery/Gallery';
 import Testimonials from '../../components/Testimonials/Testimonials';
 import Contact from '../../components/Contact/Contact';
 
-import bannerImage from '../../assets/images/promotional/home01.jpg';
+import bannerImage from '../../assets/images/promotional/page_home.jpg';
 import microbladingIcon from '../../assets/icons/microblading.png';
 import browsAndLashIcon from '../../assets/icons/brows and lash.png';
 import waxingIcon from '../../assets/icons/waxing.png';
@@ -22,33 +22,33 @@ const home = () => (
         <Banner
             image = { bannerImage }
             imageAlt = 'Beauty Salon Background'
-            main = 'Relaxing is never easy on your own'
+            main = 'Invest in your brows, it is the crown you never take off'
             description = 'Come and discover your oasis. It has never been easier to take a break from stress and the harmful factors that surround you every day!'
             linkLeftTo = '/services'
             linkLeftText = 'View services'
-            linkRightTo = 'https://fresha.com/'
+            linkRightTo = 'https://fresha.com/ashk-aesthetics-r6gk2ijg'
             linkRightText = 'Book now'
             scrollTo = 'intro' />
 
         <Section id = 'intro'>
             <Introduction
                 id = 'intro'
-                main = 'Welcome'
-                description = { ['Donec nec mattis turpis. Ut non libero diam. Curabitur malesuada nec neque nec hendrerit. Pellentesque commodo a tellus a feugiat. Cras porta lorem in lorem sodales semper. Sed viverra, sem quis consectetur eleifend, magna orci dictum metus, ut venenatis neque metus ut mi. Pellentesque at fringilla sapien.\nNam mauris est, commodo at nunc nec, venenatis venenatis risus. Aenean molestie ligula at nunc ultrices tincidunt. Sed non aliquam sapien, sed condimentum enim. Morbi id placerat urna. Quisque in ipsum ipsum. Vestibulum non lacus mi. Donec eu mattis lectus. In eleifend vel nisi eget pulvinar. Nam finibus, odio eu faucibus euismod, magna sapien condimentum sem, eget vestibulum turpis mi id massa. Aenean pharetra ligula et quam volutpat, et commodo lorem rutrum.'] } />
+                main = 'Welcome to Ashk Aesthetics'
+                description = { ['The word Ashk means Love in Turkish...\nThe famous philosopher Confucius said: “Choose a job you love, and you will never have to work a day in your life.”\nI started out in banking, then moved into hospitality management and latterly childcare administration. Alas, my passion for aesthetics led me to beauty therapy and my love for the profession led to the launch of Ashk Aesthetics.\nIt’s common knowledge that success is often not a coincidence, but instead a product of hard work, sacrifice, dedication and the pursuit of perfection!\nI trained at some of London’s top beauty academies to become both a fully qualified beauty therapist and a certified microblading artist.\nAshk Aesthetics offers a range of services which include bespoke Microblading, Eyelash treatments and body waxing.\nAt Ashk Aesthetics, the passion and attention to detail are evidenced by the results and affirmed by customer feedback.\nWhy not drop by and let’s put some joy in your heart and a smile on your face.'] } />
         </Section>
 
         <Section
             background = '#F8F8F8'
-            description = 'Donec nec mattis turpis. Ut non libero diam. Curabitur malesuada nec neque nec hendrerit. Pellentesque commodo a tellus a feugiat. Cras porta lorem in lorem sodales semper.'
+            description = ''
             linkTo = '/services'
             linkText = 'View services'>
             <Introduction main = 'Services' />
             <Widgets
                 data = {[
-                    { name: "Microblading", icon: microbladingIcon },
-                    { name: "Brows & Lash", icon: browsAndLashIcon },
-                    { name: "Waxing", icon: waxingIcon },
-                    { name: "Men's Treatments", icon: mensTreatmentsIcon }
+                    { name: "Microblading", icon: microbladingIcon, url: '/services#microblading' },
+                    { name: "Eyes & Brows", icon: browsAndLashIcon, url: '/services#eyesandbrows' },
+                    { name: "Waxing", icon: waxingIcon, url: '/services#waxing' },
+                    { name: "Men's Treatments", icon: mensTreatmentsIcon, url: '/services#menstreatments' }
                 ]} />
         </Section>
 
@@ -57,7 +57,7 @@ const home = () => (
             linkText = 'View more'>
             <Introduction
                 main = 'Gallery'
-                description = 'Donec nec mattis turpis. Ut non libero diam. Curabitur malesuada nec neque nec hendrerit. Pellentesque commodo a tellus a feugiat. Cras porta lorem in lorem sodales semper.' />
+                description = '' />
             <Gallery
                 data = {[ 
                     { image: galleryImage01, alt: 'Eyes & Brows' },
@@ -80,14 +80,15 @@ const home = () => (
         <Section>
             <Introduction
                 main = 'Find us'
-                description = 'Donec nec mattis turpis. Ut non libero diam. Curabitur malesuada nec neque nec hendrerit. Pellentesque commodo a tellus a feugiat. Cras porta lorem in lorem sodales semper.' />
+                description = '' />
             <Contact
-                description = 'Donec nec mattis turpis. Ut non libero diam. Curabitur malesuada nec neque nec hendrerit. Pellentesque commodo a tellus a feugiat. Cras porta lorem in lorem sodales semper.'
+                formDescription = 'For all inquiries please get in touch with us.'
+                contactDescription = ''
                 phone = '07768 105 096'
-                email = 'ashk.about@gmail.com'
-                address = 'Luxx Hair, 43 High St, Ealing, London W5 5DB'
+                email = 'ask@ashk-aesthetics.co.uk'
+                address = '10 Bond Street, Ealing, London W5 5AA'
                 time = 'Wed-Sat: 9:30 AM - 6:00 PM'
-                coordinates = {{ lat: 51.5127901, lng: -0.3069276 }} />
+                coordinates = {{ lat: 51.5123404, lng: -0.3083522 }} />
         </Section>
     </React.Fragment>
 );

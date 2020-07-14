@@ -6,6 +6,7 @@
 @media (min-width: 1025px) {
   .Layout {
     width: 92%;
+    max-width: 2048px;
   }
 }
 /*# sourceMappingURL=Layout.module.css.map */

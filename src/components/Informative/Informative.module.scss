@@ -1,0 +1,149 @@
+$tundora: #444444;
+
+.Informative {
+    // Non-Styling
+
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-flow: column;
+
+    margin: 3em 0;
+
+    &:first-of-type {
+        margin-top: 0;
+    }
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .Image {
+        width: 90%;
+        height: 35vh;
+
+        margin-bottom: 2em;
+        
+        img {
+            // Non-Styling
+            
+            width: 100%;
+            height: 100%;
+            
+            object-fit: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+    }
+
+    .Info {
+        width: 90%;
+
+        // Non-Styling
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        flex-flow: column;
+
+        .Wrapper {
+            width: 100%;
+
+            .Main {
+                font-family: 'Montserrat', sans-serif;           
+                font-weight: 300;
+                font-size: 1.5em;
+
+                // Non-Styling
+
+                text-transform: uppercase;
+            }
+
+            .Description {                    
+                font-weight: 300;
+                font-size: 1em;
+                line-height: 1.75em;
+                letter-spacing: 1px;
+                color: $tundora;
+
+                // Non-styling
+
+                margin-top: 1.5em;
+            }
+
+            .Content {
+                // Non-Styling
+
+                width: 100%;
+                margin-top: 3em;
+            }
+        }
+
+        .Button {
+            margin-top: 2em;
+        }
+    }
+}
+
+@media (min-width: 720px) {
+    .Informative {
+        .Image {
+            width: 85%;
+            min-height: 350px;
+            margin-bottom: 3em;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .Info {
+            width: 85%;
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    .Informative {
+        width: 90%;
+        margin: 4em auto;
+
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-flow: row;
+
+        .Image {
+            width: 45%;
+            height: 74vh;
+
+            max-height: none;
+            min-height: none;
+            
+            margin: 0;
+            
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .Info {
+            width: 50%;
+            min-height: calc(74vh - 2em);
+            margin: 1em 0;
+            
+            justify-content: space-between;
+            flex-direction: column;
+        }
+    }
+
+    .Reverse {
+        flex-flow: row-reverse;
+    }
+}

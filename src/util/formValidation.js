@@ -1,4 +1,7 @@
 export const isFormValid = (pattern, form) => {
+    if(form == null)
+        return 'Please, fill in all required fields.';
+        
     for(let input of pattern) {
         let value = form[input.name];
 

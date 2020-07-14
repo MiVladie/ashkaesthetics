@@ -6,10 +6,10 @@ import Introduction from '../../components/Introduction/Introduction';
 import Gallery from '../../components/Gallery/Gallery';
 import Testimonials from '../../components/Testimonials/Testimonials';
 
-import bannerImage from '../../assets/images/promotional/home03.jpg';
+import bannerImage from '../../assets/images/promotional/page_gallery.jpg';
 import galleryImage01 from '../../assets/images/gallery/1.jpg';
-import galleryImage02 from '../../assets/images/gallery/5.jpg';
-import galleryImage03 from '../../assets/images/gallery/9.jpg';
+import galleryImage02 from '../../assets/images/gallery/2.jpg';
+import galleryImage03 from '../../assets/images/gallery/3.jpg';
 import galleryImage04 from '../../assets/images/gallery/4.jpg';
 import galleryImage05 from '../../assets/images/gallery/5.jpg';
 import galleryImage06 from '../../assets/images/gallery/6.jpg';
@@ -22,18 +22,18 @@ const gallery = () => (
         <Banner
             image = { bannerImage }
             imageAlt = 'Beauty Salon Background'
-            main = 'Relaxing is never easy on your own'
-            description = 'Come and discover your oasis. It has never been easier to take a break from stress and the harmful factors that surround you every day!'
+            main = 'Beauty is good for the soul'
+            //description = 'Come and discover your oasis. It has never been easier to take a break from stress and the harmful factors that surround you every day!'
             linkLeftTo = '/services'
             linkLeftText = 'View services'
-            linkRightTo = 'https://fresha.com/'
+            linkRightTo = 'https://fresha.com/ashk-aesthetics-r6gk2ijg'
             linkRightText = 'Book now'
             scrollTo = 'intro' />
 
         <Section id = 'intro'>
             <Introduction
                 main = 'Gallery'
-                description = 'Donec nec mattis turpis. Ut non libero diam. Curabitur malesuada nec neque nec hendrerit. Pellentesque commodo a tellus a feugiat. Cras porta lorem in lorem sodales semper.' />
+                description = '' />
             <Gallery
                 data = {[ 
                     { image: galleryImage01, alt: 'Eyes & Brows' },

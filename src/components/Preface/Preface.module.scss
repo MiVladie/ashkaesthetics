@@ -1,0 +1,64 @@
+.Preface {
+    height: 25vh;
+
+    // Non-Styling
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    .Image {
+        opacity: 0.9;
+
+        // Non-Styling
+
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        object-fit: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .Main {
+        font-family: 'Josefin Slab', sans-serif;
+        font-size: 12vw;
+        text-shadow: 0 0 20px rgba(0, 0, 0, 0.16);
+        color: white;
+        
+        // Non-Styling
+
+        text-align: center;
+        text-transform: uppercase;
+
+        position: relative;
+    }
+}
+
+@media (min-width: 720px) {
+    .Preface {
+        .Main {
+            font-size: 10vw;
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    .Preface {
+        height: 35vh;
+
+        .Main {
+            font-size: 7em;
+        }
+    }
+}
+
