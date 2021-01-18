@@ -2,7 +2,7 @@ import React from 'react';
 
 import Animation from '../../../hoc/Animation/Animation';
 
-import classes from './Descriptive.module.css';
+import classes from './Descriptive.module.scss';
 
 const descriptive = ({ data }) => (
     <div className = { classes.Descriptive }>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import classes from './Animation.module.css';
+import classes from './Animation.module.scss';
 
 const Animation = ({ style, className, children }) => {
     const [animate, setAnimate] = useState(false);

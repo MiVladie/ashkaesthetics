@@ -1,6 +1,6 @@
 import React from 'react';
 
-import classes from './Line.module.css';
+import classes from './Line.module.scss';
 
 const line = ({ color, style }) => (
     <div className = { classes.Line } style = {{ backgroundColor: color, ...style }} />

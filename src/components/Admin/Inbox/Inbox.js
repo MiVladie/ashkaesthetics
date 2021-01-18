@@ -5,7 +5,7 @@ import Introduction from '../../Introduction/Introduction';
 import Preview from './Preview/Preview';
 import Message from './Message/Message';
 import Spinner from '../../UI/Spinner/Spinner';
-import { backendDomain } from '../../../assets/keys';
+import { BACKEND_DOMAIN } from '../../../config/constants';
 
 const Inbox = () => {
     const [expandKey, setExpandKey] = useState();
@@ -19,7 +19,7 @@ const Inbox = () => {
     const fetchMessages = () => {
         setLoading(true);
 
-        let url = backendDomain + 'admin/ashkaesthetics/messages';
+        let url = BACKEND_DOMAIN + 'admin/ashkaesthetics/messages';
         let token = localStorage.getItem('token');
         
         axios.get(url, { headers: { Authorization: 'Bearer ' + token } })
@@ -40,7 +40,7 @@ const Inbox = () => {
     const removeKeyHandler = (key) => {
       setLoading(true);
       
-      let url = backendDomain + 'admin/ashkaesthetics/messages/';
+      let url = BACKEND_DOMAIN + 'admin/ashkaesthetics/messages/';
       let token = localStorage.getItem('token');
         
       axios.delete(url + key, { headers: { Authorization: 'Bearer ' + token } })

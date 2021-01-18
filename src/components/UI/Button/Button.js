@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 
-import classes from './Button.module.css';
+import classes from './Button.module.scss';
 
 const button = ({ children, linkTo, centered }) => (
     <Link

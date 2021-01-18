@@ -4,7 +4,7 @@ import Line from '../UI/Line/Line';
 import Button from '../UI/Button/Button';
 import Animation from '../../hoc/Animation/Animation';
 
-import classes from './Informative.module.css';
+import classes from './Informative.module.scss';
 
 const informative = ({ id, image, main, description, linkTo, linkText, reversed, children }) => (
     <div className = { [classes.Informative, reversed ? classes.Reverse : ''].join(' ') } id = { id }>

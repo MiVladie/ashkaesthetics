@@ -5,7 +5,7 @@ import facebookIcon from '../../assets/icons/facebook.png';
 import phoneIcon from '../../assets/icons/phone.png';
 import emailIcon from '../../assets/icons/email.png';
 
-import classes from './Footer.module.css';
+import classes from './Footer.module.scss';
 
 const footer = () => (
     <footer className = { classes.Footer }>

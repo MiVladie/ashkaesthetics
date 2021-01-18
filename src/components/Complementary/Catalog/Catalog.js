@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import Animation from '../../../hoc/Animation/Animation';
 
-import classes from './Catalog.module.css';
+import classes from './Catalog.module.scss';
 
 const Catalog = ({ data, maxVisible, expandText, collapseText, linkTo, linkText }) => {
     const [expand, setExpand] = useState(false);

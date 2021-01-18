@@ -4,7 +4,7 @@ import axios from 'axios';
 import Introduction from '../../Introduction/Introduction';
 import Form from '../../Complementary/Form/Form';
 
-import { backendDomain } from '../../../assets/keys';
+import { BACKEND_DOMAIN } from '../../../config/constants';
 
 const Auth = ({ login }) => {
     const [loading, setLoading] = useState(false);
@@ -13,7 +13,7 @@ const Auth = ({ login }) => {
     const onLoginHandler = (values) => {
         setLoading(true);
 
-        let url = backendDomain + 'admin/ashkaesthetics';
+        let url = BACKEND_DOMAIN + 'admin/ashkaesthetics';
         let credentials = { credentials: values };
 
         axios.post(url, credentials)

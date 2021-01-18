@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import Animation from '../../hoc/Animation/Animation';
 
-import classes from './Testimonials.module.css';
+import classes from './Testimonials.module.scss';
 
 const Testimonials = ({ data }) => {
     const [current, setCurrent] = useState(0);

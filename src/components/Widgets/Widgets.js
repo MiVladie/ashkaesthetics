@@ -5,7 +5,7 @@ import { useHistory } from 'react-router-dom';
 import Line from '../UI/Line/Line';
 import Animation from '../../hoc/Animation/Animation';
 
-import classes from './Widgets.module.css';
+import classes from './Widgets.module.scss';
 
 const Widgets = ({ data }) => {
     const history = useHistory();

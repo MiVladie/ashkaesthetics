@@ -10,11 +10,11 @@ import emailIcon from '../../assets/icons/email.png';
 import addressIcon from '../../assets/icons/address.png';
 import timeIcon from '../../assets/icons/time.png';
 
-import { backendDomain, googleMapsApiKey } from '../../assets/keys';
+import { BACKEND_DOMAIN, GOOGLE_MAPS_API_KEY } from '../../config/constants';
 
 import axios from 'axios';
 
-import classes from './Contact.module.css';
+import classes from './Contact.module.scss';
 
 const Contact = ({ formDescription, contactDescription, phone, email, address, time, coordinates }) => {
     const [response, setResponse] = useState({ message: {}, result: null, loading: false });   
@@ -22,7 +22,7 @@ const Contact = ({ formDescription, contactDescription, phone, email, address, t
     const sendMessageHandler = (message) => {
         setResponse({ message: message, result: null, loading: true });
 
-        axios.post(backendDomain + 'message/ashkaesthetics', { message: message })
+        axios.post(BACKEND_DOMAIN + 'message/ashkaesthetics', { message: message })
             .then(response => {
                 setResponse({ message: null, result: 'Your message has been delivered.', loading: false });                
             })
@@ -105,7 +105,7 @@ const Contact = ({ formDescription, contactDescription, phone, email, address, t
                 <Map 
                     location = { coordinates }
                     zoom = { 15 }
-                    googleMapURL = { "https://maps.googleapis.com/maps/api/js?key=" + googleMapsApiKey }
+                    googleMapURL = { "https://maps.googleapis.com/maps/api/js?key=" + GOOGLE_MAPS_API_KEY }
                     loadingElement = { <div style = {{ height: `100vh`, width: '100vw' }} /> } />
             </div> }
         </div>

@@ -4,7 +4,7 @@ import Line from '../UI/Line/Line';
 import Button from '../UI/Button/Button';
 import Animation from '../../hoc/Animation/Animation';
 
-import classes from './Section.module.css';
+import classes from './Section.module.scss';
 
 const section = ({ children, id, background, description, linkTo, linkText }) => (
     <section className = { classes.Section } style = {{ backgroundColor: background }} id = { id }>

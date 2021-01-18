@@ -3,7 +3,7 @@ import React from 'react';
 import Line from '../UI/Line/Line';
 import Animation from '../../hoc/Animation/Animation';
 
-import classes from './Introduction.module.css';
+import classes from './Introduction.module.scss';
 
 const introduction = ({ meta, main, description }) => {
     const splitDescription = () => {

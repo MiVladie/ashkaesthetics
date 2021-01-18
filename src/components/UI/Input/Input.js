@@ -1,6 +1,6 @@
 import React from 'react';
 
-import classes from './Input.module.css';
+import classes from './Input.module.scss';
 
 const input = ({ type, placeholder, value, required, onChange }) => {
     let element;

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import Animation from '../../hoc/Animation/Animation';
 
-import classes from './Gallery.module.css';
+import classes from './Gallery.module.scss';
 
 const Gallery = ({ data }) => {
     const [picture, setPicture] = useState(null);

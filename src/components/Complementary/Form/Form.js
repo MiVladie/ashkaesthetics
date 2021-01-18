@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 
-import Input from '../Form/Input/Input';
+import Input from '../../UI/Input/Input';
 import Spinner from '../../UI/Spinner/Spinner';
 import Animation from '../../../hoc/Animation/Animation';
 
 import { isFormValid } from '../../../util/formValidation';
 
-import classes from './Form.module.css';
+import classes from './Form.module.scss';
 
 const Form = ({ data, button, centered, onSubmit, inputs, response, loading }) => {
     const [values, setValues] = useState();

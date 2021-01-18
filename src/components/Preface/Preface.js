@@ -2,7 +2,7 @@ import React from 'react';
 
 import Animation from '../../hoc/Animation/Animation';
 
-import classes from './Preface.module.css';
+import classes from './Preface.module.scss';
 
 const preface = ({ image, main }) => (
     <div className = { classes.Preface }>

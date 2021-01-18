@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Link } from 'react-router-dom';
 
-import classes from './Banner.module.css';
+import classes from './Banner.module.scss';
 
 const banner = ({ image, imageAlt, main, description, linkLeftTo, linkLeftText, linkRightTo, linkRightText, scrollTo }) => {
     const scrollHandler = () => {

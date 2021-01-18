@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import { Link, NavLink } from 'react-router-dom';
 
-import classes from './Navigation.module.css';
+import classes from './Navigation.module.scss';
 
 import phone from '../../assets/icons/phone.png';
 import email from '../../assets/icons/email.png';
