@@ -88,7 +88,7 @@ const home = () => (
                 email = 'ask@ashk-aesthetics.co.uk'
                 address = '10 Bond Street, Ealing, London W5 5AA'
                 time = 'Wed-Sat: 9:30 AM - 6:00 PM'
-                coordinates = {{ lat: 51.5123404, lng: -0.3083522 }} />
+                coordinates = {{ lat: 51.512333, lng: -0.30616 }} />
         </Section>
     </React.Fragment>
 );
