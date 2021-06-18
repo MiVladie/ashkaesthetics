@@ -45,7 +45,7 @@ body {
             width: 1.35em;
             height: 1.35em;     
 
-            filter: brightness(0.65);
+            filter: brightness(0.35);
             
             // Non-Styling               
 
@@ -57,7 +57,7 @@ body {
             transition: all 0.15s;
 
             &:hover {
-                filter: brightness(0.25);                        
+                filter: brightness(0.15);                        
             }
         }
 
@@ -278,7 +278,7 @@ body {
                 width: 1.15em;
                 height: 1.15em;     
 
-                filter: brightness(0.75);
+                filter: brightness(0.35);
                 
                 // Non-Styling               
 
@@ -355,7 +355,7 @@ body {
                     width: 1.35em;
                     height: 1.35em;          
                     
-                    filter: brightness(0.75);
+                    filter: brightness(0.35);
                     
                     // Non-Styling
 
