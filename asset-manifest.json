@@ -1,16 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.cbc86e2d.chunk.css",
-    "main.js": "/static/js/main.84220db7.chunk.js",
-    "main.js.map": "/static/js/main.84220db7.chunk.js.map",
+    "main.css": "/static/css/main.b1500111.chunk.css",
+    "main.js": "/static/js/main.cd766614.chunk.js",
+    "main.js.map": "/static/js/main.cd766614.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.fae5a7e7.js",
     "runtime-main.js.map": "/static/js/runtime-main.fae5a7e7.js.map",
-    "static/js/2.f9b0c805.chunk.js": "/static/js/2.f9b0c805.chunk.js",
-    "static/js/2.f9b0c805.chunk.js.map": "/static/js/2.f9b0c805.chunk.js.map",
+    "static/js/2.3c349b42.chunk.js": "/static/js/2.3c349b42.chunk.js",
+    "static/js/2.3c349b42.chunk.js.map": "/static/js/2.3c349b42.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.cbc86e2d.chunk.css.map": "/static/css/main.cbc86e2d.chunk.css.map",
-    "static/js/2.f9b0c805.chunk.js.LICENSE.txt": "/static/js/2.f9b0c805.chunk.js.LICENSE.txt",
+    "static/css/main.b1500111.chunk.css.map": "/static/css/main.b1500111.chunk.css.map",
+    "static/js/2.3c349b42.chunk.js.LICENSE.txt": "/static/js/2.3c349b42.chunk.js.LICENSE.txt",
     "static/media/1.3aff64b8.jpg": "/static/media/1.3aff64b8.jpg",
+    "static/media/10.3453e38c.jpg": "/static/media/10.3453e38c.jpg",
+    "static/media/11.040f57db.jpg": "/static/media/11.040f57db.jpg",
+    "static/media/12.c28e45d1.jpg": "/static/media/12.c28e45d1.jpg",
+    "static/media/13.fa502a53.jpg": "/static/media/13.fa502a53.jpg",
+    "static/media/14.61182beb.jpg": "/static/media/14.61182beb.jpg",
+    "static/media/15.f3749f06.jpg": "/static/media/15.f3749f06.jpg",
+    "static/media/16.3e82fe04.jpg": "/static/media/16.3e82fe04.jpg",
+    "static/media/17.744aed72.jpg": "/static/media/17.744aed72.jpg",
+    "static/media/18.99728977.jpg": "/static/media/18.99728977.jpg",
     "static/media/2.04dc4e09.jpg": "/static/media/2.04dc4e09.jpg",
     "static/media/3.a5d396cb.jpg": "/static/media/3.a5d396cb.jpg",
     "static/media/4.a460551c.jpg": "/static/media/4.a460551c.jpg",
@@ -27,7 +36,7 @@
     "static/media/mens treatments.6352c67a.jpg": "/static/media/mens treatments.6352c67a.jpg",
     "static/media/microblading.57339feb.jpg": "/static/media/microblading.57339feb.jpg",
     "static/media/microblading.fc2df23a.png": "/static/media/microblading.fc2df23a.png",
-    "static/media/microblading02.074dd61a.jpg": "/static/media/microblading02.074dd61a.jpg",
+    "static/media/microblading02.1eab6ca7.jpg": "/static/media/microblading02.1eab6ca7.jpg",
     "static/media/packages.a63c489e.jpg": "/static/media/packages.a63c489e.jpg",
     "static/media/page_404.7c79cb02.jpg": "/static/media/page_404.7c79cb02.jpg",
     "static/media/page_contact.c5ffc2d0.jpg": "/static/media/page_contact.c5ffc2d0.jpg",
@@ -39,8 +48,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.fae5a7e7.js",
-    "static/js/2.f9b0c805.chunk.js",
-    "static/css/main.cbc86e2d.chunk.css",
-    "static/js/main.84220db7.chunk.js"
+    "static/js/2.3c349b42.chunk.js",
+    "static/css/main.b1500111.chunk.css",
+    "static/js/main.cd766614.chunk.js"
   ]
 }
