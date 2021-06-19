@@ -16,6 +16,15 @@ import galleryImage06 from '../../assets/images/gallery/6.jpg';
 import galleryImage07 from '../../assets/images/gallery/7.jpg';
 import galleryImage08 from '../../assets/images/gallery/8.jpg';
 import galleryImage09 from '../../assets/images/gallery/9.jpg';
+import galleryImage10 from '../../assets/images/gallery/10.jpg';
+import galleryImage11 from '../../assets/images/gallery/11.jpg';
+import galleryImage12 from '../../assets/images/gallery/12.jpg';
+import galleryImage13 from '../../assets/images/gallery/13.jpg';
+import galleryImage14 from '../../assets/images/gallery/14.jpg';
+import galleryImage15 from '../../assets/images/gallery/15.jpg';
+import galleryImage16 from '../../assets/images/gallery/16.jpg';
+import galleryImage17 from '../../assets/images/gallery/17.jpg';
+import galleryImage18 from '../../assets/images/gallery/18.jpg';
 
 const gallery = () => (
     <React.Fragment>
@@ -45,6 +54,15 @@ const gallery = () => (
                     { image: galleryImage07, alt: 'Eyes & Brows' },
                     { image: galleryImage08, alt: 'Eyes & Brows' },
                     { image: galleryImage09, alt: 'Eyes & Brows' },
+                    { image: galleryImage10, alt: 'Eyes & Brows' },
+                    { image: galleryImage11, alt: 'Eyes & Brows' },
+                    { image: galleryImage12, alt: 'Eyes & Brows' },
+                    { image: galleryImage13, alt: 'Eyes & Brows' },
+                    { image: galleryImage14, alt: 'Eyes & Brows' },
+                    { image: galleryImage15, alt: 'Eyes & Brows' },
+                    { image: galleryImage16, alt: 'Eyes & Brows' },
+                    { image: galleryImage17, alt: 'Eyes & Brows' },
+                    { image: galleryImage18, alt: 'Eyes & Brows' },
                 ]} />
         </Section>
         
