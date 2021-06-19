@@ -95,7 +95,7 @@ const services = () => (
                 <Catalog
                     data = {[
                         { name: 'Brow Lamination', time: 45, price: 40 },
-                        { name: 'Brow Lamination & Tint', time: 60, price: 55 },
+                        { name: 'Brow Lamination & Tint', time: 60, price: 43 },
                         { name: 'Brow Lamination With Tint & Shape', time: 75, price: 48 },
                         { name: 'Lash Lift & Tint', time:  60, price: 40 },
                         { name: 'Eyebrow Shape & Tint', time: 30 , price: 13 },
