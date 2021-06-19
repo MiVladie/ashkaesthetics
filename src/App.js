@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, useLocation } from 'react-router-dom';
+import { GOOGLE_ANALYTICS_ID } from './config/constants';
 
 import Layout from './hoc/Layout/Layout';
 import Navigation from './components/Navigation/Navigation';
@@ -14,30 +15,42 @@ import Admin from './containers/Admin/Admin';
 import NotFound from './containers/NotFound/NotFound';
 import Footer from './components/Footer/Footer';
 
-const app = () => (
-  <Layout>
-    <Route render = { ({ location }) => (
-      <React.Fragment>
-        <Navigation />
+import ReactGA from 'react-ga';
 
-        <Switch location = { location }>
-          <Route path = '/' exact component = { Home } />
-          <Route path = '/services' exact component = { Services } />
-          <Route path = '/services/microblading' exact component = { Microblading } />
-          <Route path = '/services/eyes-and-brows' exact component = { EyesAndBrows } />
-          <Route path = '/gallery' exact component = { Gallery } />
-          <Route path = '/find-us' exact component = { Find } />
-          <Route path = '/admin' exact component = { Admin } />
-          <Route render = { () => <NotFound /> } />
-        </Switch>
+ReactGA.initialize(GOOGLE_ANALYTICS_ID);
 
-        <Footer />
-      </React.Fragment>
-    )} />
-  </Layout>
-);
+const App = () => {
+  const location = useLocation();
 
-export default app;
+  useEffect(() => {
+    ReactGA.pageview(location.pathname + location.search);
+  }, [location]);
+
+  return (
+    <Layout>
+      <Route render = { ({ location }) => (
+        <React.Fragment>
+          <Navigation />
+
+          <Switch location = { location }>
+            <Route path = '/' exact component = { Home } />
+            <Route path = '/services' exact component = { Services } />
+            <Route path = '/services/microblading' exact component = { Microblading } />
+            <Route path = '/services/eyes-and-brows' exact component = { EyesAndBrows } />
+            <Route path = '/gallery' exact component = { Gallery } />
+            <Route path = '/find-us' exact component = { Find } />
+            <Route path = '/admin' exact component = { Admin } />
+            <Route render = { () => <NotFound /> } />
+          </Switch>
+
+          <Footer />
+        </React.Fragment>
+      )} />
+    </Layout>
+  )
+};
+
+export default App;
 
 /*
 
