@@ -2,12 +2,22 @@ import React from 'react';
 
 import classes from './Message.module.scss';
 
+const correctDate = (value) => {
+    let [date, time] = value.split(' ');
+
+    let [day, month, year] = date.split('/');
+
+    date = `${year}/${month}/${day}`;
+
+    return date + ' ' + time
+}
+
 const message = ({ message, back, remove }) => {
     let name = message.name;
     let email = message.email;
     let phone = message.phone;
     let text = message.message;
-    let date = message.time;
+    let date = correctDate(message.time);
 
     return (
     	<section className = { classes.Message }>
@@ -27,7 +37,7 @@ const message = ({ message, back, remove }) => {
                 </div> }
                 
                 <div className = { classes.Description }>
-                    <p className = { classes.Name }>Date: <span className = { classes.Text }>{ date }</span></p>
+                    <p className = { classes.Name }>Date: <span className = { classes.Text }>{ new Date(date).toLocaleString('en-UK', { dateStyle: 'long', timeStyle: 'short' }) }</span></p>
                 </div>
             </div>
 
