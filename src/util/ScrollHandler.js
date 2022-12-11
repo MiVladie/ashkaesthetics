@@ -1,29 +1,14 @@
-import { PureComponent } from "react";
-import { withRouter } from "react-router-dom";
+import { useEffect } from 'react';
+import { useLocation } from 'react-router';
 
-class ScrollHandler extends PureComponent {
-  componentDidMount = () => window.scrollTo(0, 0);
+const ScrollHandler = (props) => {
+	const location = useLocation();
 
-  componentDidUpdate = (prevProps) => {
-    if (this.props.location !== prevProps.location) {
-      const { hash } = window.location;
-      
-      if (hash !== '') {
-        setTimeout(() => {
-          const id = hash.replace('#', '');
-          const element = document.getElementById(id);
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, [location]);
 
-          if (element) {
-            element.scrollIntoView();
-          }
-        }, 0);
-      } else {
-        window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
-      }
-    }
-  };
+	return <>{props.children}</>;
+};
 
-  render = () => this.props.children;
-}
-
-export default withRouter(ScrollHandler);
+export default ScrollHandler;

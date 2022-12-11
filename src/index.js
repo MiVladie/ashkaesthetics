@@ -9,12 +9,12 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import ScrollHandler from './util/ScrollHandler';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Router basename = { process.env.PUBLIC_URL }>
-      <ScrollHandler>
-        <App />
-      </ScrollHandler>
-    </Router>
-  </React.StrictMode>,
-  document.getElementById('root')
+	<React.StrictMode>
+		<Router basename={process.env.PUBLIC_URL}>
+			<ScrollHandler>
+				<App />
+			</ScrollHandler>
+		</Router>
+	</React.StrictMode>,
+	document.getElementById('root')
 );

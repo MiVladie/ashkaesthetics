@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-import { Route, Switch, useLocation } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import { GOOGLE_ANALYTICS_ID } from './config/constants';
 
 import Layout from './hoc/Layout/Layout';
@@ -20,34 +20,30 @@ import ReactGA from 'react-ga';
 ReactGA.initialize(GOOGLE_ANALYTICS_ID);
 
 const App = () => {
-  const location = useLocation();
+	const location = useLocation();
 
-  useEffect(() => {
-    ReactGA.pageview(location.pathname + location.search);
-  }, [location]);
+	useEffect(() => {
+		ReactGA.pageview(location.pathname + location.search);
+	}, [location]);
 
-  return (
-    <Layout>
-      <Route render = { ({ location }) => (
-        <React.Fragment>
-          <Navigation />
+	return (
+		<Layout>
+			<Navigation />
 
-          <Switch location = { location }>
-            <Route path = '/' exact component = { Home } />
-            <Route path = '/services' exact component = { Services } />
-            <Route path = '/services/microblading' exact component = { Microblading } />
-            <Route path = '/services/eyes-and-brows' exact component = { EyesAndBrows } />
-            <Route path = '/gallery' exact component = { Gallery } />
-            <Route path = '/find-us' exact component = { Find } />
-            <Route path = '/admin' exact component = { Admin } />
-            <Route render = { () => <NotFound /> } />
-          </Switch>
+			<Routes>
+				<Route path='/' element={<Home />} />
+				<Route path='/services' element={<Services />} />
+				<Route path='/services/microblading' element={<Microblading />} />
+				<Route path='/services/eyes-and-brows' element={<EyesAndBrows />} />
+				<Route path='/gallery' element={<Gallery />} />
+				<Route path='/find-us' element={<Find />} />
+				<Route path='/admin' element={<Admin />} />
+				<Route render={() => <NotFound />} />
+			</Routes>
 
-          <Footer />
-        </React.Fragment>
-      )} />
-    </Layout>
-  )
+			<Footer />
+		</Layout>
+	);
 };
 
 export default App;
