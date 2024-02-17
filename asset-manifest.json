@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d53072bb.css",
-    "main.js": "/static/js/main.174ebe5a.js",
+    "main.js": "/static/js/main.d44bf0d6.js",
     "static/media/eyes & brows 2.jpg": "/static/media/eyes & brows 2.e73634352ac6a4202564.jpg",
     "static/media/10.jpg": "/static/media/10.3453e38ce67735ece137.jpg",
     "static/media/12.jpg": "/static/media/12.c28e45d1e2f6bd2c3d24.jpg",
@@ -10,7 +10,9 @@
     "static/media/page_home.jpg": "/static/media/page_home.910ff7763659fa0378d3.jpg",
     "static/media/14.jpg": "/static/media/14.61182beb38fc5e58657b.jpg",
     "static/media/18.jpg": "/static/media/18.99728977fda4b9109c91.jpg",
+    "static/media/lumi eyes.png": "/static/media/lumi eyes.c93cc737818b6dbb82de.png",
     "static/media/16.jpg": "/static/media/16.3e82fe04faf0b45dedf4.jpg",
+    "static/media/lemon bottle treatment areas.png": "/static/media/lemon bottle treatment areas.ee9d63712b54fcbf81ac.png",
     "static/media/15.jpg": "/static/media/15.f3749f06a51bfba4e055.jpg",
     "static/media/17.jpg": "/static/media/17.744aed72b43a6945427e.jpg",
     "static/media/13.jpg": "/static/media/13.fa502a53bcd5755ba3d9.jpg",
@@ -23,6 +25,7 @@
     "static/media/mens treatments.jpg": "/static/media/mens treatments.6352c67af9b7fb3258d1.jpg",
     "static/media/7.jpg": "/static/media/7.2a2d4317463802b7f64f.jpg",
     "static/media/microblading.jpg": "/static/media/microblading.57339feb230ed53110b0.jpg",
+    "static/media/lemon bottle.png": "/static/media/lemon bottle.31a96bbc0f214d41ad27.png",
     "static/media/6.jpg": "/static/media/6.7b1ace902306ca72bc05.jpg",
     "static/media/9.jpg": "/static/media/9.583ce4d4d05ecdc28f1e.jpg",
     "static/media/3.jpg": "/static/media/3.a5d396cb9987c4894149.jpg",
@@ -37,12 +40,13 @@
     "static/media/mens treatments.png": "/static/media/mens treatments.5fe1c230eb0741a19f7e.png",
     "static/media/microblading02.jpg": "/static/media/microblading02.1eab6ca7e48f8baa8f58.jpg",
     "static/media/logo.png": "/static/media/logo.04eac2f7ad30e6265053.png",
+    "static/media/profhilo.png": "/static/media/profhilo.150640217807c261d186.png",
     "index.html": "/index.html",
     "main.d53072bb.css.map": "/static/css/main.d53072bb.css.map",
-    "main.174ebe5a.js.map": "/static/js/main.174ebe5a.js.map"
+    "main.d44bf0d6.js.map": "/static/js/main.d44bf0d6.js.map"
   },
   "entrypoints": [
     "static/css/main.d53072bb.css",
-    "static/js/main.174ebe5a.js"
+    "static/js/main.d44bf0d6.js"
   ]
 }
