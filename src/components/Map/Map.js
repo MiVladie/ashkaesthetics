@@ -1,20 +1,21 @@
 import React from 'react';
 
-import { withScriptjs, withGoogleMap, GoogleMap, Marker } from 'react-google-maps';
+import { GoogleMap, Marker, useJsApiLoader } from '@react-google-maps/api';
+import { GOOGLE_MAPS_API_KEY } from '../../config/constants';
 
 const Map = ({ location, zoom }) => {
-	const CustomMap = withGoogleMap((_) => (
-		<GoogleMap defaultCenter={location} defaultZoom={zoom}>
+	const { isLoaded } = useJsApiLoader({
+		id: 'google-map-script',
+		googleMapsApiKey: GOOGLE_MAPS_API_KEY
+	});
+
+	return isLoaded ? (
+		<GoogleMap mapContainerStyle={{ width: '100%', height: '100%' }} center={location} zoom={zoom}>
 			<Marker position={location} />
 		</GoogleMap>
-	));
-
-	return (
-		<CustomMap
-			containerElement={<div style={{ height: '100%', width: '100%' }} />}
-			mapElement={<div style={{ height: '100%' }} />}
-		/>
+	) : (
+		<></>
 	);
 };
 
-export default React.memo(withScriptjs(Map));
+export default React.memo(Map);

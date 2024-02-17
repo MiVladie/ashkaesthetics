@@ -5,17 +5,17 @@ import { GOOGLE_ANALYTICS_ID } from './config/constants';
 
 import Layout from './hoc/Layout/Layout';
 import Navigation from './components/Navigation/Navigation';
-import Home from './containers/Home/Home';
-import Services from './containers/Services/Services';
-import Microblading from './containers/Services/Microblading';
-import LumiEyes from './containers/Services/LumiEyes';
-import Profhilo from './containers/Services/Profhilo';
-import LemonBottle from './containers/Services/LemonBottle';
-import EyesAndBrows from './containers/Services/EyesAndBrows';
-import Gallery from './containers/Gallery/Gallery';
-import Find from './containers/Find/Find';
-import Admin from './containers/Admin/Admin';
-import NotFound from './containers/NotFound/NotFound';
+import Home from './pages/Home/Home';
+import Services from './pages/Services/Services';
+import Microblading from './pages/Services/Microblading';
+import LumiEyes from './pages/Services/LumiEyes';
+import Profhilo from './pages/Services/Profhilo';
+import LemonBottle from './pages/Services/LemonBottle';
+import EyesAndBrows from './pages/Services/EyesAndBrows';
+import Gallery from './pages/Gallery/Gallery';
+import Find from './pages/Find/Find';
+import Admin from './pages/Admin/Admin';
+import NotFound from './pages/NotFound/NotFound';
 import Footer from './components/Footer/Footer';
 
 import ReactGA from 'react-ga';
