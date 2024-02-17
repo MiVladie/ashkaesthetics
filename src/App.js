@@ -8,6 +8,9 @@ import Navigation from './components/Navigation/Navigation';
 import Home from './containers/Home/Home';
 import Services from './containers/Services/Services';
 import Microblading from './containers/Services/Microblading';
+import LumiEyes from './containers/Services/LumiEyes';
+import Profhilo from './containers/Services/Profhilo';
+import LemonBottle from './containers/Services/LemonBottle';
 import EyesAndBrows from './containers/Services/EyesAndBrows';
 import Gallery from './containers/Gallery/Gallery';
 import Find from './containers/Find/Find';
@@ -34,6 +37,9 @@ const App = () => {
 				<Route path='/' element={<Home />} />
 				<Route path='/services' element={<Services />} />
 				<Route path='/services/microblading' element={<Microblading />} />
+				<Route path='/services/lumi-eyes' element={<LumiEyes />} />
+				<Route path='/services/profhilo' element={<Profhilo />} />
+				<Route path='/services/lemon-bottle' element={<LemonBottle />} />
 				<Route path='/services/eyes-and-brows' element={<EyesAndBrows />} />
 				<Route path='/gallery' element={<Gallery />} />
 				<Route path='/find-us' element={<Find />} />
