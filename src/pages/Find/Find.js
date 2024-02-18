@@ -22,7 +22,7 @@ const find = () => (
 		/>
 
 		<Section id='intro'>
-			<Introduction main='Find us' description='' />
+			<Introduction main='Find us' />
 			<Contact
 				formDescription='For all inquiries please get in touch with us.'
 				contactDescription=''

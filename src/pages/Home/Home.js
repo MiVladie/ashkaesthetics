@@ -41,7 +41,7 @@ const home = () => (
 			/>
 		</Section>
 
-		<Section background='#F8F8F8' description='' linkTo='/services' linkText='View services'>
+		<Section background='#F8F8F8' linkTo='/services' linkText='View services'>
 			<Introduction main='Services' />
 			<Widgets
 				data={[
