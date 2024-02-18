@@ -1,5 +1,7 @@
-export const PROD = true; // process.env.NODE_ENV === 'production';
+export const PROD = process.env.NODE_ENV === 'production';
 
 export const GOOGLE_MAPS_API_KEY = PROD ? 'AIzaSyBB0rZooauFiXOMMkkRNlwUELyYWwQXKLQ' : '';
-export const BACKEND_DOMAIN = 'https://access-server.herokuapp.com/';
+export const BACKEND_DOMAIN = PROD
+	? 'https://us-central1-letscomit-server.cloudfunctions.net/app/'
+	: 'http://localhost:5000/';
 export const GOOGLE_ANALYTICS_ID = '';
