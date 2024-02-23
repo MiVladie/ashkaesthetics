@@ -5,7 +5,7 @@ module.exports = {
 	siteMetadata: {
 		title: `Ashk Aesthetics`,
 		description: `Ashk Aesthetics Beauty Salon`,
-		image: `/src/assets/icons/favicon.ico`,
+		image: `src/assets/icons/favicon.ico`,
 		siteUrl: `https://ashk-aesthetics.co.uk`
 	},
 	plugins: [
@@ -25,10 +25,10 @@ module.exports = {
 			resolve: `gatsby-plugin-sharp`,
 			options: {
 				defaults: {
-					formats: [`auto`, `webp`],
+					formats: [`auto`, `jpg`, `png`],
 					placeholder: `blurred`,
 					quality: 100,
-					breakpoints: [720, 1080, 1366, 1920],
+					breakpoints: [720, 1025, 1366, 1920],
 					backgroundColor: `transparent`
 				}
 			}
