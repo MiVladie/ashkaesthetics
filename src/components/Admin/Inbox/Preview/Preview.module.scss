@@ -1,152 +1,151 @@
-$tundora: #444444;
-$alabaster: #F8F8F8;
-$akaroa: #D7C2A4;
+@import '../../../../styles/fonts.scss';
+@import '../../../../styles/colors.scss';
 
 .Preview {
-    width: 90%;
-    margin: 0 auto;
+	width: 90%;
+	margin: 0 auto;
 
-    .Meta {
-        width: 100%;
+	.Meta {
+		width: 100%;
 
-        display: flex;
-        align-items: center;
+		display: flex;
+		align-items: center;
 
-        margin-bottom: 0.5em;
+		margin-bottom: 0.5em;
 
-        .Description {
-            width: 50%;
+		.Description {
+			width: 50%;
 
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.25em;
-            color: $tundora;
+			font-family: $primary-font;
+			font-size: 1.25em;
+			color: $primary-color;
 
-            &:nth-child(2n) {
-                display: none;
-            }
-        }
-    }
+			&:nth-child(2n) {
+				display: none;
+			}
+		}
+	}
 
-    .Message {
-        width: 100%;
-        height: 3em;
+	.Message {
+		width: 100%;
+		height: 3em;
 
-        margin-bottom: 0.75em;
+		margin-bottom: 0.75em;
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 
-        cursor: pointer;
-        transition: all 0.15s;
-        
-        &:nth-child(2n) {
-            background-color: $alabaster;
-        }
+		cursor: pointer;
+		transition: all 0.15s;
 
-        &:hover {
-            background-color: $akaroa;
-            
-            .Info {
-                .Text {
-                    color: white;
-                    border-color: white;
-                }
-            }
-        }
+		&:nth-child(2n) {
+			background-color: $secondary-color;
+		}
 
-        .Info {
-            width: 50%;
+		&:hover {
+			background-color: $brand-color;
 
-            &:nth-child(1) {
-                .Text {
-                    border: none;
-                }
-            }
+			.Info {
+				.Text {
+					color: white;
+					border-color: white;
+				}
+			}
+		}
 
-            .Text {
-                font-weight: 300;
-                font-size: 1.125em;
-                text-overflow: ellipsis;
+		.Info {
+			width: 50%;
 
-                color: $tundora;
-                
-                overflow: hidden;
-                white-space: nowrap;
+			&:nth-child(1) {
+				.Text {
+					border: none;
+				}
+			}
 
-                width: 80%;
-                padding: 0.5em 0 0.5em 0.75em;
+			.Text {
+				font-weight: 300;
+				font-size: 1.125em;
+				text-overflow: ellipsis;
 
-                border-left: 0.5px solid rgba(0, 0, 0, 0.25);
-                transition: all 0.15s;
-            }
-            
-            &:nth-child(2n) {
-                display: none;
-            }
-        }
-    }
+				color: $primary-color;
 
-    .Total {
-        font-family: 'Montserrat', cursive;
-        font-size: 1.25em;
-        color: $tundora;
-        
-        margin-top: 0.5em;
-        padding-bottom: 1em;
-    }
+				overflow: hidden;
+				white-space: nowrap;
+
+				width: 80%;
+				padding: 0.5em 0 0.5em 0.75em;
+
+				border-left: 0.5px solid rgba(0, 0, 0, 0.25);
+				transition: all 0.15s;
+			}
+
+			&:nth-child(2n) {
+				display: none;
+			}
+		}
+	}
+
+	.Total {
+		font-family: $primary-font;
+		font-size: 1.25em;
+		color: $primary-color;
+
+		margin-top: 0.5em;
+		padding-bottom: 1em;
+	}
 }
 
 @media (min-width: 720px) {
-    .Preview {
-        width: 80%;
+	.Preview {
+		width: 80%;
 
-        .Meta {
-            .Description {
-                width: 33%;
+		.Meta {
+			.Description {
+				width: 33%;
 
-                &:nth-child(4) {
-                    display: block;
-                }
-            }
-        }
+				&:nth-child(4) {
+					display: block;
+				}
+			}
+		}
 
-        .Message {
-            .Info {
-                width: 33%;
+		.Message {
+			.Info {
+				width: 33%;
 
-                &:nth-child(4) {
-                    display: block;
-                }
-            }
-        }
-    }
+				&:nth-child(4) {
+					display: block;
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 1024px) {
-    .Preview {
-        width: 75%;
+	.Preview {
+		width: 75%;
 
-        .Meta {
-            .Description {
-                width: 25%;
+		.Meta {
+			.Description {
+				width: 25%;
 
-                &:nth-child(2) {
-                    display: block;
-                }
-            }
-        }
+				&:nth-child(2) {
+					display: block;
+				}
+			}
+		}
 
-        .Message {
-            height: 4em;
+		.Message {
+			height: 4em;
 
-            .Info {
-                width: 25%;
+			.Info {
+				width: 25%;
 
-                &:nth-child(2) {
-                    display: block;
-                }
-            }
-        }
-    }
+				&:nth-child(2) {
+					display: block;
+				}
+			}
+		}
+	}
 }

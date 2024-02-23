@@ -1,285 +1,278 @@
-$akaroa: #D7C2A4;
-$tundora: #444444;
+@import '../../styles/fonts.scss';
+@import '../../styles/colors.scss';
 
 .Gallery {
-    width: 100%;
-    margin-top: 2em;
+	width: 100%;
+	margin-top: 2em;
 
-    // Non-Styling
+	// Non-Styling
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-    flex-wrap: wrap;
+	flex-wrap: wrap;
 
-    .Picture {
-        margin: 0.5em 0;
+	.Picture {
+		margin: 0.5em 0;
 
-        // Non-Styling
+		// Non-Styling
 
-        width: 90vw;
-        height: 90vw;
+		width: 90vw;
+		height: 90vw;
 
-        overflow: hidden;
+		overflow: hidden;
 
-        &:hover {
-            .Expand {
-                transform: translateY(-100%);
-                opacity: 1;
-            }
-        }
+		&:hover {
+			.Expand {
+				transform: translateY(-100%);
+				opacity: 1;
+			}
+		}
 
-        .Image {
-            opacity: 0.9;
-            
-            // Non-Styling
+		.Image {
+			opacity: 0.9;
 
-            width: 100%;
-            height: 100%;
+			// Non-Styling
 
-            object-fit: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
+			width: 100%;
+			height: 100%;
 
-        .Expand {
-            font-family: 'Montserrat';
-            font-weight: 300;
+			object-fit: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
 
-            color: $tundora;
-            background-color: rgba(255, 255, 255, 0.9);
-            opacity: 0;
+		.Expand {
+			font-family: 'Montserrat';
+			font-weight: 300;
 
-            // Non-Styling
-            
-            width: 100%;
-            height: 100%;
+			color: $primary-color;
+			background-color: rgba(255, 255, 255, 0.9);
+			opacity: 0;
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
+			// Non-Styling
 
-            text-transform: uppercase;
-            cursor: pointer;
-            
-            transform: translateY(-50%);
-            transition: all 0.3s;
-        }
-    }
+			width: 100%;
+			height: 100%;
 
-    .Modal {
-        background-color: rgba(0, 0, 0, 0.6);
+			display: flex;
+			justify-content: center;
+			align-items: center;
 
-        // Non-Styling
+			text-transform: uppercase;
+			cursor: pointer;
 
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
+			transform: translateY(-50%);
+			transition: all 0.3s;
+		}
+	}
 
-        z-index: 500;
-        
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        .Wrapper {
-            position: relative;
+	.Modal {
+		background-color: rgba(0, 0, 0, 0.6);
 
-            animation: expand 0.25s 0s ease-out forwards;
+		// Non-Styling
 
-            img {
-                min-width: 3em;
-                min-height: 3em;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
 
-                max-width: 82.5vw;
-                max-height: 82.5vh;
-                
-                box-shadow: 0 0 12px rgba(0, 0, 0, 0.04);
-                
-                // Non-Styling
+		z-index: 500;
 
-                object-fit: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-            }
+		display: flex;
+		justify-content: center;
+		align-items: center;
 
-            .Close {
-                $size: 1.75em;
+		.Wrapper {
+			position: relative;
 
-                width: $size;
-                height: $size;
+			animation: expand 0.25s 0s ease-out forwards;
 
-                background-color: white;
-                box-shadow: 0 0 12px rgba(0, 0, 0, 0.04);
-                
-                // Non-Styling
+			.FullImage {
+				min-width: 3em;
+				min-height: 3em;
 
-                display: flex;
-                justify-content: center;
-                align-items: center;
+				max-width: 82.5vw;
+				max-height: 82.5vh;
 
-                position: absolute;
-                top: calc(#{ $size } / -2);
-                right: calc(#{ $size } / -2);
+				box-shadow: 0 0 12px rgba(0, 0, 0, 0.04);
 
-                transition: all 0.15s;
-                cursor: pointer;
+				// Non-Styling
 
-                border: none;
+				object-fit: cover;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
 
-                &:hover {
-                    background-color: $akaroa;
+			.Close {
+				$size: 1.75em;
 
-                    .Icon {
-                        filter: brightness(1);
-                    }
-                }
+				width: $size;
+				height: $size;
 
-                .Icon {
-                    background-image: url('../../assets/icons/close.png');
+				background-color: white;
+				box-shadow: 0 0 12px rgba(0, 0, 0, 0.04);
 
-                    width: 65%;
-                    height: 65%;
-                    
-                    filter: brightness(0.2);
+				// Non-Styling
 
-                    // Non-Styling
+				display: flex;
+				justify-content: center;
+				align-items: center;
 
-                    background-size: contain;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    
-                    transition: all 0.15s;
-                }
-            }
+				position: absolute;
+				top: calc(#{$size} / -2);
+				right: calc(#{$size} / -2);
 
-            .Previous, .Next {
-                width: 1.75em;
-                height: 75%;
+				z-index: 1000;
 
-                // Non-Styling
+				transition: all 0.15s;
+				cursor: pointer;
 
-                position: absolute;
+				border: none;
 
-                top: 50%;
-                transform: translateY(-50%);
+				&:hover {
+					background-color: $brand-color;
 
-                display: flex;
-                align-items: center;
+					.Icon {
+						filter: brightness(1);
+					}
+				}
 
-                padding: 0;
-                background-color: transparent;
-                border: none;
+				.Icon {
+					filter: brightness(0.2);
 
-                &:hover {
-                    i {
-                        filter: brightness(0.8);
-                    }
-                }
+					// Non-Styling
 
-                i {
-                    background-image: url('../../assets/icons/arrow.png');
+					background-size: contain;
+					background-position: center;
+					background-repeat: no-repeat;
 
-                    width: 100%;
-                    height: 2em;
-                    
-                    // Non-Styling
-                    
-                    background-size: contain;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    
-                    transition: all 0.15s;
-                }
-            }
+					transition: all 0.15s;
+				}
+			}
 
-            .Previous {
-                left: -1.75em;
+			.Previous,
+			.Next {
+				width: 1.75em;
+				height: 75%;
 
-                i {
-                    transform: rotateZ(180deg);
-                }
-            }
+				// Non-Styling
 
-            .Next {
-                right: -1.75em;
-            }
-            
-            @keyframes expand {
-                from {
-                    transform: translateY(-6em);
-                    opacity: 0.25;
-                }
+				position: absolute;
 
-                to {
-                    transform: translateY(0);
-                    opacity: 1;
-                }
-            }
-        }
-    }
+				top: 50%;
+				transform: translateY(-50%);
+
+				display: flex;
+				align-items: center;
+
+				padding: 0;
+				background-color: transparent;
+				border: none;
+
+				&:hover {
+					.Arrow {
+						filter: brightness(0.8);
+					}
+				}
+
+				.Arrow {
+					// Non-Styling
+
+					background-size: contain;
+					background-position: center;
+					background-repeat: no-repeat;
+
+					transition: all 0.15s;
+				}
+			}
+
+			.Previous {
+				left: -1.75em;
+
+				.Arrow {
+					transform: rotateZ(180deg);
+				}
+			}
+
+			.Next {
+				right: -1.75em;
+			}
+
+			@keyframes expand {
+				from {
+					transform: translateY(-6em);
+					opacity: 0.25;
+				}
+
+				to {
+					transform: translateY(0);
+					opacity: 1;
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 720px) {
-    .Gallery {
-        .Picture {
-            width: 28vw;
-            height: 28vw;
+	.Gallery {
+		.Picture {
+			width: 28vw;
+			height: 28vw;
 
-            margin: 0.35em;
-        }
-        
-        .Modal {
-            .Wrapper {
-                .Close {
-                    $size: 2.5em;
-    
-                    width: $size;
-                    height: $size;
+			margin: 0.35em;
+		}
 
-                    top: calc(#{ $size } / -2);
-                    right: calc(#{ $size } / -2);
-                }
+		.Modal {
+			.Wrapper {
+				.Close {
+					$size: 2.5em;
 
-                .Previous, .Next {
-                    width: 2em;
-                }
+					width: $size;
+					height: $size;
 
-                .Previous {
-                    left: -2em;
-                }
+					top: calc(#{$size} / -2);
+					right: calc(#{$size} / -2);
+				}
 
-                .Next {
-                    right: -2em;
-                }
-            }
-        }
-    }
+				.Previous,
+				.Next {
+					width: 2em;
+				}
+
+				.Previous {
+					left: -2em;
+				}
+
+				.Next {
+					right: -2em;
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 1025px) {
-    .Gallery {
-        .Picture {
-            width: 23vw;
-            height: 23vw;
-        }
-        
-        .Modal {
-            .Wrapper {
-                .Close {
-                    $size: 2em;
-    
-                    width: $size;
-                    height: $size;
+	.Gallery {
+		.Picture {
+			width: 23vw;
+			height: 23vw;
+		}
 
-                    top: calc(#{ $size } / -2);
-                    right: calc(#{ $size } / -2);
-                }
-            }
-        }
-    }
+		.Modal {
+			.Wrapper {
+				.Close {
+					$size: 2em;
+
+					width: $size;
+					height: $size;
+
+					top: calc(#{$size} / -2);
+					right: calc(#{$size} / -2);
+				}
+			}
+		}
+	}
 }
-

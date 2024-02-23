@@ -1,64 +1,65 @@
-$tundora: #444444;
+@import '../../styles/fonts.scss';
+@import '../../styles/colors.scss';
 
 .Introduction {
-    width: 100%;    
+	width: 100%;
 
-    .Wrapper {
-        width: 90%;
-        margin: 0 auto;
+	.Wrapper {
+		width: 90%;
+		margin: 0 auto;
 
-        .Meta {
-            font-size: 1em;
-            text-transform: uppercase;
+		.Meta {
+			font-size: 1em;
+			text-transform: uppercase;
 
-            // Non-styling
+			// Non-styling
 
-            text-align: center;
-            margin-bottom: 0.5em;
-        }
+			text-align: center;
+			margin-bottom: 0.5em;
+		}
 
-        .Main {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.75em;
-            font-weight: 300;
-            text-transform: uppercase;
-            color: $tundora;
+		.Main {
+			font-family: $primary-font;
+			font-size: 1.75em;
+			font-weight: 300;
+			text-transform: uppercase;
+			color: $primary-color;
 
-            // Non-styling
+			// Non-styling
 
-            text-align: center;
-        }
+			text-align: center;
+		}
 
-        .Description {
-            font-weight: 300;
-            font-size: 1em;
-            line-height: 1.75em;
-            letter-spacing: 1px;
-            color: $tundora;
+		.Description {
+			font-weight: 300;
+			font-size: 1em;
+			line-height: 1.75em;
+			letter-spacing: 1px;
+			color: $primary-color;
 
-            // Non-styling
+			// Non-styling
 
-            text-align: center;
-        }
-    }
+			text-align: center;
+		}
+	}
 }
 
 @media (min-width: 720px) {
-    .Introduction {
-        .Wrapper {
-            width: 80%;
-        }
-    }
+	.Introduction {
+		.Wrapper {
+			width: 80%;
+		}
+	}
 }
 
 @media (min-width: 1025px) {
-    .Introduction {
-        .Wrapper {
-            width: 70%;
+	.Introduction {
+		.Wrapper {
+			width: 70%;
 
-            .Main {
-                font-size: 2em;
-            }
-        }
-    }
+			.Main {
+				font-size: 2em;
+			}
+		}
+	}
 }

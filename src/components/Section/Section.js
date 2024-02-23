@@ -4,9 +4,9 @@ import Line from '../UI/Line/Line';
 import Button from '../UI/Button/Button';
 import Animation from '../../hoc/Animation/Animation';
 
-import classes from './Section.module.scss';
+import * as classes from './Section.module.scss';
 
-const section = ({ children, id, background, description, linkTo, linkText }) => (
+const Section = ({ children, id, background, description, linkTo, linkText }) => (
 	<section className={classes.Section} style={{ backgroundColor: background }} id={id}>
 		{children}
 		{description && (
@@ -29,4 +29,4 @@ const section = ({ children, id, background, description, linkTo, linkText }) =>
 	</section>
 );
 
-export default section;
+export default Section;

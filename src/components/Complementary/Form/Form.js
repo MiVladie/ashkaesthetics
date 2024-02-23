@@ -6,60 +6,75 @@ import Animation from '../../../hoc/Animation/Animation';
 
 import { isFormValid } from '../../../util/formValidation';
 
-import classes from './Form.module.scss';
+import * as classes from './Form.module.scss';
 
 const Form = ({ data, button, centered, onSubmit, inputs, response, loading }) => {
-    const [values, setValues] = useState();
-    const [result, setResult] = useState();
+	const [values, setValues] = useState();
+	const [result, setResult] = useState();
 
-    useEffect(() => {
-        setValues(inputs);
-        setResult(response);
-    }, [inputs, response]);
+	useEffect(() => {
+		setValues(inputs);
+		setResult(response);
+	}, [inputs, response]);
 
-    const submitHandler = () => {
-        let err = isFormValid(data, values);
+	const submitHandler = () => {
+		let err = isFormValid(data, values);
 
-        if(err == null) {            
-            values.time = new Date().getDate() + '/' + (new Date().getMonth() + 1) + '/' + new Date().getFullYear() + ' ' + new Date().getHours() + ':' + new Date().getMinutes();
-            
-            for(let input in values) 
-                values[input] = values[input] === '' ? null : values[input];
+		if (err == null) {
+			values.time =
+				new Date().getDate() +
+				'/' +
+				(new Date().getMonth() + 1) +
+				'/' +
+				new Date().getFullYear() +
+				' ' +
+				new Date().getHours() +
+				':' +
+				new Date().getMinutes();
 
-            onSubmit(values);
-        } else {
-            setResult(err);
-        }
-    };
+			for (let input in values) values[input] = values[input] === '' ? null : values[input];
 
-    return (
-        <div className = { classes.Form }>
-            { loading && <div className = { classes.Modal }><Spinner /></div> }
+			onSubmit(values);
+		} else {
+			setResult(err);
+		}
+	};
 
-            <form className = { classes.Area }>
-                { data.map(input =>
-                    <Animation key = { input.name }>
-                        <Input
-                            type = { input.type }
-                            placeholder = { input.placeholder }
-                            required = { input.required }
-                            value = { values != null && values[input.name] != null ? values[input.name] : '' }
-                            onChange = { (value) => setValues({...values, [input.name]: value }) } />
-                    </Animation>) }
-            </form>
+	return (
+		<div className={classes.Form}>
+			{loading && (
+				<div className={classes.Modal}>
+					<Spinner />
+				</div>
+			)}
 
-            { result && <Animation><p className = { classes.Result }>{ result }</p></Animation> }
+			<form className={classes.Area}>
+				{data.map((input) => (
+					<Animation key={input.name}>
+						<Input
+							type={input.type}
+							placeholder={input.placeholder}
+							required={input.required}
+							value={values != null && values[input.name] != null ? values[input.name] : ''}
+							onChange={(value) => setValues({ ...values, [input.name]: value })}
+						/>
+					</Animation>
+				))}
+			</form>
 
-            <Animation style = { centered && { display: 'flex', justifyContent: 'center', alignItems: 'center' } }>
-                <button
-                    className = { classes.Submit }
-                    onClick = { submitHandler }
-                    disabled = { loading }>
-                    { button }
-                </button>
-            </Animation>
-        </div>
-    )
+			{result && (
+				<Animation>
+					<p className={classes.Result}>{result}</p>
+				</Animation>
+			)}
+
+			<Animation style={centered && { display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+				<button className={classes.Submit} onClick={submitHandler} disabled={loading}>
+					{button}
+				</button>
+			</Animation>
+		</div>
+	);
 };
 
 export default Form;

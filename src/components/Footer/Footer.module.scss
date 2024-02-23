@@ -1,102 +1,103 @@
-$tundora: #444444;
+@import '../../styles/fonts.scss';
+@import '../../styles/colors.scss';
 
 .Footer {
-    background-color: #F8F8F8;
-    
-    // Non-Styling
-    
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-flow: column;
+	background-color: $secondary-color;
 
-    padding: 2em 0;
+	// Non-Styling
 
-    .Line {
-        height: 2px;
-        background-color: #EBEBEB;
-        
-        // Non-Styling
-        
-        width: 90%;
-        margin-bottom: 2.25em;
-    }
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-flow: column;
 
-    .Links {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+	padding: 2em 0;
 
-        margin-bottom: 2em;
+	.Line {
+		height: 2px;
+		background-color: #ebebeb;
 
-        .Link {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+		// Non-Styling
 
-            width: 2.5em;
-            height: 2.5em;
+		width: 90%;
+		margin-bottom: 2.25em;
+	}
 
-            margin: 0 0.5em;
+	.Links {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 
-            border-radius: 50%;
-            background-color: #EBEEF2;
-            
-            transition: all 0.15s;
-            outline: none;
+		margin-bottom: 2em;
 
-            &:hover {
-                background-color: darken(#EBEEF2, 10);
-            }
+		.Link {
+			display: flex;
+			justify-content: center;
+			align-items: center;
 
-            .Icon {
-                width: 40%;
-                height: 40%;
+			width: 2.5em;
+			height: 2.5em;
 
-                object-fit: contain;
-                background-repeat: no-repeat;
-                background-position: center;
-                
-                filter: brightness(0.25);
-            }
-        }
-    }
+			margin: 0 0.5em;
 
-    .Content {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 300;
+			border-radius: 50%;
+			background-color: #ebeef2;
 
-        text-transform: uppercase;
-        text-align: center;
-        line-height: 1.5em;
-        color: $tundora;
+			transition: all 0.15s;
+			outline: none;
 
-        a {
-            color: $tundora;
-        }
-    }
+			&:hover {
+				background-color: darken(#ebeef2, 10);
+			}
+
+			.Icon {
+				width: 40%;
+				height: 40%;
+
+				object-fit: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+
+				filter: brightness(0.25);
+			}
+		}
+	}
+
+	.Content {
+		font-family: $primary-font;
+		font-weight: 300;
+
+		text-transform: uppercase;
+		text-align: center;
+		line-height: 1.5em;
+		color: $primary-color;
+
+		a {
+			color: $primary-color;
+		}
+	}
 }
 
 @media (min-width: 720px) {
-    .Footer {
-        padding: 3em 0;
+	.Footer {
+		padding: 3em 0;
 
-        .Line {
-            margin-bottom: 2.5em;
-        }
-        
-        .Content {
-            .Break {
-                display: none;
-            }
-        }
-    }
+		.Line {
+			margin-bottom: 2.5em;
+		}
+
+		.Content {
+			.Break {
+				display: none;
+			}
+		}
+	}
 }
 
 @media (min-width: 1025px) {
-    .Footer {
-        .Links {
-            margin-bottom: 2.75em;
-        }
-    }
+	.Footer {
+		.Links {
+			margin-bottom: 2.75em;
+		}
+	}
 }

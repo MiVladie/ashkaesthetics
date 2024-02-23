@@ -1,12 +1,19 @@
 import React from 'react';
 
-import classes from './Layout.module.scss';
+import Navigation from '../../components/Navigation/Navigation';
+import Footer from '../../components/Footer/Footer';
+
+import * as classes from './Layout.module.scss';
 import './reset.css';
 
-const layout = ({ children }) => (
-    <div className = { classes.Layout }>
-        { children }
-    </div>
+const Layout = ({ children }) => (
+	<div className={classes.Layout}>
+		<Navigation />
+
+		<main>{children}</main>
+
+		<Footer />
+	</div>
 );
 
-export default layout;
+export default Layout;

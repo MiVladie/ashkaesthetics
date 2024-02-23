@@ -1,199 +1,200 @@
-$tundora: #444444;
+@import '../../styles/fonts.scss';
+@import '../../styles/colors.scss';
 
 .Contact {
-    // Non-Styling
+	// Non-Styling
 
-    width: 100%;
+	width: 100%;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-    flex-flow: column;
+	flex-flow: column;
 
-    .Row {
-        // Non-Styling
+	.Row {
+		// Non-Styling
 
-        width: 90%;
+		width: 90%;
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 
-        flex-flow: column;
+		flex-flow: column;
 
-        .Block {
-            // Non-Styling
-            
-            width: 100%;
+		.Block {
+			// Non-Styling
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
+			width: 100%;
 
-            flex-flow: column;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 
-            text-align: center;
-            margin-top: 2em;
+			flex-flow: column;
 
-            .Name {
-                font-family: 'Montserrat', sans-serif;
-                font-size: 1.5em;
+			text-align: center;
+			margin-top: 2em;
 
-                text-transform: uppercase;
-            }
+			.Name {
+				font-family: $primary-font;
+				font-size: 1.5em;
 
-            .Description {                    
-                font-weight: 300;
-                font-size: 1em;
-                line-height: 1.75em;
-                letter-spacing: 1px;
-                
-                color: $tundora;
+				text-transform: uppercase;
+			}
 
-                // Non-styling
+			.Description {
+				font-weight: 300;
+				font-size: 1em;
+				line-height: 1.75em;
+				letter-spacing: 1px;
 
-                width: 100%;
-                margin-bottom: 2em;
-            }
+				color: $primary-color;
 
-            .Methods {
-                // Non-Styling
+				// Non-styling
 
-                width: 100%;
+				width: 100%;
+				margin-bottom: 2em;
+			}
 
-                display: flex;
-                justify-content: center;
-                align-items: center;
+			.Methods {
+				// Non-Styling
 
-                flex-wrap: wrap;
+				width: 100%;
 
-                text-align: left;
+				display: flex;
+				justify-content: center;
+				align-items: center;
 
-                .Method {
-                    // Non-Styling
+				flex-wrap: wrap;
 
-                    width: 100%;
+				text-align: left;
 
-                    display: flex;
-                    justify-content: flex-start;
-                    align-items: center;
+				.Method {
+					// Non-Styling
 
-                    margin: 0.75em 0;
+					width: 100%;
 
-                    &:first-of-type {
-                        margin-top: 0;
-                    }
+					display: flex;
+					justify-content: flex-start;
+					align-items: center;
 
-                    &:last-of-type {
-                        margin-bottom: 0;
-                    }
+					margin: 0.75em 0;
 
-                    .Icon {
-                        filter: brightness(0.25); 
+					&:first-of-type {
+						margin-top: 0;
+					}
 
-                        // Non-Styling
+					&:last-of-type {
+						margin-bottom: 0;
+					}
 
-                        width: 2em;
-                        height: 2em;          
-                        
-                        margin-right: 1em;
+					.Icon {
+						filter: brightness(0.25);
 
-                        object-fit: contain;
-                        background-repeat: no-repeat;
-                        background-position: center; 
-                    }
+						// Non-Styling
 
-                    .Info {
-                        color: $tundora;
-                    }
-                }
-            }
+						width: 2em;
+						height: 2em;
 
-            .Form {
-                width: 100%;
-            }
-        }
-    }
+						margin-right: 1em;
 
-    .Map {
-        height: 40vh;
+						object-fit: contain;
+						background-repeat: no-repeat;
+						background-position: center;
+					}
 
-        // Non-Styling
+					.Info {
+						color: $primary-color;
+					}
+				}
+			}
 
-        width: 100%;
-        margin-top: 2em;
-    }
+			.Form {
+				width: 100%;
+			}
+		}
+	}
+
+	.Map {
+		height: 40vh;
+
+		// Non-Styling
+
+		width: 100%;
+		margin-top: 2em;
+	}
 }
 
 @media (min-width: 720px) {
-    .Contact {
-        .Row {
-            width: 80%;
-            justify-content: space-between;
+	.Contact {
+		.Row {
+			width: 80%;
+			justify-content: space-between;
 
-            .Block {
-                .Methods {
-                    justify-content: space-between;
+			.Block {
+				.Methods {
+					justify-content: space-between;
 
-                    .Method {
-                        width: 45%;
+					.Method {
+						width: 45%;
 
-                        margin: 0.75em 0;
+						margin: 0.75em 0;
 
-                        .Icon {
-                            width: 1.75em;
-                            height: 1.75em;
-                        }
-                    }
-                }
+						.Icon {
+							width: 1.75em;
+							height: 1.75em;
+						}
+					}
+				}
 
-                .Form {
-                    width: 75%;
-                }
-            }
-        }
+				.Form {
+					width: 75%;
+				}
+			}
+		}
 
-        .Map {
-            height: 27vh;
-        }
-    }
+		.Map {
+			height: 27vh;
+		}
+	}
 }
 
 @media (min-width: 1025px) {
-    .Contact {
-        width: 85%;
-        margin: 0 auto;
+	.Contact {
+		width: 85%;
+		margin: 0 auto;
 
-        .Row {
-            width: 100%;
+		.Row {
+			width: 100%;
 
-            align-items: flex-start;            
-            flex-flow: row;
+			align-items: flex-start;
+			flex-flow: row;
 
-            .Block {
-                width: 47%;
-                margin-top: 3em;
+			.Block {
+				width: 47%;
+				margin-top: 3em;
 
-                align-items: flex-start;
-                text-align: left;
+				align-items: flex-start;
+				text-align: left;
 
-                .Methods {
-                    .Method {
-                        width: 100%;
-                    }
-                }
+				.Methods {
+					.Method {
+						width: 100%;
+					}
+				}
 
-                .Form {
-                    width: 95%;
-                }
-            }
-        }
+				.Form {
+					width: 95%;
+				}
+			}
+		}
 
-        .Map {
-            height: 50vh;
-            
-            margin-top: 3em;
-        }
-    }
+		.Map {
+			height: 50vh;
+
+			margin-top: 3em;
+		}
+	}
 }

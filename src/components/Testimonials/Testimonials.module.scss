@@ -1,101 +1,101 @@
-$akaroa: #D7C2A4;
-$tundora: #444444;
+@import '../../styles/fonts.scss';
+@import '../../styles/colors.scss';
 
 .Testimonials {
-    // Non-Styling
+	// Non-Styling
 
-    width: 100%;
+	width: 100%;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-    flex-flow: column;
+	flex-flow: column;
 
-    .Testimonial {
-        // Non-Styling
+	.Testimonial {
+		// Non-Styling
 
-        width: 90%;
+		width: 90%;
 
-        .Review {
-            font-weight: 300;
-            font-size: 1em;
-            line-height: 1.75em;
-            letter-spacing: 1px;
-            color: $tundora;
+		.Review {
+			font-weight: 300;
+			font-size: 1em;
+			line-height: 1.75em;
+			letter-spacing: 1px;
+			color: $primary-color;
 
-            // Non-styling
+			// Non-styling
 
-            text-align: center;
-        }
+			text-align: center;
+		}
 
-        .Author {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.25em;
-            text-transform: uppercase;
-            color: $tundora;
+		.Author {
+			font-family: $primary-font;
+			font-size: 1.25em;
+			text-transform: uppercase;
+			color: $primary-color;
 
-            // Non-styling
+			// Non-styling
 
-            text-align: center;
-            margin-top: 2em;
-        }
-    }
+			text-align: center;
+			margin-top: 2em;
+		}
+	}
 
-    .Selection {
-        // Non-Styling
+	.Selection {
+		// Non-Styling
 
-        margin-top: 1.25em;
+		margin-top: 1.25em;
 
-        .Select {
-            background-color: white;
-            box-shadow: 0 0 8px rgba(0, 0, 0, 0.04);
+		.Select {
+			background-color: white;
+			box-shadow: 0 0 8px rgba(0, 0, 0, 0.04);
 
-            // Non-Styling
-            
-            width: 0.85em;
-            height: 0.85em;
+			// Non-Styling
 
-            margin: 0 0.25em;
+			width: 0.85em;
+			height: 0.85em;
 
-            transition: all 0.3s;
-            border: none;
+			margin: 0 0.25em;
 
-            &:hover {
-                background-color: lighten($akaroa, 10);
-            }
-        }
+			transition: all 0.3s;
+			border: none;
 
-        .Active {
-            background-color: $akaroa;
-            
-            &:hover {
-                background-color: $akaroa;
-            }
-        }
-    }
+			&:hover {
+				background-color: lighten($brand-color, 10);
+			}
+		}
+
+		.Active {
+			background-color: $brand-color;
+
+			&:hover {
+				background-color: $brand-color;
+			}
+		}
+	}
 }
 
 @media (min-width: 720px) {
-    .Testimonials {
-        .Testimonial {
-            width: 85%;
+	.Testimonials {
+		.Testimonial {
+			width: 85%;
 
-            .Review {
-                min-height: 12em;
-            }
-        }
-    }
+			.Review {
+				min-height: 12em;
+			}
+		}
+	}
 }
 
 @media (min-width: 1025px) {
-    .Testimonials {
-        .Testimonial {
-            width: 80%;
-            
-            .Review {
-                min-height: 8em;
-            }
-        }
-    }
+	.Testimonials {
+		.Testimonial {
+			width: 80%;
+
+			.Review {
+				min-height: 8em;
+			}
+		}
+	}
 }

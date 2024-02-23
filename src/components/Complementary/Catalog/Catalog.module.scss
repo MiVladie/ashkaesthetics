@@ -1,106 +1,106 @@
-$akaroa: #D7C2A4;
-$tundora: #444444;
-$copper: #B87332;
+@import '../../../styles/fonts.scss';
+@import '../../../styles/colors.scss';
 
 .Catalog {
-    // Non-Styling
+	// Non-Styling
 
-    width: 100%;
+	width: 100%;
 
-    .List {
-        // Non-Styling
+	.List {
+		// Non-Styling
 
-        width: 100%;
+		width: 100%;
 
-        .Item {
-            // Non-Styling
+		.Item {
+			// Non-Styling
 
-            width: 100%;
-            min-height: 1.75em;
+			width: 100%;
+			min-height: 1.75em;
 
-            margin-bottom: 1.25em;
+			margin-bottom: 1.25em;
 
-            &:last-of-type {
-                margin-bottom: 0;
-            }
+			&:last-of-type {
+				margin-bottom: 0;
+			}
 
-            .Line {
-                // Non-Styling
+			.Line {
+				// Non-Styling
 
-                width: 100%;
+				width: 100%;
 
-                display: flex;
-                justify-content: space-between;
-                align-items: flex-start;
+				display: flex;
+				justify-content: space-between;
+				align-items: flex-start;
 
-                .Name, .Price {
-                    font-family: 'Montserrat', sans-serif;
-                    color: $tundora;
-                }
+				.Name,
+				.Price {
+					font-family: $primary-font;
+					color: $primary-color;
+				}
 
-                .Price {
-                    min-width: 5em;
-                    text-align: right;
+				.Price {
+					min-width: 5em;
+					text-align: right;
 
-                    .Discounted {
-                        text-decoration: line-through;
-                        color: $copper;
-                    }
-                }
-            }
+					.Discounted {
+						text-decoration: line-through;
+						color: $warning-color;
+					}
+				}
+			}
 
-            .Description {
-                font-family: 'Montserrat', sans-serif;
-                font-size: 0.8em;
-                color: #A6A6A6;
-                
-                // Non-Styling
+			.Description {
+				font-family: $primary-font;
+				font-size: 0.8em;
+				color: #a6a6a6;
 
-                margin: 5px 0 0 1px;
-            }
-        }
-    }
+				// Non-Styling
 
-    .Options {
-        margin-top: 3em;
+				margin: 5px 0 0 1px;
+			}
+		}
+	}
 
-        .Button {
-            background-color: $akaroa;
-            border-radius: 0em;
+	.Options {
+		margin-top: 3em;
 
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 300;
-            text-transform: capitalize;
-            color: white;
+		.Button {
+			background-color: $brand-color;
+			border-radius: 0em;
 
-            // Non-Styling
+			font-family: $primary-font;
+			font-weight: 300;
+			text-transform: capitalize;
+			color: white;
 
-            margin-right: 1.25em;
-            padding: 0.8em 1.35em;
+			// Non-Styling
 
-            border: none;
+			margin-right: 1.25em;
+			padding: 0.8em 1.35em;
 
-            transition: all 0.15s;
+			border: none;
 
-            &:hover {
-                background-color: darken($akaroa, 10);
-            }
-        }    
+			transition: all 0.15s;
 
-        .Link {
-            font-family: 'Montserrat', sans-serif;
-            text-transform: capitalize;
-            color: $copper;        
-            
-            // Non-Styling
+			&:hover {
+				background-color: darken($brand-color, 10);
+			}
+		}
 
-            text-decoration: none;
-            transition: all 0.15s;
-            outline: none;
+		.Link {
+			font-family: $primary-font;
+			text-transform: capitalize;
+			color: $warning-color;
 
-            &:hover {
-                color: darken($copper, 10);
-            }
-        }
-    }
+			// Non-Styling
+
+			text-decoration: none;
+			transition: all 0.15s;
+			outline: none;
+
+			&:hover {
+				color: darken($warning-color, 10);
+			}
+		}
+	}
 }

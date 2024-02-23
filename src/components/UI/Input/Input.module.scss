@@ -1,54 +1,57 @@
-$tundora: #444444;
+@import '../../../styles/fonts.scss';
+@import '../../../styles/colors.scss';
+
 $grey: rgb(194, 194, 194);
 
-.Input, .Textarea {
-    border-bottom: 1px solid $grey;
+.Input,
+.Textarea {
+	border-bottom: 1px solid $grey;
 
-    font-family: 'Open Sans', sans-serif;
-    color: $tundora;
+	font-family: $secondary-font;
+	color: $primary-color;
 
-    // Non-Styling
+	// Non-Styling
 
-    width: 100%;
-    height: 2em;
+	width: 100%;
+	height: 2em;
 
-    padding: 0;
-    margin-bottom: 1.25em;
+	padding: 0;
+	margin-bottom: 1.25em;
 
-    background: none;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    transition: color 0.15s;
+	background: none;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	transition: color 0.15s;
 
-    &::placeholder {
-        font-weight: 300;
-        text-transform: capitalize;
-        color: $grey;
+	&::placeholder {
+		font-weight: 300;
+		text-transform: capitalize;
+		color: $grey;
 
-        // Non-Styling
-        
-        transition: color 0.15s;
-    }
+		// Non-Styling
 
-    &:focus {
-        border-bottom: 1.25px solid $tundora;
+		transition: color 0.15s;
+	}
 
-        &::placeholder {
-            color: $tundora;
-        }
-    }
+	&:focus {
+		border-bottom: 1.25px solid $primary-color;
+
+		&::placeholder {
+			color: $primary-color;
+		}
+	}
 }
 
 .Input {
-    // Non-Styling
+	// Non-Styling
 
-    height: 2em;
+	height: 2em;
 }
 
 .Textarea {
-    // Non-Styling
+	// Non-Styling
 
-    min-height: 8em;
-    max-height: 14em;
+	min-height: 8em;
+	max-height: 14em;
 }

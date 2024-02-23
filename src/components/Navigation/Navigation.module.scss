@@ -1,487 +1,445 @@
-$tundora: #444444;
-$akaroa: #D7C2A4;
+@import '../../styles/fonts.scss';
+@import '../../styles/colors.scss';
 
 body {
-    // Non-Styling
+	// Non-Styling
 
-    margin-top: 4.5em;
+	margin-top: 4.5em;
 }
 
-.Upper, .Line, .Lower .Links {
-    // Non-Styling
+.Upper,
+.Line,
+.Links {
+	// Non-Styling
 
-    display: none;
+	display: none;
 }
 
 .Lower {
-    width: 90%;
-    height: 4.5em;
+	width: 90%;
+	height: 4.5em;
 
-    padding: 0 5%;
-    
-    background-color: white;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-    
-    // Non-Styling
+	padding: 0 5%;
 
-    position: fixed;
-    top: 0;
-    z-index: 250;
+	background-color: white;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 
-    margin: 0 auto;
+	// Non-Styling
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    .Social {
-        // Non-Styling
+	position: sticky;
+	top: 0;
+	z-index: 250;
 
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+	margin: 0 auto;
 
-        .Facebook, .Instagram, .Phone {
-            width: 1.5em;
-            height: 1.5em;     
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 
-            filter: brightness(0.35);
-            
-            // Non-Styling               
+	.Social {
+		// Non-Styling
 
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            
-            outline: none;
-            transition: all 0.15s;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 
-            &:hover {
-                filter: brightness(0.15);                        
-            }
-        }
+		.Facebook,
+		.Instagram,
+		.Phone {
+			width: 1.5em;
+			height: 1.5em;
 
-        .Facebook {
-            background-image: url('../../assets/icons/facebook.png');
-        }
-        
-        .Instagram {
-            margin: 0 0.75em;
-            background-image: url('../../assets/icons/instagram.png');
-        }
+			filter: brightness(0.35);
 
-        .Phone {
-            background-image: url('../../assets/icons/phone.png');
-        }
-    }
+			// Non-Styling
 
-    .Logo {
-        width: 5.5em;
-        height: 4em;
-        
-        background-image: url('../../assets/icons/logo.png');
+			outline: none;
+			transition: all 0.15s;
 
-        // Non-Styling
+			&:hover {
+				filter: brightness(0.15);
+			}
+		}
 
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;  
-        
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translateY(-50%) translateX(-50%);
+		.Instagram {
+			margin: 0 0.75em;
+		}
+	}
 
-        z-index: 1000;
-        outline: none;
-    }
+	.Logo {
+		// Non-Styling
 
-    .Menu {
-        background-image: url('../../assets/icons/menu.png');
-        filter: brightness(0.2);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateY(-50%) translateX(-50%);
 
-        // Non-Styling
+		z-index: 1000;
+		outline: none;
+	}
 
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        
-        border: none;
-        background-color: transparent;
+	.Menu {
+		filter: brightness(0.2);
 
-        width: 2em;
-        height: 2em;
-    }
+		// Non-Styling
 
-    .Links {
-        background-color: white;
+		border: none;
+		background-color: transparent;
 
-        // Non-Styling
-        
-        display: none;
-        position: fixed;
-        
-        width: 100%;
+		width: 34px;
+		height: 34px;
 
-        top: 0;
-        left: 0;        
-        
-        justify-content: center;
-        align-items: center;
-        flex-flow: column;
+		padding: 0;
+	}
 
-        .Link {
-            // Non-Styling
+	.Links {
+		background-color: white;
 
-            margin: 1.5em 0;
+		// Non-Styling
 
-            a {
-                font-size: 1.25em;
-                font-family: 'Montserrat', sans-serif;
-                color: $tundora;
+		display: none;
+		position: fixed;
 
-                // Non-Styling
+		width: 100%;
 
-                padding: 0.5em 0;
-                text-transform: uppercase;
-                text-decoration: none;
-                
-                outline: none;
+		top: 0;
+		left: 0;
 
-                .Underline {
-                    height: 3px;
-                    margin: 0.75em auto 0;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column;
 
-                    background-color: $akaroa;
-                    border-radius: 3px;
-                    
-                    // Non-Styling
+		.Link {
+			// Non-Styling
 
-                    width: 0;
+			margin: 1.5em 0;
 
-                    position: absolute;
-                    left: 0;
-                    right: 0;
-                }
-            }
+			a {
+				font-size: 1.25em;
+				font-family: $primary-font;
+				color: $primary-color;
 
-            .Active {
-                // Non-Styling
+				// Non-Styling
 
-                position: relative;
+				padding: 0.5em 0;
+				text-transform: uppercase;
+				text-decoration: none;
 
-                &:hover {
-                    .Underline {
-                        background-color: $akaroa;
-                    }
-                }
+				outline: none;
 
-                .Underline {
-                    animation: underline 0.3s 0s ease forwards;
+				.Underline {
+					height: 3px;
+					margin: 0.75em auto 0;
 
-                    @keyframes underline {
-                        from {
-                            width: 0;
-                        }
+					background-color: $brand-color;
+					border-radius: 3px;
 
-                        to {
-                            width: 3em;
-                        }
-                    }
-                }
-            }
-        }
+					// Non-Styling
 
-        .Book {
-            // Non-Styling
+					width: 0;
 
-            margin-top: 3em;
-            
-            a {
-                background-color: $akaroa;
-                border-radius: 5em;
+					position: absolute;
+					left: 0;
+					right: 0;
+				}
+			}
 
-                font-size: 1.1em;
-                color: white;
+			.Active {
+				// Non-Styling
 
-                // Non-Styling
+				position: relative;
 
-                padding: 0.85em 2em;
+				&:hover {
+					.Underline {
+						background-color: $brand-color;
+					}
+				}
 
-                transition: all 0.15s;
+				.Underline {
+					animation: underline 0.3s 0s ease forwards;
 
-                &:hover {
-                    background-color: darken($akaroa, 10);
-                }
-            }
-        }
-    }
+					@keyframes underline {
+						from {
+							width: 0;
+						}
+
+						to {
+							width: 3em;
+						}
+					}
+				}
+			}
+		}
+
+		.Book {
+			// Non-Styling
+
+			margin-top: 3em;
+
+			a {
+				background-color: $brand-color;
+				border-radius: 5em;
+
+				font-size: 1.1em;
+				color: white;
+
+				// Non-Styling
+
+				padding: 0.85em 2em;
+
+				transition: all 0.15s;
+
+				&:hover {
+					background-color: darken($brand-color, 10);
+				}
+			}
+		}
+	}
 }
 
 .Reveal {
-    // Non-Styling
+	// Non-Styling
 
-    border-bottom: none;
+	border-bottom: none;
 
-    .Links {
-        // Non-Styling
+	.Links {
+		// Non-Styling
 
-        display: flex;
-        animation: expand 0.3s 0s ease-out forwards;
+		display: flex;
+		animation: expand 0.3s 0s ease-out forwards;
 
-        @keyframes expand {
-            from {
-                height: 0;
-                opacity: 0;
-            }
+		@keyframes expand {
+			from {
+				height: 0;
+				opacity: 0;
+			}
 
-            to {
-                height: 100vh;
-                opacity: 1;
-            }
-        }
-    }
-    
-    .Menu {
-        background-image: url('../../assets/icons/close.png');
-    }
+			to {
+				height: 100vh;
+				opacity: 1;
+			}
+		}
+	}
 }
 
 @media (min-width: 720px) {
-    body {
-        margin: 0;
-    }   
+	body {
+		margin: 0;
+	}
 
-    .Upper {
-        height: 5.5em;
-        background-color: white;
-        
-        // Non-Styling
+	.Upper {
+		height: 5.5em;
+		background-color: white;
 
-        width: 92%;
-        margin: 0 auto;
+		// Non-Styling
 
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+		width: 92%;
+		margin: 0 auto;
 
-        .Social {
-            width: 4.5em;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 
-            // Non-Styling
+		.Social {
+			width: 4.5em;
 
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+			// Non-Styling
 
-            .Facebook, .Instagram {
-                width: 1.5em;
-                height: 1.5em;     
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
 
-                filter: brightness(0.35);
-                
-                // Non-Styling               
+			.Facebook,
+			.Instagram {
+				width: 1.5em;
+				height: 1.5em;
 
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: center;
-                
-                outline: none;
-                transition: all 0.15s;
+				filter: brightness(0.35);
 
-                &:hover {
-                    filter: brightness(0.25);                        
-                }
-            }
+				// Non-Styling
 
-            .Facebook {
-                background-image: url('../../assets/icons/facebook.png');
-            }
-            
-            .Instagram {
-                background-image: url('../../assets/icons/instagram.png');
-            }
-        }
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
 
-        .Logo {
-            width: 5em;
-            height: 5em;
-            
-            background-image: url('../../assets/icons/logo.png');
+				outline: none;
+				transition: all 0.15s;
 
-            // Non-Styling
+				&:hover {
+					filter: brightness(0.25);
+				}
+			}
+		}
 
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;  
-            
-            outline: none;
-        
-            position: absolute;
-            left: 0;
-            right: 0;
-            margin: auto;
-        }
+		.Logo {
+			width: 85px;
+			height: 50px;
 
-        .Contacts {
-            width: 4.5em;
+			// Non-Styling
 
-            // Non-Styling
+			outline: none;
 
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+			position: absolute;
+			left: 0;
+			right: 0;
+			margin: auto;
+		}
 
-            .Contact {
-                // Non-Styling
+		.Contacts {
+			width: 4.5em;
 
-                display: flex;
-                align-items: center;
-                
-                transition: all 0.15s;
-                cursor: pointer;
+			// Non-Styling
 
-                &:hover {
-                    .Icon {
-                        filter: brightness(0.25);  
-                    }
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
 
-                    .Info {
-                        color: black;
-                    }
-                }
+			.Contact {
+				// Non-Styling
 
-                .Icon {
-                    width: 1.5em;
-                    height: 1.5em;          
-                    
-                    filter: brightness(0.35);
-                    
-                    // Non-Styling
+				display: flex;
+				align-items: center;
 
-                    object-fit: contain;
-                    background-repeat: no-repeat;
-                    background-position: center;
+				transition: all 0.15s;
+				cursor: pointer;
 
-                    transition: all 0.15s;                        
-                }
+				&:hover {
+					.Icon {
+						filter: brightness(0.25);
+					}
 
-                .Info {
-                    display: none;
+					.Info {
+						color: black;
+					}
+				}
 
-                    font-size: 0.9em;
-                    color: $tundora;
-                    
-                    // Non-Styling
+				.Icon {
+					width: 1.5em;
+					height: 1.5em;
 
-                    text-transform: none;
-                    text-decoration: none;
-                    
-                    outline: none;
-                    transition: all 0.15s;
-                }
-            }
-        }
-    }
+					filter: brightness(0.35);
 
-    .Line {
-        height: 2px;
+					// Non-Styling
 
-        border-radius: 2px;
-        background-color: rgba(0, 0, 0, 0.05);
-        
-        // Non-Styling
+					transition: all 0.15s;
+				}
 
-        display: block;
-        width: 100%;
-    }
+				.Info {
+					display: none;
 
-    .Lower {
-        position: sticky;
-        top: -2px;
+					font-size: 0.9em;
+					color: $primary-color;
 
-        width: 80%;
-        height: 4.5em;
+					// Non-Styling
 
-        padding: 0 10%;
+					text-transform: none;
+					text-decoration: none;
 
-        .Social {
-            display: none;
-        }
+					outline: none;
+					transition: all 0.15s;
+				}
+			}
+		}
+	}
 
-        .Logo, .Menu {
-            display: none;
-        }
+	.Line {
+		height: 2px;
 
-        .Links {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
+		border-radius: 2px;
+		background-color: rgba(0, 0, 0, 0.05);
 
-            flex-flow: row;
+		// Non-Styling
 
-            position: relative;
-            top: 0;
+		display: block;
+		width: 100%;
+	}
 
-            .Link {
-                a {
-                    font-size: 0.75em;
+	.Lower {
+		top: -2px;
 
-                    // Non-Styling 
-                    
-                    position: relative;
+		width: 80%;
+		height: 4.5em;
 
-                    .Underline {
-                        height: 2px;
-                    }
+		padding: 0 10%;
 
-                    &:hover {
-                        .Underline {
-                            background-color: rgba(0, 0, 0, 0.05);
-                        }
-                    }
-                }
-            }
+		.Social {
+			display: none;
+		}
 
-            .Book {
-                margin: 0;
-            }
-        }
-    }
+		.Logo,
+		.Menu {
+			display: none;
+		}
+
+		.Links {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+
+			flex-flow: row;
+
+			position: relative;
+			top: 0;
+
+			.Link {
+				a {
+					font-size: 0.75em;
+
+					// Non-Styling
+
+					position: relative;
+
+					.Underline {
+						height: 2px;
+					}
+
+					&:hover {
+						.Underline {
+							background-color: rgba(0, 0, 0, 0.05);
+						}
+					}
+				}
+			}
+
+			.Book {
+				margin: 0;
+			}
+		}
+	}
 }
 
 @media (min-width: 1025px) {
-    .Upper {
-        width: 100%;
+	.Upper {
+		width: 100%;
 
-        .Social {            
-            .Facebook, .Instagram {
-                width: 1.5em;
-                height: 1.5em; 
-            }
-        }
+		.Social {
+			.Facebook,
+			.Instagram {
+				width: 1.5em;
+				height: 1.5em;
+			}
+		}
 
-        .Logo {
-            width: 5.25em;
-            height: 5.25em;
-        }
+		.Logo {
+			width: 85px;
+			height: 50px;
+		}
 
-        .Contacts {
-            width: auto;
+		.Contacts {
+			width: auto;
 
-            .Contact {
+			.Contact {
+				.Icon {
+					width: 1.5em;
+					height: 1.5em;
 
-                .Icon {
-                    width: 1.5em;
-                    height: 1.5em;     
+					margin: 0 0.5em 0 1.25em;
+				}
 
-                    margin: 0 0.5em 0 1.25em;
-                }
-
-                .Info {
-                    display: block;
-                }
-            }
-        }
-    }
+				.Info {
+					display: block;
+				}
+			}
+		}
+	}
 }

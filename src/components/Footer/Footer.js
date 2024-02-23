@@ -1,39 +1,28 @@
 import React from 'react';
 
-import instagramIcon from '../../assets/icons/instagram.png';
-import facebookIcon from '../../assets/icons/facebook.png';
-import phoneIcon from '../../assets/icons/phone.png';
-import emailIcon from '../../assets/icons/email.png';
+import { StaticImage } from 'gatsby-plugin-image';
 
-import classes from './Footer.module.scss';
+import * as classes from './Footer.module.scss';
 
-const footer = () => (
+const Footer = () => (
 	<footer className={classes.Footer}>
 		<div className={classes.Line} />
 
 		<div className={classes.Links}>
-			<a
-				className={classes.Link}
-				href='https://instagram.com/ashk_aesthetics/'
-				target='_blank'
-				rel='noopener noreferrer'>
-				<img className={classes.Icon} src={instagramIcon} alt='Instagram Logo' />
+			<a className={classes.Link} href='https://instagram.com/ashk_aesthetics/' target='__blank'>
+				<StaticImage className={classes.Icon} src='../../assets/icons/instagram.png' alt='instagram' />
 			</a>
 
-			<a
-				className={classes.Link}
-				href='https://facebook.com/ashkaesthetics/'
-				target='_blank'
-				rel='noopener noreferrer'>
-				<img className={classes.Icon} src={facebookIcon} alt='Facebook Logo' />
+			<a className={classes.Link} href='https://facebook.com/ashkaesthetics/' target='__blank'>
+				<StaticImage className={classes.Icon} src='../../assets/icons/facebook.png' alt='facebook' />
 			</a>
 
 			<a className={classes.Link} href='tel:07768 105 096'>
-				<img className={classes.Icon} src={phoneIcon} alt='Phone Icon' />
+				<StaticImage className={classes.Icon} src='../../assets/icons/phone.png' alt='phone' />
 			</a>
 
 			<a className={classes.Link} href='mailto:ask@ashk-aesthetics.co.uk'>
-				<img className={classes.Icon} src={emailIcon} alt='Email Icon' />
+				<StaticImage className={classes.Icon} src='../../assets/icons/email.png' alt='email' />
 			</a>
 		</div>
 
@@ -42,11 +31,11 @@ const footer = () => (
 			Reserved
 			<br />
 			Website created by{' '}
-			<a href='https://mivladie.github.io/letscomit/' target='_blank' rel='noopener noreferrer'>
+			<a href='https://mivladie.github.io/letscomit/' target='__blank'>
 				letscomit
 			</a>
 		</p>
 	</footer>
 );
 
-export default footer;
+export default Footer;

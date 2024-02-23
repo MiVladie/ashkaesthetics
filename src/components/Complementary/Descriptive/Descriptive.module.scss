@@ -1,37 +1,38 @@
-$tundora: #444444;
+@import '../../../styles/fonts.scss';
+@import '../../../styles/colors.scss';
 
 .Descriptive {
-    // Non-Styling
-    
-    width: 100%;
+	// Non-Styling
 
-    .Paragraph {
-        // Non-Styling
+	width: 100%;
 
-        width: 100%;
-        margin-bottom: 2em;
+	.Paragraph {
+		// Non-Styling
 
-        &:last-of-type {
-            margin-bottom: 0;
-        }
+		width: 100%;
+		margin-bottom: 2em;
 
-        .Name {
-            font-family: 'Montserrat', sans-serif;
-            text-transform: uppercase;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
 
-            // Non-Styling
+		.Name {
+			font-family: $primary-font;
+			text-transform: uppercase;
 
-            margin-bottom: 1em;
-        }
+			// Non-Styling
 
-        .Description {
-            font-weight: 300;
-            color: $tundora;
-            
-            // Non-Styling
+			margin-bottom: 1em;
+		}
 
-            line-height: 1.75em;
-            letter-spacing: 1px;
-        }
-    }
+		.Description {
+			font-weight: 300;
+			color: $primary-color;
+
+			// Non-Styling
+
+			line-height: 1.75em;
+			letter-spacing: 1px;
+		}
+	}
 }

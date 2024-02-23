@@ -3,9 +3,9 @@ import React from 'react';
 import Line from '../UI/Line/Line';
 import Animation from '../../hoc/Animation/Animation';
 
-import classes from './Introduction.module.scss';
+import * as classes from './Introduction.module.scss';
 
-const introduction = ({ meta, main, description }) => {
+const Introduction = ({ meta, main, description }) => {
 	const splitDescription = () => {
 		return (typeof description === 'string' ? description.split('\n') : description).flatMap(
 			(value, index, array) =>
@@ -19,18 +19,6 @@ const introduction = ({ meta, main, description }) => {
 					  ]
 					: value
 		);
-
-		// return (description = ('' + description).split('\n').flatMap((value, index, array) =>
-		// 	array.length - 1 !== index
-		// 		? [
-		// 				value,
-		// 				<React.Fragment key={index}>
-		// 					<br />
-		// 					<br />
-		// 				</React.Fragment>
-		// 		  ]
-		// 		: value
-		// ));
 	};
 
 	return (
@@ -57,13 +45,4 @@ const introduction = ({ meta, main, description }) => {
 	);
 };
 
-export default introduction;
-
-/*
-
-  <Introduction
-    meta = 'Efficitur'
-    main = 'Mauris rhoncus'
-    description = { ['Fusce odio nunc, aliquam vitae vehicula non, porta vitae est. Sed consectetur, lectus sed consectetur aliquet,\ntortor velit sollicitudin eros, sit amet dictum tortor ex nec diam.'] } />
-
-*/
+export default Introduction;

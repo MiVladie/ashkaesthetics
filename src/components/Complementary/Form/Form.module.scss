@@ -1,62 +1,62 @@
-$tundora: #444444;
-$akaroa: #D7C2A4;
+@import '../../../styles/fonts.scss';
+@import '../../../styles/colors.scss';
 
 .Form {
-    // Non-Styling
+	// Non-Styling
 
-    width: 100%;
-    position: relative;
+	width: 100%;
+	position: relative;
 
-    .Area {
-        width: 100%;
-    }
+	.Area {
+		width: 100%;
+	}
 
-    .Result {
-        width: 100%;
-        margin: 0.5em 0 1em;
-        color: $tundora;
-    }
+	.Result {
+		width: 100%;
+		margin: 0.5em 0 1em;
+		color: $primary-color;
+	}
 
-    .Submit {
-        width: 11em;
-        height: 3.25em;
+	.Submit {
+		width: 11em;
+		height: 3.25em;
 
-        font-family: 'Open Sans', sans-serif;
-        text-transform: uppercase;
-        text-shadow: 0 0 20px rgba(0, 0, 0, 0.16);
+		font-family: $secondary-font;
+		text-transform: uppercase;
+		text-shadow: 0 0 20px rgba(0, 0, 0, 0.16);
 
-        border: 1.5px solid $tundora;
-        color: $tundora;
+		border: 1.5px solid $primary-color;
+		color: $primary-color;
 
-        // Non-Styling
+		// Non-Styling
 
-        background: none;
-        transition: all 0.15s;
-        margin-top: 1em;
+		background: none;
+		transition: all 0.15s;
+		margin-top: 1em;
 
-        &:hover {
-            border-color: $akaroa;
-            background-color: $akaroa;
-            color: white;
-        }
-    }
+		&:hover {
+			border-color: $brand-color;
+			background-color: $brand-color;
+			color: white;
+		}
+	}
 
-    .Modal {
-        background-color: white;
-        opacity: 0.8;
+	.Modal {
+		background-color: white;
+		opacity: 0.8;
 
-        // Non-Styling
+		// Non-Styling
 
-        width: 100%;
-        height: 100%;
+		width: 100%;
+		height: 100%;
 
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 200;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 200;
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 }
