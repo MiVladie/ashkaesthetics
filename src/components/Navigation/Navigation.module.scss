@@ -177,7 +177,7 @@ body {
 			margin-top: 3em;
 
 			a {
-				background-color: $brand-color, 10;
+				background-color: darken($brand-color, 44);
 				border-radius: 5em;
 
 				font-size: 1.1em;
@@ -190,7 +190,7 @@ body {
 				transition: all 0.15s;
 
 				&:hover {
-					background-color: darken($brand-color, 10);
+					background-color: darken($brand-color, 54);
 				}
 			}
 		}
