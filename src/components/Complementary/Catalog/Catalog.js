@@ -7,7 +7,7 @@ import * as classes from './Catalog.module.scss';
 const Catalog = ({ data, maxVisible, expandText, collapseText, linkTo, linkText }) => {
 	const [expand, setExpand] = useState(false);
 
-	const timeConverter = (time) => {
+	function timeConverter(time) {
 		let result = '';
 
 		if (Math.trunc(time / 60) > 0) result += Math.floor(time / 60) + ' hour';
@@ -19,9 +19,9 @@ const Catalog = ({ data, maxVisible, expandText, collapseText, linkTo, linkText 
 		if (time % 60 !== 0) result += (time % 60) + ' min';
 
 		return result;
-	};
+	}
 
-	const itemsList = () => {
+	function itemsList() {
 		let list = data.map((item) => (
 			<li className={classes.Item} key={item.name}>
 				<Animation>
@@ -47,7 +47,7 @@ const Catalog = ({ data, maxVisible, expandText, collapseText, linkTo, linkText 
 		else list.length = maxVisible;
 
 		return list;
-	};
+	}
 
 	return (
 		<div className={classes.Catalog}>

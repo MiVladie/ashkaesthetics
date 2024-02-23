@@ -17,7 +17,7 @@ const Form = ({ data, button, centered, onSubmit, inputs, response, loading }) =
 		setResult(response);
 	}, [inputs, response]);
 
-	const submitHandler = () => {
+	function submitHandler() {
 		let err = isFormValid(data, values);
 
 		if (err == null) {
@@ -38,7 +38,7 @@ const Form = ({ data, button, centered, onSubmit, inputs, response, loading }) =
 		} else {
 			setResult(err);
 		}
-	};
+	}
 
 	return (
 		<div className={classes.Form}>

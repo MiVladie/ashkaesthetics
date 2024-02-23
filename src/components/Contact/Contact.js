@@ -15,7 +15,7 @@ import * as classes from './Contact.module.scss';
 const Contact = ({ formDescription, contactDescription, phone, email, address, time, coordinates }) => {
 	const [response, setResponse] = useState({ message: {}, result: null, loading: false });
 
-	const sendMessageHandler = (message) => {
+	function sendMessageHandler(message) {
 		setResponse({ message: message, result: null, loading: true });
 
 		axios
@@ -26,7 +26,7 @@ const Contact = ({ formDescription, contactDescription, phone, email, address, t
 			.catch((error) => {
 				setResponse({ ...response, result: 'Something went wrong! Please, try again.', loading: false });
 			});
-	};
+	}
 
 	return (
 		<div className={classes.Contact}>

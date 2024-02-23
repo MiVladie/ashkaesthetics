@@ -16,9 +16,9 @@ const Banner = ({
 	linkRightText,
 	scrollTo
 }) => {
-	const scrollHandler = () => {
+	function scrollHandler() {
 		document.getElementById(scrollTo).scrollIntoView({ behavior: 'smooth' });
-	};
+	}
 
 	return (
 		<section className={classes.Banner}>

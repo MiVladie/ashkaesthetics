@@ -2,7 +2,7 @@ import React from 'react';
 
 import * as classes from './Message.module.scss';
 
-const correctDate = (value) => {
+function correctDate(value) {
 	let [date, time] = value.split(' ');
 
 	let [day, month, year] = date.split('/');
@@ -10,7 +10,7 @@ const correctDate = (value) => {
 	date = `${year}/${month}/${day}`;
 
 	return date + ' ' + time;
-};
+}
 
 const Message = ({ message, back, remove }) => {
 	let name = message.name;

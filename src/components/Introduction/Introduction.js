@@ -6,7 +6,7 @@ import Animation from '../../hoc/Animation/Animation';
 import * as classes from './Introduction.module.scss';
 
 const Introduction = ({ meta, main, description }) => {
-	const splitDescription = () => {
+	function splitDescription() {
 		return (typeof description === 'string' ? description.split('\n') : description).flatMap(
 			(value, index, array) =>
 				array.length - 1 !== index
@@ -19,7 +19,7 @@ const Introduction = ({ meta, main, description }) => {
 					  ]
 					: value
 		);
-	};
+	}
 
 	return (
 		<div className={classes.Introduction}>

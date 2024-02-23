@@ -2,7 +2,7 @@ import React from 'react';
 
 import * as classes from './Preview.module.scss';
 
-const correctDate = (value) => {
+function correctDate(value) {
 	let [date, time] = value.split(' ');
 
 	let [day, month, year] = date.split('/');
@@ -10,7 +10,7 @@ const correctDate = (value) => {
 	date = `${year}/${month}/${day}`;
 
 	return date + ' ' + time;
-};
+}
 
 const Preview = ({ messages, expand }) => {
 	if (messages == null) return null;
