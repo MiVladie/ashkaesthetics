@@ -46,27 +46,6 @@ module.exports = {
 				background_color: `#D7C2A4`,
 				theme_color: `#444444`
 			}
-		},
-		{
-			resolve: `gatsby-omni-font-loader`,
-			options: {
-				enableListener: true,
-				preconnect: [`https://fonts.googleapis.com`, `https://fonts.gstatic.com`],
-				web: [
-					{
-						name: `Open Sans`,
-						file: `https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap`
-					},
-					{
-						name: `Montserrat`,
-						file: `https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap`
-					},
-					{
-						name: `Josefin Slab`,
-						file: `https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap`
-					}
-				]
-			}
 		}
 	]
 };
