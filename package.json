@@ -1,34 +1,39 @@
 {
-  "name": "ashk-aesthetics",
-  "version": "1.0.0",
-  "private": true,
-  "description": "ashk-aesthetics",
-  "author": "MiVladie",
-  "keywords": [
-    "gatsby"
-  ],
-  "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
-  },
-  "dependencies": {
-    "@react-google-maps/api": "^2.19.3",
-    "axios": "^1.6.7",
-    "gatsby": "^5.13.3",
-    "gatsby-omni-font-loader": "^2.0.2",
-    "gatsby-plugin-image": "^3.13.1",
-    "gatsby-plugin-manifest": "^5.13.1",
-    "gatsby-plugin-sass": "^6.13.1",
-    "gatsby-plugin-sharp": "^5.13.1",
-    "gatsby-plugin-sitemap": "^6.13.1",
-    "gatsby-source-filesystem": "^5.13.1",
-    "gatsby-transformer-sharp": "^5.13.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-helmet": "^6.1.0",
-    "sass": "^1.71.1"
-  }
+	"name": "ashk-aesthetics",
+	"version": "1.0.0",
+	"private": true,
+	"description": "ashk-aesthetics",
+	"author": "MiVladie",
+	"keywords": [
+		"gatsby"
+	],
+	"scripts": {
+		"develop": "gatsby develop",
+		"start": "gatsby develop",
+		"build": "gatsby build",
+		"predeploy": "gatsby build",
+		"deploy": "gh-pages -d public",
+		"serve": "gatsby serve",
+		"clean": "gatsby clean"
+	},
+	"dependencies": {
+		"@react-google-maps/api": "^2.19.3",
+		"axios": "^1.6.7",
+		"gatsby": "^5.13.3",
+		"gatsby-omni-font-loader": "^2.0.2",
+		"gatsby-plugin-image": "^3.13.1",
+		"gatsby-plugin-manifest": "^5.13.1",
+		"gatsby-plugin-sass": "^6.13.1",
+		"gatsby-plugin-sharp": "^5.13.1",
+		"gatsby-plugin-sitemap": "^6.13.1",
+		"gatsby-source-filesystem": "^5.13.1",
+		"gatsby-transformer-sharp": "^5.13.1",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-helmet": "^6.1.0",
+		"sass": "^1.71.1"
+	},
+	"devDependencies": {
+		"gh-pages": "^6.1.1"
+	}
 }
