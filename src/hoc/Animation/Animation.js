@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 import * as classes from './Animation.module.scss';
 
 const Animation = ({ style, className, children }) => {
 	const [animate, setAnimate] = useState(false);
-	const key = useState(Math.random().toFixed(4).toString())[0];
+
+	const element = useRef(null);
 
 	useEffect(() => {
 		if (typeof window === 'undefined') return;
@@ -25,12 +26,8 @@ const Animation = ({ style, className, children }) => {
 
 		if (window.screen.width >= 720) percentage = 20;
 
-		let element = document.getElementById(key);
-
-		if (!element) return;
-
 		let visible = (
-			((window.screen.height - element.getBoundingClientRect().top) * 100) /
+			((window.screen.height - element.current.getBoundingClientRect().top) * 100) /
 			window.screen.height
 		).toFixed(0);
 
@@ -38,7 +35,7 @@ const Animation = ({ style, className, children }) => {
 	}
 
 	return (
-		<div className={[animate ? classes.Animation : classes.Hide, className].join(' ')} style={style} id={key}>
+		<div className={[animate ? classes.Animation : classes.Hide, className].join(' ')} style={style} ref={element}>
 			{children}
 		</div>
 	);
