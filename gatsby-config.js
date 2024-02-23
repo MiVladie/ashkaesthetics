@@ -4,6 +4,8 @@
 module.exports = {
 	siteMetadata: {
 		title: `Ashk Aesthetics`,
+		description: `Ashk Aesthetics Beauty Salon`,
+		image: `/src/assets/icons/favicon.ico`,
 		siteUrl: `https://ashk-aesthetics.co.uk`
 	},
 	plugins: [

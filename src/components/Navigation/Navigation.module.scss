@@ -177,7 +177,7 @@ body {
 			margin-top: 3em;
 
 			a {
-				background-color: $brand-color;
+				background-color: darken($brand-color, 10);
 				border-radius: 5em;
 
 				font-size: 1.1em;

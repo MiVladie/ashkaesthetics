@@ -46,7 +46,7 @@ const Banner = ({
 			</div>
 
 			{scrollTo && (
-				<button className={classes.Scroll} onClick={scrollHandler}>
+				<button className={classes.Scroll} onClick={scrollHandler} aria-label='scroll down'>
 					<span className={classes.Circle} />
 					<span className={classes.Knob} />
 				</button>
