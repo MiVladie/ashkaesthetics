@@ -23,7 +23,7 @@ const Banner = ({
 	return (
 		<section className={classes.Banner}>
 			<div className={classes.Image}>
-				<GatsbyImage image={getImage(image)} alt={imageAlt} className={classes.Photo} />
+				<GatsbyImage image={getImage(image)} alt={imageAlt} className={classes.Photo} loading='eager' />
 			</div>
 
 			<div className={classes.Wrapper}>
