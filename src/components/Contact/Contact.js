@@ -5,12 +5,14 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 import Line from '../UI/Line/Line';
 import Form from '../Complementary/Form/Form';
-import Map from '../Map/Map';
 import Animation from '../../hoc/Animation/Animation';
 
+import loadable from '@loadable/component';
 import axios from 'axios';
 
 import * as classes from './Contact.module.scss';
+
+const Map = loadable(() => import('../Map/Map'));
 
 const Contact = ({ formDescription, contactDescription, phone, email, address, time, coordinates }) => {
 	const [response, setResponse] = useState({ message: {}, result: null, loading: false });
