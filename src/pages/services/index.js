@@ -31,17 +31,17 @@ const Services = () => {
 					gatsbyImageData
 				}
 			}
-			microbladingImage: file(relativePath: { eq: "assets/images/promotional/microblading.jpg" }) {
+			microbladingImage: file(relativePath: { eq: "assets/images/promotional/microblading.jpeg" }) {
 				childImageSharp {
 					gatsbyImageData
 				}
 			}
-			limuEyesImage: file(relativePath: { eq: "assets/images/promotional/lumi eyes.png" }) {
+			limuEyesImage: file(relativePath: { eq: "assets/images/promotional/lumi eyes.jpeg" }) {
 				childImageSharp {
 					gatsbyImageData
 				}
 			}
-			profhiloImage: file(relativePath: { eq: "assets/images/promotional/profhilo.png" }) {
+			profhiloImage: file(relativePath: { eq: "assets/images/promotional/profhilo.jpeg" }) {
 				childImageSharp {
 					gatsbyImageData
 				}
@@ -56,7 +56,7 @@ const Services = () => {
 					gatsbyImageData
 				}
 			}
-			microbladingImage02: file(relativePath: { eq: "assets/images/promotional/microblading02.jpg" }) {
+			microbladingImage02: file(relativePath: { eq: "assets/images/promotional/microblading02.jpeg" }) {
 				childImageSharp {
 					gatsbyImageData
 				}

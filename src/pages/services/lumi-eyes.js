@@ -7,13 +7,24 @@ import Preface from '../../components/Preface/Preface';
 import Section from '../../components/Section/Section';
 import Introduction from '../../components/Introduction/Introduction';
 import Informative from '../../components/Informative/Informative';
+import Catalog from '../../components/Complementary/Catalog/Catalog';
 import Descriptive from '../../components/Complementary/Descriptive/Descriptive';
 import Seo from '../../hoc/Seo/Seo';
 
 const LumiEyes = () => {
-	const { lumiEyesImage } = useStaticQuery(graphql`
+	const { lumiEyesImage, lumiEyesImage02, lumiEyesImage03 } = useStaticQuery(graphql`
 		query {
-			lumiEyesImage: file(relativePath: { eq: "assets/images/promotional/lumi eyes.png" }) {
+			lumiEyesImage: file(relativePath: { eq: "assets/images/promotional/lumi eyes.jpeg" }) {
+				childImageSharp {
+					gatsbyImageData
+				}
+			}
+			lumiEyesImage02: file(relativePath: { eq: "assets/images/promotional/lumi eyes02.jpeg" }) {
+				childImageSharp {
+					gatsbyImageData
+				}
+			}
+			lumiEyesImage03: file(relativePath: { eq: "assets/images/promotional/lumi eyes03.jpeg" }) {
 				childImageSharp {
 					gatsbyImageData
 				}
@@ -54,7 +65,7 @@ const LumiEyes = () => {
 			</Section>
 
 			<Section>
-				<Informative image={lumiEyesImage} main='Lumi Eyes'>
+				<Informative image={lumiEyesImage02} main='Lumi Eyes'>
 					<Descriptive
 						data={[
 							{
@@ -83,6 +94,23 @@ const LumiEyes = () => {
 						'Facials, dermaplaning, laser treatments, and other facial treatments for minimum of two weeks.'
 					]}
 				/>
+			</Section>
+
+			<Section>
+				<Introduction main='Price list' />
+
+				<Informative image={lumiEyesImage03} main='Lumi Eyes' reversed>
+					<Catalog
+						data={[
+							{ name: 'Lumi Eyes [1 session]', price: 140 },
+							{ name: 'Lumi Eyes [2 sessions]', price: 260 },
+							{ name: 'Lumi Eyes [3 sessions]', price: 365 }
+						]}
+						maxVisible={6}
+						linkTo='https://fresha.com/ashk-aesthetics-r6gk2ijg'
+						linkText='Book now'
+					/>
+				</Informative>
 			</Section>
 		</Layout>
 	);

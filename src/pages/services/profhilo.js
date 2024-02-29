@@ -7,13 +7,24 @@ import Preface from '../../components/Preface/Preface';
 import Section from '../../components/Section/Section';
 import Introduction from '../../components/Introduction/Introduction';
 import Informative from '../../components/Informative/Informative';
+import Catalog from '../../components/Complementary/Catalog/Catalog';
 import Descriptive from '../../components/Complementary/Descriptive/Descriptive';
 import Seo from '../../hoc/Seo/Seo';
 
 const Profhilo = () => {
-	const { profhiloImage } = useStaticQuery(graphql`
+	const { profhiloImage, profhiloImage02, profhiloImage03 } = useStaticQuery(graphql`
 		query {
-			profhiloImage: file(relativePath: { eq: "assets/images/promotional/profhilo.png" }) {
+			profhiloImage: file(relativePath: { eq: "assets/images/promotional/profhilo.jpeg" }) {
+				childImageSharp {
+					gatsbyImageData
+				}
+			}
+			profhiloImage02: file(relativePath: { eq: "assets/images/promotional/profhilo02.jpeg" }) {
+				childImageSharp {
+					gatsbyImageData
+				}
+			}
+			profhiloImage03: file(relativePath: { eq: "assets/images/promotional/profhilo03.jpeg" }) {
 				childImageSharp {
 					gatsbyImageData
 				}
@@ -50,7 +61,7 @@ const Profhilo = () => {
 			</Section>
 
 			<Section>
-				<Informative image={profhiloImage} main='Skin Booster Profhilo'>
+				<Informative image={profhiloImage02} main='Skin Booster Profhilo'>
 					<Descriptive
 						data={[
 							{
@@ -93,6 +104,36 @@ const Profhilo = () => {
 					main='What are the difference between Profhilo and Dermal Fillers?'
 					description='Whilst traditional dermal fillers also contain hyaluronic acid, the key difference between the two treatments is that Profhilo doesn’t add volume or change the structure of the face. Dermal fillers are used to augment a specific area via a lifting and volumising effect. They do give the skin greater luminosity, but Profhilo takes a more holistic approach for widespread improvement'
 				/>
+			</Section>
+
+			<Section background='#F8F8F8'>
+				<Introduction main='Price list' />
+
+				<Informative image={profhiloImage03} main='Face & Neck' reversed>
+					<Catalog
+						data={[
+							{ name: 'Face [1 session]', price: 180 },
+							{ name: 'Face [2 sessions]', price: 350 },
+							{ name: 'Face [3 sessions]', price: 510 }
+						]}
+						maxVisible={6}
+						expandText='View more'
+						collapseText='View less'
+					/>
+
+					<Catalog
+						data={[
+							{ name: 'Neck [1 session]', price: 180 },
+							{ name: 'Neck [2 sessions]', price: 350 },
+							{ name: 'Neck [3 sessions]', price: 510 }
+						]}
+						maxVisible={6}
+						expandText='View more'
+						collapseText='View less'
+						linkTo='https://fresha.com/ashk-aesthetics-r6gk2ijg'
+						linkText='Book now'
+					/>
+				</Informative>
 			</Section>
 		</Layout>
 	);

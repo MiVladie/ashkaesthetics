@@ -13,12 +13,12 @@ import Seo from '../../hoc/Seo/Seo';
 const Microblading = () => {
 	const { microbladingImage, microbladingImage02 } = useStaticQuery(graphql`
 		query {
-			microbladingImage: file(relativePath: { eq: "assets/images/promotional/microblading.jpg" }) {
+			microbladingImage: file(relativePath: { eq: "assets/images/promotional/microblading.jpeg" }) {
 				childImageSharp {
 					gatsbyImageData
 				}
 			}
-			microbladingImage02: file(relativePath: { eq: "assets/images/promotional/microblading02.jpg" }) {
+			microbladingImage02: file(relativePath: { eq: "assets/images/promotional/microblading02.jpeg" }) {
 				childImageSharp {
 					gatsbyImageData
 				}

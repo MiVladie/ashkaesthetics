@@ -7,6 +7,7 @@ import Preface from '../../components/Preface/Preface';
 import Section from '../../components/Section/Section';
 import Introduction from '../../components/Introduction/Introduction';
 import Informative from '../../components/Informative/Informative';
+import Catalog from '../../components/Complementary/Catalog/Catalog';
 import Descriptive from '../../components/Complementary/Descriptive/Descriptive';
 import Seo from '../../hoc/Seo/Seo';
 
@@ -79,6 +80,54 @@ const LemonBottle = () => {
 						'When the solution is injected in to the fat cell, the fat cells start to break down immediately, you will notice the weight loss via inches. It is recommended to drink 2 litres of water to transport the fat cells out of the body. It can take up to 3-12 weeks for optimal results.'
 					]}
 				/>
+			</Section>
+
+			<Section background='#F8F8F8' reversed>
+				<Introduction main='Price list' />
+
+				<Informative image={lemonBottleImage} main='Face & Neck'>
+					<Catalog
+						data={[
+							{ name: 'Small Area [1 session]', meta: 'Chin Fat, Jaw, Neck, Bra Bulge', price: 85 },
+							{ name: 'Small Area [2 sessions]', meta: 'Chin Fat, Jaw, Neck, Bra Bulge', price: 160 }
+						]}
+						maxVisible={6}
+					/>
+
+					<Catalog
+						data={[
+							{ name: 'Medium Area [1 session]', meta: 'Arms, Back, Lower Stomach', price: 170 },
+							{ name: 'Medium Area [2 sessions]', meta: 'Arms, Back, Lower Stomach', price: 310 },
+							{ name: 'Medium Area [3 sessions]', meta: 'Arms, Back, Lower Stomach', price: 460 }
+						]}
+						maxVisible={6}
+					/>
+
+					<Catalog
+						data={[
+							{
+								name: 'Large Area [1 session]',
+								meta: 'Stomach, Inner Thigh, Outer Thigh, Love Handles',
+								price: 340
+							},
+							{
+								name: 'Large Area [2 sessions]',
+								meta: 'Stomach, Inner Thigh, Outer Thigh, Love Handles',
+								price: 630
+							},
+							{
+								name: 'Large Area [3 sessions]',
+								meta: 'Stomach, Inner Thigh, Outer Thigh, Love Handles',
+								price: 900
+							}
+						]}
+						maxVisible={6}
+						expandText='View more'
+						collapseText='View less'
+						linkTo='https://fresha.com/ashk-aesthetics-r6gk2ijg'
+						linkText='Book now'
+					/>
+				</Informative>
 			</Section>
 		</Layout>
 	);

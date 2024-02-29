@@ -33,7 +33,9 @@ const Catalog = ({ data, maxVisible, expandText, collapseText, linkTo, linkText 
 						</p>
 					</div>
 
-					{item.time && <p className={classes.Description}>{timeConverter(item.time)}</p>}
+					{(item.time || item.meta) && (
+						<p className={classes.Description}>{item.meta || timeConverter(item.time)}</p>
+					)}
 					{item.oldPrice && !item.time && (
 						<p className={classes.Description}>
 							save up to {100 - ((100 / item.oldPrice) * item.price).toFixed(0)}%
