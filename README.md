@@ -83,17 +83,11 @@ React is a JavaScript library for building user interfaces.
 
 -   [Getting Started](https://reactjs.org/docs/getting-started.html)
 
-## React Google Maps
+## Gatsby
 
-`react-google-maps` provides a set of React components wrapping the underlying Google Maps JavaScript API v3 instances.
+Gatsby is a React-based open source framework for creating websites.
 
--   [Documentation](https://tomchentw.github.io/react-google-maps/#documentation)
-
-## React Router
-
-React Router is a collection of navigational components that compose declaratively with your application.
-
--   [Quick Start](https://reactrouter.com/web/guides/quick-start)
+-   [Documentation](https://www.gatsbyjs.com/docs/)
 
 ## Sass
 
