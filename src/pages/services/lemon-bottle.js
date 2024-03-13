@@ -76,9 +76,31 @@ const LemonBottle = () => {
 
 			<Section>
 				<Introduction
-					main='When can you see result?'
+					main='How many sessions are typically required for optimal Lemon Bottle Fat Dissolving results?'
 					description={[
-						'When the solution is injected in to the fat cell, the fat cells start to break down immediately, you will notice the weight loss via inches. It is recommended to drink 2 litres of water to transport the fat cells out of the body. It can take up to 3-12 weeks for optimal results.'
+						'The number of sessions varies based on individual needs. However, most clients achieve their desired results after 2-4 sessions, with each session spaced several weeks apart.'
+					]}
+				/>
+			</Section>
+
+			<Section background='#F8F8F8'>
+				<Introduction
+					main='How long do the effects of Lemon Bottle Fat Dissolving treatment last?'
+					description={[
+						'The transformative effects of Lemon Bottle Fat Dissolving Injections can be long-lasting. To ensure the longevity of these results, it’s beneficial to adopt a balanced diet and regular exercise routine.'
+					]}
+				/>
+			</Section>
+
+			<Section>
+				<Introduction
+					main='Lemon Bottle Fat Dissolving Aftercare'
+					description={[
+						'Immediate Post-Treatment Care:',
+						'Redness',
+						'Swelling',
+						'Slight bruising',
+						'Please note that these symptoms are temporary and typically subside within a few days. Our team is available to address any concerns and guide you through the recovery process.'
 					]}
 				/>
 			</Section>
