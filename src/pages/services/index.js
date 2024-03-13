@@ -197,7 +197,7 @@ const Services = () => {
 				</Informative>
 			</Section>
 
-			<Section>
+			<Section background='#F8F8F8'>
 				<Informative
 					image={frecklesTatooImage}
 					main='Faux Freckles Tattoo'
@@ -220,7 +220,7 @@ const Services = () => {
 				</Informative>
 			</Section>
 
-			<Section background='#F8F8F8'>
+			<Section>
 				<Informative
 					image={browsAndLashImage}
 					main='Eyes & Brows'
