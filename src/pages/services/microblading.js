@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { graphql, useStaticQuery } from 'gatsby';
+import { BOOKING_URL } from '../../config/constants';
 
 import Layout from '../../hoc/Layout/Layout';
 import Preface from '../../components/Preface/Preface';
@@ -71,7 +72,7 @@ const Microblading = () => {
 						maxVisible={5}
 						expandText='View more'
 						collapseText='View less'
-						linkTo='https://fresha.com/ashk-aesthetics-r6gk2ijg'
+						linkTo={BOOKING_URL}
 						linkText='Book now'
 					/>
 				</Informative>

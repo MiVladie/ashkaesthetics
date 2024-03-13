@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import { Link, graphql, useStaticQuery } from 'gatsby';
 import { GatsbyImage, StaticImage, getImage } from 'gatsby-plugin-image';
+import { BOOKING_URL } from '../../config/constants';
 
 import * as classes from './Navigation.module.scss';
 
@@ -136,10 +137,7 @@ const Navigation = () => {
 				</li>
 
 				<li className={[classes.Link, classes.Book].join(' ')}>
-					<a
-						href='https://fresha.com/ashk-aesthetics-r6gk2ijg'
-						onClick={() => menuHandler('off')}
-						target='__blank'>
+					<a href={BOOKING_URL} onClick={() => menuHandler('off')} target='__blank'>
 						Book now
 					</a>
 				</li>

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { graphql, useStaticQuery } from 'gatsby';
+import { BOOKING_URL } from '../config/constants';
 
 import Layout from '../hoc/Layout/Layout';
 import Banner from '../components/Banner/Banner';
@@ -76,7 +77,7 @@ const Home = () => {
 				description='Come and discover your oasis. It has never been easier to take a break from stress and the harmful factors that surround you every day!'
 				linkLeftTo='/services'
 				linkLeftText='View services'
-				linkRightTo='https://fresha.com/ashk-aesthetics-r6gk2ijg'
+				linkRightTo={BOOKING_URL}
 				linkRightText='Book now'
 				scrollTo='intro'
 			/>
