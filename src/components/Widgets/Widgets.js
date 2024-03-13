@@ -22,6 +22,7 @@ const Widgets = ({ data }) => (
 					<p className={classes.Name} onClick={() => navigate(widget.url)}>
 						{widget.name}
 					</p>
+
 					<Line color='#B87332' style={{ marginBottom: '0' }} />
 				</Animation>
 			</div>
