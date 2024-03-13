@@ -19,6 +19,7 @@ const Services = () => {
 		limuEyesImage,
 		profhiloImage,
 		lemonBottleImage,
+		frecklesTatooImage,
 		browsAndLashImage,
 		microbladingImage02,
 		eyesAndBrowsImage,
@@ -48,6 +49,11 @@ const Services = () => {
 				}
 			}
 			lemonBottleImage: file(relativePath: { eq: "assets/images/promotional/lemon bottle.png" }) {
+				childImageSharp {
+					gatsbyImageData
+				}
+			}
+			frecklesTatooImage: file(relativePath: { eq: "assets/images/promotional/freckles tattoo.jpeg" }) {
 				childImageSharp {
 					gatsbyImageData
 				}
@@ -105,8 +111,7 @@ const Services = () => {
 					image={microbladingImage}
 					main='Microblading'
 					linkTo='/services/microblading'
-					linkText='Learn more'
-					reversed>
+					linkText='Learn more'>
 					<Descriptive
 						data={[
 							{
@@ -125,7 +130,12 @@ const Services = () => {
 			</Section>
 
 			<Section>
-				<Informative image={limuEyesImage} main='Lumi Eyes' linkTo='/services/lumi-eyes' linkText='Learn more'>
+				<Informative
+					image={limuEyesImage}
+					main='Lumi Eyes'
+					linkTo='/services/lumi-eyes'
+					linkText='Learn more'
+					reversed>
 					<Descriptive
 						data={[
 							{
@@ -147,8 +157,7 @@ const Services = () => {
 					image={profhiloImage}
 					main='Skin Booster Profhilo'
 					linkTo='/services/profhilo'
-					linkText='Learn more'
-					reversed>
+					linkText='Learn more'>
 					<Descriptive
 						data={[
 							{
@@ -170,7 +179,8 @@ const Services = () => {
 					image={lemonBottleImage}
 					main='Fat Dissolving Lemon Bottle'
 					linkTo='/services/lemon-bottle'
-					linkText='Learn more'>
+					linkText='Learn more'
+					reversed>
 					<Descriptive
 						data={[
 							{
@@ -181,6 +191,29 @@ const Services = () => {
 							{
 								description:
 									'These injections are becoming increasingly popular as an alternative to surgical procedures such as liposuction. Unlike other fat dissolvers this causes minimal swelling there’s no downtime and it contains natural ingredients.'
+							}
+						]}
+					/>
+				</Informative>
+			</Section>
+
+			<Section>
+				<Informative
+					image={frecklesTatooImage}
+					main='Faux Freckles Tattoo'
+					linkTo='/services/faux-freckles-tattoo'
+					linkText='Learn more'>
+					<Descriptive
+						data={[
+							{
+								name: 'What is Faux Freckles Tattoo?',
+								description: [
+									"Faux freckle tattooing is a cosmetic procedure where semi-permanent freckles are tattooed onto the skin to create a natural freckled appearance. It's popular among individuals who desire a sun-kissed, youthful look or want to enhance their natural freckles."
+								]
+							},
+							{
+								description:
+									'Faux freckle treatments can be tailored to a wide range of customized colors and can be layered to achieve a natural appearance. The duration of the treatment varies, typically lasting between 1.5 to over 2 years, contingent upon factors such as immediate and long-term aftercare, skin type, lifestyle, and more.'
 							}
 						]}
 					/>
