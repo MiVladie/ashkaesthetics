@@ -19,6 +19,9 @@ const Services = () => {
 		limuEyesImage,
 		profhiloImage,
 		lemonBottleImage,
+		plateletRichPlasmaImage,
+		nucleofillSkinBoosterImage,
+		vitaminShotsImage,
 		frecklesTatooImage,
 		browsAndLashImage,
 		microbladingImage02,
@@ -49,6 +52,23 @@ const Services = () => {
 				}
 			}
 			lemonBottleImage: file(relativePath: { eq: "assets/images/promotional/lemon bottle.png" }) {
+				childImageSharp {
+					gatsbyImageData
+				}
+			}
+			plateletRichPlasmaImage: file(relativePath: { eq: "assets/images/promotional/prp 1.jpeg" }) {
+				childImageSharp {
+					gatsbyImageData
+				}
+			}
+			nucleofillSkinBoosterImage: file(
+				relativePath: { eq: "assets/images/promotional/nucleofill skin booster 1.jpg" }
+			) {
+				childImageSharp {
+					gatsbyImageData
+				}
+			}
+			vitaminShotsImage: file(relativePath: { eq: "assets/images/promotional/vitamin shot 1.jpg" }) {
 				childImageSharp {
 					gatsbyImageData
 				}
@@ -199,10 +219,79 @@ const Services = () => {
 
 			<Section background='#F8F8F8'>
 				<Informative
+					image={plateletRichPlasmaImage}
+					main='Platelet-Rich Plasma'
+					linkTo='/services/platelet-rich-plasma'
+					linkText='Learn more'>
+					<Descriptive
+						data={[
+							{
+								name: 'What is PRP?',
+								description:
+									'Platelet-Rich Plasma (PRP) is a regenerative treatment that uses your body’s own platelets to stimulate healing and rejuvenation in targeted areas. Platelets are rich in growth factors, proteins that play a key role in tissue repair and regeneration.'
+							},
+							{
+								description:
+									'By concentrating platelets in a specific area, PRP treatment can improve skin quality, and promote hair growth. It is a popular choice for cosmetic applications due to its natural approach and minimal risk of allergic reaction or rejection.'
+							}
+						]}
+					/>
+				</Informative>
+			</Section>
+
+			<Section>
+				<Informative
+					image={nucleofillSkinBoosterImage}
+					main='Nucleofill Skin Booster & Eye'
+					linkTo='/services/nucleofill-skin-booster-and-eye'
+					linkText='Learn more'
+					reversed>
+					<Descriptive
+						data={[
+							{
+								name: 'Nucleofill Skin Booster',
+								description:
+									'Nucleofill Skin Booster is a cutting-edge injectable treatment designed to rejuvenate and hydrate the skin using a powerful combination of hyaluronic acid, polynucleotides, and salmon DNA.'
+							},
+							{
+								name: 'Nucleofill Eye',
+								description:
+									'Nucleofill Eye is a specialized version of the Nucleofill treatment, specifically designed for the delicate skin around the eyes.'
+							}
+						]}
+					/>
+				</Informative>
+			</Section>
+
+			<Section background='#F8F8F8'>
+				<Informative
+					image={vitaminShotsImage}
+					main='Vitamin Shots: C, D, B12, and Biotin'
+					linkTo='/services/vitamin-shots'
+					linkText='Learn more'>
+					<Descriptive
+						data={[
+							{
+								name: 'What Are Vitamin Shots?',
+								description:
+									'Vitamin shots deliver essential nutrients directly into the bloodstream via intramuscular injection, typically in the arm.'
+							},
+							{
+								description:
+									'This method ensures fast absorption and bypasses the digestive system, making it more effective than oral supplements for individuals with nutrient deficiencies or absorption issues.'
+							}
+						]}
+					/>
+				</Informative>
+			</Section>
+
+			<Section>
+				<Informative
 					image={frecklesTatooImage}
 					main='Faux Freckles Tattoo'
 					linkTo='/services/faux-freckles-tattoo'
-					linkText='Learn more'>
+					linkText='Learn more'
+					reversed>
 					<Descriptive
 						data={[
 							{
@@ -220,13 +309,12 @@ const Services = () => {
 				</Informative>
 			</Section>
 
-			<Section>
+			<Section background='#F8F8F8'>
 				<Informative
 					image={browsAndLashImage}
 					main='Eyes & Brows'
 					linkTo='/services/eyes-and-brows'
-					linkText='Learn more'
-					reversed>
+					linkText='Learn more'>
 					<Descriptive
 						data={[
 							{
