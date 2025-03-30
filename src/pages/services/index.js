@@ -151,20 +151,26 @@ const Services = () => {
 			<Section>
 				<Informative
 					image={profhiloImage}
-					main='Skin Booster Profhilo'
-					linkTo='/services/profhilo'
+					main='Skin Booster'
+					linkTo='/services/skin-booster'
 					linkText='Learn more'
 					reversed>
 					<Descriptive
 						data={[
 							{
-								name: 'What is Skin Booster Profhilo?',
+								name: 'Skin Booster Profhilo',
 								description:
 									'Profilo is a type skin booster injectable treat treatment. It is designed to stimulate natural production of collagen and elastin, essential proteins that contribute to skin elasticity and firmness.'
 							},
 							{
+								name: 'Nucleofill Skin Booster',
 								description:
-									'Additionally, Profilo has the unique property of attracting water to the treated areas, enhancing skin hydration.'
+									'Nucleofill Skin Booster is a cutting-edge injectable treatment designed to rejuvenate and hydrate the skin using a powerful combination of hyaluronic acid, polynucleotides, and salmon DNA.'
+							},
+							{
+								name: 'Nucleofill Eye',
+								description:
+									'Nucleofill Eye is a specialized version of the Nucleofill treatment, specifically designed for the delicate skin around the eyes.'
 							}
 						]}
 					/>
