@@ -128,97 +128,6 @@ const Services = () => {
 
 			<Section background='#F8F8F8'>
 				<Informative
-					image={microbladingImage}
-					main='Microblading'
-					linkTo='/services/microblading'
-					linkText='Learn more'>
-					<Descriptive
-						data={[
-							{
-								name: 'What is microblading?',
-								description:
-									'Microblading is a semi-permanent makeup procedure that dramatically corrects or fully construct/reconstruct lost eyebrow hairs. It looks so real, it is often referred to as 3D or hairstroke tattoo. It can help define, shape, and create fullness in the eyebrow area.'
-							},
-							{
-								name: 'Benefits of eyebrow microblading',
-								description:
-									'It gives you long-lasting results. Think of it like a tattoo that gives you the brows of your dreams. You will only need to get your brows microbladed once every one and a half to two years. It is an easy solution for people who have lost their brows due to over plucking, an illness, or chemotherapy.'
-							}
-						]}
-					/>
-				</Informative>
-			</Section>
-
-			<Section>
-				<Informative
-					image={limuEyesImage}
-					main='Lumi Eyes'
-					linkTo='/services/lumi-eyes'
-					linkText='Learn more'
-					reversed>
-					<Descriptive
-						data={[
-							{
-								name: 'What is Lumi eyes?',
-								description:
-									'Lumi Eyes is a type of tissue stimulator that is specifically designed for use in needle Mesotherapy treatments around the eyes and tear valley area. Unlike other treatments, Lumi Eyes does not cause side effects minimal invasive treatment with fast and anti-agin results and visible changes with in  just one session.'
-							},
-							{
-								description:
-									'This high-quality product contains polynucleotides that have a strong tissue-regenerating effect, helping to repair damage to the dermis. The Lumi Eyes Treatment effectively hydrates and rejuvenates the skin tissue while reducing symptoms of fatigue and skin discoloration.'
-							}
-						]}
-					/>
-				</Informative>
-			</Section>
-
-			<Section background='#F8F8F8'>
-				<Informative
-					image={profhiloImage}
-					main='Skin Booster Profhilo'
-					linkTo='/services/profhilo'
-					linkText='Learn more'>
-					<Descriptive
-						data={[
-							{
-								name: 'What is Skin Booster Profhilo?',
-								description:
-									'Profilo is a type skin booster injectable treat treatment. It is designed to stimulate natural production of collagen and elastin, essential proteins that contribute to skin elasticity and firmness.'
-							},
-							{
-								description:
-									'Additionally, Profilo has the unique property of attracting water to the treated areas, enhancing skin hydration.'
-							}
-						]}
-					/>
-				</Informative>
-			</Section>
-
-			<Section>
-				<Informative
-					image={lemonBottleImage}
-					main='Fat Dissolving Lemon Bottle'
-					linkTo='/services/lemon-bottle'
-					linkText='Learn more'
-					reversed>
-					<Descriptive
-						data={[
-							{
-								name: 'What is Lemon Bottle?',
-								description:
-									'Lemon bottle is a combination of vitamins and enzymes that break down the subcutaneous layer of the fat cell. There is a high concentration of Vitamin B2 also known as Riboflavin and bromelain, this increases and speeds up the process of breaking down the fat cell and allowing your metabolism get rid of it naturally.'
-							},
-							{
-								description:
-									'These injections are becoming increasingly popular as an alternative to surgical procedures such as liposuction. Unlike other fat dissolvers this causes minimal swelling there’s no downtime and it contains natural ingredients.'
-							}
-						]}
-					/>
-				</Informative>
-			</Section>
-
-			<Section background='#F8F8F8'>
-				<Informative
 					image={plateletRichPlasmaImage}
 					main='Platelet-Rich Plasma'
 					linkTo='/services/platelet-rich-plasma'
@@ -241,22 +150,21 @@ const Services = () => {
 
 			<Section>
 				<Informative
-					image={nucleofillSkinBoosterImage}
-					main='Nucleofill Skin Booster & Eye'
-					linkTo='/services/nucleofill-skin-booster-and-eye'
+					image={profhiloImage}
+					main='Skin Booster Profhilo'
+					linkTo='/services/profhilo'
 					linkText='Learn more'
 					reversed>
 					<Descriptive
 						data={[
 							{
-								name: 'Nucleofill Skin Booster',
+								name: 'What is Skin Booster Profhilo?',
 								description:
-									'Nucleofill Skin Booster is a cutting-edge injectable treatment designed to rejuvenate and hydrate the skin using a powerful combination of hyaluronic acid, polynucleotides, and salmon DNA.'
+									'Profilo is a type skin booster injectable treat treatment. It is designed to stimulate natural production of collagen and elastin, essential proteins that contribute to skin elasticity and firmness.'
 							},
 							{
-								name: 'Nucleofill Eye',
 								description:
-									'Nucleofill Eye is a specialized version of the Nucleofill treatment, specifically designed for the delicate skin around the eyes.'
+									'Additionally, Profilo has the unique property of attracting water to the treated areas, enhancing skin hydration.'
 							}
 						]}
 					/>
@@ -265,10 +173,33 @@ const Services = () => {
 
 			<Section background='#F8F8F8'>
 				<Informative
+					image={lemonBottleImage}
+					main='Fat Dissolving Lemon Bottle'
+					linkTo='/services/lemon-bottle'
+					linkText='Learn more'>
+					<Descriptive
+						data={[
+							{
+								name: 'What is Lemon Bottle?',
+								description:
+									'Lemon bottle is a combination of vitamins and enzymes that break down the subcutaneous layer of the fat cell. There is a high concentration of Vitamin B2 also known as Riboflavin and bromelain, this increases and speeds up the process of breaking down the fat cell and allowing your metabolism get rid of it naturally.'
+							},
+							{
+								description:
+									'These injections are becoming increasingly popular as an alternative to surgical procedures such as liposuction. Unlike other fat dissolvers this causes minimal swelling there’s no downtime and it contains natural ingredients.'
+							}
+						]}
+					/>
+				</Informative>
+			</Section>
+
+			<Section>
+				<Informative
 					image={vitaminShotsImage}
 					main='Vitamin Shots: C, D, B12, and Biotin'
 					linkTo='/services/vitamin-shots'
-					linkText='Learn more'>
+					linkText='Learn more'
+					reversed>
 					<Descriptive
 						data={[
 							{
@@ -285,13 +216,12 @@ const Services = () => {
 				</Informative>
 			</Section>
 
-			<Section>
+			<Section background='#F8F8F8'>
 				<Informative
 					image={frecklesTatooImage}
 					main='Faux Freckles Tattoo'
 					linkTo='/services/faux-freckles-tattoo'
-					linkText='Learn more'
-					reversed>
+					linkText='Learn more'>
 					<Descriptive
 						data={[
 							{
@@ -309,31 +239,24 @@ const Services = () => {
 				</Informative>
 			</Section>
 
-			<Section background='#F8F8F8'>
+			<Section>
 				<Informative
-					image={browsAndLashImage}
-					main='Eyes & Brows'
-					linkTo='/services/eyes-and-brows'
-					linkText='Learn more'>
+					image={microbladingImage}
+					main='Microblading'
+					linkTo='/services/microblading'
+					linkText='Learn more'
+					reversed>
 					<Descriptive
 						data={[
 							{
-								name: 'Brow lamination',
+								name: 'What is microblading?',
 								description:
-									'Brow Lamination is a salon treatment which involves restructuring brow hairs to keep them in their desired shape. Naturally fuller brows which can be tailored to suit any brow preference.'
+									'Microblading is a semi-permanent makeup procedure that dramatically corrects or fully construct/reconstruct lost eyebrow hairs. It looks so real, it is often referred to as 3D or hairstroke tattoo. It can help define, shape, and create fullness in the eyebrow area.'
 							},
 							{
+								name: 'Benefits of eyebrow microblading',
 								description:
-									'Brows can be worn brushed up or down depending on your style. Brow Lamination treatments are proving extremely popular thanks to their amazing results which last up to 8 weeks.'
-							},
-							{
-								description:
-									'This treatment takes  30- 45 minutes and will give the appearance of thicker brows that are expertly styled into your desired shape.'
-							},
-							{
-								name: 'Lash Lift',
-								description:
-									'A lash lift is a bit like an eyelash perm and gives the same effect as using an eyelash curler. it lasts 8-12 week and is suitable for clients no matter what their lash length. It’s a very low maintenance lash service. It means you can also use your normal makeup, mascara and makeup remover.'
+									'It gives you long-lasting results. Think of it like a tattoo that gives you the brows of your dreams. You will only need to get your brows microbladed once every one and a half to two years. It is an easy solution for people who have lost their brows due to over plucking, an illness, or chemotherapy.'
 							}
 						]}
 					/>
