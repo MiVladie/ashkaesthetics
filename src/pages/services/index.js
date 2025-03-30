@@ -20,7 +20,6 @@ const Services = () => {
 		profhiloImage,
 		lemonBottleImage,
 		plateletRichPlasmaImage,
-		nucleofillSkinBoosterImage,
 		vitaminShotsImage,
 		frecklesTatooImage,
 		browsAndLashImage,
@@ -57,13 +56,6 @@ const Services = () => {
 				}
 			}
 			plateletRichPlasmaImage: file(relativePath: { eq: "assets/images/promotional/prp 1.jpeg" }) {
-				childImageSharp {
-					gatsbyImageData
-				}
-			}
-			nucleofillSkinBoosterImage: file(
-				relativePath: { eq: "assets/images/promotional/nucleofill skin booster 1.jpg" }
-			) {
 				childImageSharp {
 					gatsbyImageData
 				}
