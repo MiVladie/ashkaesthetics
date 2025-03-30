@@ -79,7 +79,7 @@ const Home = () => {
 			<Banner
 				image={bannerImage}
 				imageAlt='Beauty Salon Background'
-				main='Invest in your brows, it is the crown you never take off'
+				main='Enhance Your Glow with Skin-Boosting Treatments'
 				description='Come and discover your oasis. It has never been easier to take a break from stress and the harmful factors that surround you every day!'
 				linkLeftTo='/services'
 				linkLeftText='View services'
