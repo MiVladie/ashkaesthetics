@@ -18,6 +18,7 @@ const Home = () => {
 		bannerImage,
 		microbladingIcon,
 		browsAndLashIcon,
+		injectablesIcon,
 		waxingIcon,
 		mensTreatmentsIcon,
 		galleryImage01,
@@ -36,6 +37,11 @@ const Home = () => {
 				}
 			}
 			browsAndLashIcon: file(relativePath: { eq: "assets/icons/brows and lash.png" }) {
+				childImageSharp {
+					gatsbyImageData
+				}
+			}
+			injectablesIcon: file(relativePath: { eq: "assets/icons/injectables.png" }) {
 				childImageSharp {
 					gatsbyImageData
 				}
@@ -98,6 +104,7 @@ const Home = () => {
 					data={[
 						{ name: 'Microblading', icon: microbladingIcon, url: '/services#microblading' },
 						{ name: 'Eyes & Brows', icon: browsAndLashIcon, url: '/services#eyesandbrows' },
+						{ name: 'Injectables', icon: injectablesIcon, url: '/services#platelet-rich plasma' },
 						{ name: 'Waxing', icon: waxingIcon, url: '/services#waxing' },
 						{ name: "Men's Treatments", icon: mensTreatmentsIcon, url: '/services#menstreatments' }
 					]}
