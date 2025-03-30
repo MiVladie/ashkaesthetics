@@ -269,6 +269,56 @@ const Services = () => {
 				</Informative>
 			</Section>
 
+			<Section background='#F8F8F8'>
+				<Informative image={limuEyesImage} main='Lumi Eyes' linkTo='/services/lumi-eyes' linkText='Learn more'>
+					<Descriptive
+						data={[
+							{
+								name: 'What is Lumi eyes?',
+								description:
+									'Lumi Eyes is a type of tissue stimulator that is specifically designed for use in needle Mesotherapy treatments around the eyes and tear valley area. Unlike other treatments, Lumi Eyes does not cause side effects minimal invasive treatment with fast and anti-agin results and visible changes with in  just one session.'
+							},
+							{
+								description:
+									'This high-quality product contains polynucleotides that have a strong tissue-regenerating effect, helping to repair damage to the dermis. The Lumi Eyes Treatment effectively hydrates and rejuvenates the skin tissue while reducing symptoms of fatigue and skin discoloration.'
+							}
+						]}
+					/>
+				</Informative>
+			</Section>
+
+			<Section>
+				<Informative
+					image={browsAndLashImage}
+					main='Eyes & Brows'
+					linkTo='/services/eyes-and-brows'
+					linkText='Learn more'
+					reversed>
+					<Descriptive
+						data={[
+							{
+								name: 'Brow lamination',
+								description:
+									'Brow Lamination is a salon treatment which involves restructuring brow hairs to keep them in their desired shape. Naturally fuller brows which can be tailored to suit any brow preference.'
+							},
+							{
+								description:
+									'Brows can be worn brushed up or down depending on your style. Brow Lamination treatments are proving extremely popular thanks to their amazing results which last up to 8 weeks.'
+							},
+							{
+								description:
+									'This treatment takes  30- 45 minutes and will give the appearance of thicker brows that are expertly styled into your desired shape.'
+							},
+							{
+								name: 'Lash Lift',
+								description:
+									'A lash lift is a bit like an eyelash perm and gives the same effect as using an eyelash curler. it lasts 8-12 week and is suitable for clients no matter what their lash length. It’s a very low maintenance lash service. It means you can also use your normal makeup, mascara and makeup remover.'
+							}
+						]}
+					/>
+				</Informative>
+			</Section>
+
 			<Section>
 				<Introduction main='Price list' description='' />
 
