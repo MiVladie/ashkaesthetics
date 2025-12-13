@@ -27,6 +27,7 @@ const Services = () => {
 		eyesAndBrowsImage,
 		waxingImage,
 		mensTreatmentsImage,
+		mensWaxingImage,
 		packagesImage
 	} = useStaticQuery(graphql`
 		query {
@@ -91,6 +92,11 @@ const Services = () => {
 				}
 			}
 			mensTreatmentsImage: file(relativePath: { eq: "assets/images/promotional/mens treatments.jpg" }) {
+				childImageSharp {
+					gatsbyImageData
+				}
+			}
+			mensWaxingImage: file(relativePath: { eq: "assets/images/promotional/mens waxing.jpg" }) {
 				childImageSharp {
 					gatsbyImageData
 				}
@@ -415,7 +421,28 @@ const Services = () => {
 					/>
 				</Informative>
 
-				<Informative image={packagesImage} main='Packages' description=''>
+				<Informative
+					id='menswaxing'
+					image={mensWaxingImage}
+					main="Men's Intimate Waxing"
+					description='Experience smooth, fresh confidence with..'>
+					<Catalog
+						data={[
+							{ name: 'Men Hollywood (Including Crack Line)', price: 59 },
+							{ name: "MEN'zillian (front Area)", price: 40 },
+							{ name: 'Crack Line', price: 28 },
+							{ name: 'Buttocks', price: 22 },
+							{ name: 'Boxer Line (tidy up)', price: 20 }
+						]}
+						maxVisible={5}
+						expandText='View more'
+						collapseText='View less'
+						linkTo={BOOKING_URL}
+						linkText='Book now'
+					/>
+				</Informative>
+
+				<Informative image={packagesImage} main='Packages' description='' reversed>
 					<Catalog
 						data={[
 							{ name: 'Lash Lift + Brow Lamination', price: 75, oldPrice: 105 },
