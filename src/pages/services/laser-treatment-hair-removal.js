@@ -53,7 +53,17 @@ const LaserHairRemoval = () => {
 			</Section>
 
 			<Section>
-				<Introduction main='Price list' />
+				<Introduction
+					main='Price list'
+					description={[
+						<>
+							In partnership with{' '}
+							<a href='https://www.silkysmoothbeauty.com/' target='_blank' rel='noopener noreferrer'>
+								Silky Smooth
+							</a>
+						</>
+					]}
+				/>
 
 				<Informative image={laserHairRemovalImage} main='Laser Treatments' description=''>
 					<Catalog
