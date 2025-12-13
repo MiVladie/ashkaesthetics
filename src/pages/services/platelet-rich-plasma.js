@@ -41,8 +41,8 @@ const PlateletRichPlasma = () => {
 				<Introduction
 					main='Platelet-Rich Plasma'
 					description={[
-						'Nucleofill Skin Booster is a cutting-edge injectable treatment designed to rejuvenate and hydrate the skin using a powerful combination of hyaluronic acid, polynucleotides, and salmon DNA.',
-						"The salmon DNA (also known as DNA fragments) and polynucleotides play a crucial role in stimulating the skin's natural healing and regeneration processes. This treatment is ideal for improving skin quality on the face, neck, and décolletage."
+						'PRP (Platelet-Rich Plasma) treatment is a procedure that uses your own blood to promote healing and rejuvenation.',
+						'A small amount of blood is taken, processed to concentrate the platelets, and then injected into the targeted area. The platelets release growth factors that stimulate tissue repair, collagen production, and regeneration.'
 					]}
 				/>
 			</Section>
