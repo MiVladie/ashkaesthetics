@@ -13,25 +13,31 @@ import Descriptive from '../../components/Complementary/Descriptive/Descriptive'
 import Seo from '../../hoc/Seo/Seo';
 
 const PlateletRichPlasma = () => {
-	const { plateletRichPlasmaImage1, plateletRichPlasmaImage2, plateletRichPlasmaImage3 } = useStaticQuery(graphql`
-		query {
-			plateletRichPlasmaImage1: file(relativePath: { eq: "assets/images/promotional/prp 1.jpeg" }) {
-				childImageSharp {
-					gatsbyImageData
+	const { plateletRichPlasmaImage1, plateletRichPlasmaImage2, plateletRichPlasmaImage3, plateletRichPlasmaImage4 } =
+		useStaticQuery(graphql`
+			query {
+				plateletRichPlasmaImage1: file(relativePath: { eq: "assets/images/promotional/prp 1.jpeg" }) {
+					childImageSharp {
+						gatsbyImageData
+					}
+				}
+				plateletRichPlasmaImage2: file(relativePath: { eq: "assets/images/promotional/prp 2.jpeg" }) {
+					childImageSharp {
+						gatsbyImageData
+					}
+				}
+				plateletRichPlasmaImage3: file(relativePath: { eq: "assets/images/promotional/prp 3.jpg" }) {
+					childImageSharp {
+						gatsbyImageData
+					}
+				}
+				plateletRichPlasmaImage4: file(relativePath: { eq: "assets/images/promotional/prp 4.jpeg" }) {
+					childImageSharp {
+						gatsbyImageData
+					}
 				}
 			}
-			plateletRichPlasmaImage2: file(relativePath: { eq: "assets/images/promotional/prp 2.jpeg" }) {
-				childImageSharp {
-					gatsbyImageData
-				}
-			}
-			plateletRichPlasmaImage3: file(relativePath: { eq: "assets/images/promotional/prp 3.jpeg" }) {
-				childImageSharp {
-					gatsbyImageData
-				}
-			}
-		}
-	`);
+		`);
 
 	return (
 		<Layout>
@@ -110,16 +116,26 @@ const PlateletRichPlasma = () => {
 			</Section>
 
 			<Section background='#F8F8F8'>
-				<Introduction
-					main='What to Do Before the Treatment?'
-					description={[
-						'Preparing for PRP treatment can help ensure the best results:',
-						'Avoid Blood-Thinning Medications aspirin, ibuprofen for at least a week before treatment, as these can affect platelet function.',
-						'Limit Alcohol and Smoking as both can impair the healing process.',
-						'Stay Hydrated good hydration improves blood quality and makes the blood draw process easier.',
-						'Eat a Healthy Diet: eating nutritious foods rich in vitamins and minerals can help support the quality of your platelets and improve overall results.'
-					]}
-				/>
+				<Informative image={plateletRichPlasmaImage3} main='What to Do Before the Treatment?' reversed>
+					<Descriptive
+						data={[
+							{ name: 'Preparing for PRP treatment can help ensure the best results:' },
+							{
+								description:
+									'Avoid Blood-Thinning Medications aspirin, ibuprofen for at least a week before treatment, as these can affect platelet function.'
+							},
+							{ description: 'Limit Alcohol and Smoking as both can impair the healing process.' },
+							{
+								description:
+									'Stay Hydrated good hydration improves blood quality and makes the blood draw process easier.'
+							},
+							{
+								description:
+									'Eat a Healthy Diet: eating nutritious foods rich in vitamins and minerals can help support the quality of your platelets and improve overall results.'
+							}
+						]}
+					/>
+				</Informative>
 			</Section>
 
 			<Section>
@@ -162,7 +178,7 @@ const PlateletRichPlasma = () => {
 			<Section background='#F8F8F8'>
 				<Introduction main='Price list' />
 
-				<Informative image={plateletRichPlasmaImage3} main='PRP Treatments'>
+				<Informative image={plateletRichPlasmaImage4} main='PRP Treatments'>
 					<Catalog
 						data={[
 							{ name: 'Hair Loss [1 session]', price: 170 },
