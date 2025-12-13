@@ -16,6 +16,7 @@ const Services = () => {
 	const {
 		bannerImage,
 		microbladingImage,
+		laserRemovalImage: laserTreatmentImage,
 		limuEyesImage,
 		profhiloImage,
 		lemonBottleImage,
@@ -37,6 +38,11 @@ const Services = () => {
 				}
 			}
 			microbladingImage: file(relativePath: { eq: "assets/images/promotional/microblading.jpeg" }) {
+				childImageSharp {
+					gatsbyImageData
+				}
+			}
+			laserRemovalImage: file(relativePath: { eq: "assets/images/promotional/laser treatment.jpg" }) {
 				childImageSharp {
 					gatsbyImageData
 				}
@@ -148,11 +154,42 @@ const Services = () => {
 
 			<Section>
 				<Informative
+					image={laserTreatmentImage}
+					description={
+						<>
+							In partnership with{' '}
+							<a href='https://www.silkysmoothbeauty.com/' target='_blank' rel='noopener noreferrer'>
+								Silky Smooth
+							</a>
+						</>
+					}
+					main='Laser Treatment & Hair Removal'
+					linkTo='/services/laser-treatment-hair-removal'
+					linkText='Learn more'
+					reversed>
+					<Descriptive
+						data={[
+							{
+								name: 'Laser Treatment',
+								description:
+									'The Pulsar system can improve the appearance of many skin conditions, creating smoother and rejuvenated looking skin. The energy from the light source is taken up by the pigments (melanin and haemoglobin) in the skin, hairs and blood vessels.'
+							},
+							{
+								name: 'Hair Removal',
+								description:
+									'The number of treatments needed will depend on the skin condition that needs to be treated and the severity of each condition. More than 1 session for any area is usually needed to achieve a good result. '
+							}
+						]}
+					/>
+				</Informative>
+			</Section>
+
+			<Section>
+				<Informative
 					image={profhiloImage}
 					main='Skin Booster'
 					linkTo='/services/skin-booster'
-					linkText='Learn more'
-					reversed>
+					linkText='Learn more'>
 					<Descriptive
 						data={[
 							{
@@ -180,7 +217,8 @@ const Services = () => {
 					image={lemonBottleImage}
 					main='Fat Dissolving Lemon Bottle'
 					linkTo='/services/lemon-bottle'
-					linkText='Learn more'>
+					linkText='Learn more'
+					reversed>
 					<Descriptive
 						data={[
 							{
@@ -202,8 +240,7 @@ const Services = () => {
 					image={vitaminShotsImage}
 					main='Vitamin Shots: C, D, B12, and Biotin'
 					linkTo='/services/vitamin-shots'
-					linkText='Learn more'
-					reversed>
+					linkText='Learn more'>
 					<Descriptive
 						data={[
 							{
@@ -225,7 +262,8 @@ const Services = () => {
 					image={frecklesTatooImage}
 					main='Faux Freckles Tattoo'
 					linkTo='/services/faux-freckles-tattoo'
-					linkText='Learn more'>
+					linkText='Learn more'
+					reversed>
 					<Descriptive
 						data={[
 							{
@@ -248,8 +286,7 @@ const Services = () => {
 					image={microbladingImage}
 					main='Microblading'
 					linkTo='/services/microblading'
-					linkText='Learn more'
-					reversed>
+					linkText='Learn more'>
 					<Descriptive
 						data={[
 							{
@@ -268,7 +305,12 @@ const Services = () => {
 			</Section>
 
 			<Section background='#F8F8F8'>
-				<Informative image={limuEyesImage} main='Lumi Eyes' linkTo='/services/lumi-eyes' linkText='Learn more'>
+				<Informative
+					image={limuEyesImage}
+					main='Lumi Eyes'
+					linkTo='/services/lumi-eyes'
+					linkText='Learn more'
+					reversed>
 					<Descriptive
 						data={[
 							{
@@ -290,8 +332,7 @@ const Services = () => {
 					image={browsAndLashImage}
 					main='Eyes & Brows'
 					linkTo='/services/eyes-and-brows'
-					linkText='Learn more'
-					reversed>
+					linkText='Learn more'>
 					<Descriptive
 						data={[
 							{
@@ -320,7 +361,7 @@ const Services = () => {
 			<Section>
 				<Introduction main='Price list' description='' />
 
-				<Informative id='microblading' image={microbladingImage02} main='Microblading' description=''>
+				<Informative id='microblading' image={microbladingImage02} main='Microblading' description='' reversed>
 					<Catalog
 						data={[
 							{
@@ -338,7 +379,7 @@ const Services = () => {
 					/>
 				</Informative>
 
-				<Informative id='eyesandbrows' image={eyesAndBrowsImage} main='Eyes & Brows' description='' reversed>
+				<Informative id='eyesandbrows' image={eyesAndBrowsImage} main='Eyes & Brows' description=''>
 					<Catalog
 						data={[
 							{ name: 'Brow Lamination', time: 45, price: 40 },
@@ -359,7 +400,7 @@ const Services = () => {
 					/>
 				</Informative>
 
-				<Informative id='waxing' image={waxingImage} main='Waxing' description=''>
+				<Informative id='waxing' image={waxingImage} main='Waxing' description='' reversed>
 					<Catalog
 						data={[
 							{ name: 'Half Leg (Lower)', time: 15, price: 14 },
@@ -393,12 +434,7 @@ const Services = () => {
 					/>
 				</Informative>
 
-				<Informative
-					id='menstreatments'
-					image={mensTreatmentsImage}
-					main="Men's Treatments"
-					description=''
-					reversed>
+				<Informative id='menstreatments' image={mensTreatmentsImage} main="Men's Treatments" description=''>
 					<Catalog
 						data={[
 							{ name: 'Brow Lamination', time: 60, price: 50 },
@@ -425,7 +461,8 @@ const Services = () => {
 					id='menswaxing'
 					image={mensWaxingImage}
 					main="Men's Intimate Waxing"
-					description='Experience smooth, fresh confidence with..'>
+					description='Experience smooth, fresh confidence with..'
+					reversed>
 					<Catalog
 						data={[
 							{ name: 'Men Hollywood (Including Crack Line)', price: 59 },
@@ -442,7 +479,7 @@ const Services = () => {
 					/>
 				</Informative>
 
-				<Informative image={packagesImage} main='Packages' description='' reversed>
+				<Informative image={packagesImage} main='Packages' description=''>
 					<Catalog
 						data={[
 							{ name: 'Lash Lift + Brow Lamination', price: 75, oldPrice: 105 },
