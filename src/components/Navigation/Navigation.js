@@ -123,6 +123,16 @@ const Navigation = () => {
 				</li>
 
 				<li className={classes.Link}>
+					<Link
+						to='/services/#menstreatments'
+						activeClassName={classes.Active}
+						onClick={() => menuHandler('off')}>
+						Men's Treatments
+						<div className={classes.Underline} />
+					</Link>
+				</li>
+
+				<li className={classes.Link}>
 					<Link to='/gallery' activeClassName={classes.Active} onClick={() => menuHandler('off')}>
 						Gallery & Testimonials
 						<div className={classes.Underline} />
