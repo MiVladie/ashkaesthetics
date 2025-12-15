@@ -62,7 +62,7 @@ const Services = () => {
 					gatsbyImageData
 				}
 			}
-			plateletRichPlasmaImage: file(relativePath: { eq: "assets/images/promotional/prp 1.jpeg" }) {
+			plateletRichPlasmaImage: file(relativePath: { eq: "assets/images/promotional/prp 3.jpg" }) {
 				childImageSharp {
 					gatsbyImageData
 				}
@@ -154,42 +154,11 @@ const Services = () => {
 
 			<Section>
 				<Informative
-					image={laserTreatmentImage}
-					description={
-						<>
-							In partnership with{' '}
-							<a href='https://www.silkysmoothbeauty.com/' target='_blank' rel='noopener noreferrer'>
-								Silky Smooth
-							</a>
-						</>
-					}
-					main='Laser Treatment & Hair Removal'
-					linkTo='/services/laser-treatment-hair-removal'
-					linkText='Learn more'
-					reversed>
-					<Descriptive
-						data={[
-							{
-								name: 'Laser Treatment',
-								description:
-									'The Pulsar system can improve the appearance of many skin conditions, creating smoother and rejuvenated looking skin. The energy from the light source is taken up by the pigments (melanin and haemoglobin) in the skin, hairs and blood vessels.'
-							},
-							{
-								name: 'Hair Removal',
-								description:
-									'The number of treatments needed will depend on the skin condition that needs to be treated and the severity of each condition. More than 1 session for any area is usually needed to achieve a good result. '
-							}
-						]}
-					/>
-				</Informative>
-			</Section>
-
-			<Section>
-				<Informative
 					image={profhiloImage}
 					main='Skin Booster'
 					linkTo='/services/skin-booster'
-					linkText='Learn more'>
+					linkText='Learn more'
+					reversed>
 					<Descriptive
 						data={[
 							{
@@ -217,8 +186,7 @@ const Services = () => {
 					image={lemonBottleImage}
 					main='Fat Dissolving Lemon Bottle'
 					linkTo='/services/lemon-bottle'
-					linkText='Learn more'
-					reversed>
+					linkText='Learn more'>
 					<Descriptive
 						data={[
 							{
@@ -229,75 +197,6 @@ const Services = () => {
 							{
 								description:
 									'These injections are becoming increasingly popular as an alternative to surgical procedures such as liposuction. Unlike other fat dissolvers this causes minimal swelling there’s no downtime and it contains natural ingredients.'
-							}
-						]}
-					/>
-				</Informative>
-			</Section>
-
-			<Section>
-				<Informative
-					image={vitaminShotsImage}
-					main='Vitamin Shots: C, D, B12, and Biotin'
-					linkTo='/services/vitamin-shots'
-					linkText='Learn more'>
-					<Descriptive
-						data={[
-							{
-								name: 'What Are Vitamin Shots?',
-								description:
-									'Vitamin shots deliver essential nutrients directly into the bloodstream via intramuscular injection, typically in the arm.'
-							},
-							{
-								description:
-									'This method ensures fast absorption and bypasses the digestive system, making it more effective than oral supplements for individuals with nutrient deficiencies or absorption issues.'
-							}
-						]}
-					/>
-				</Informative>
-			</Section>
-
-			<Section background='#F8F8F8'>
-				<Informative
-					image={frecklesTatooImage}
-					main='Faux Freckles Tattoo'
-					linkTo='/services/faux-freckles-tattoo'
-					linkText='Learn more'
-					reversed>
-					<Descriptive
-						data={[
-							{
-								name: 'What is Faux Freckles Tattoo?',
-								description: [
-									"Faux freckle tattooing is a cosmetic procedure where semi-permanent freckles are tattooed onto the skin to create a natural freckled appearance. It's popular among individuals who desire a sun-kissed, youthful look or want to enhance their natural freckles."
-								]
-							},
-							{
-								description:
-									'Faux freckle treatments can be tailored to a wide range of customized colors and can be layered to achieve a natural appearance. The duration of the treatment varies, typically lasting between 1.5 to over 2 years, contingent upon factors such as immediate and long-term aftercare, skin type, lifestyle, and more.'
-							}
-						]}
-					/>
-				</Informative>
-			</Section>
-
-			<Section>
-				<Informative
-					image={microbladingImage}
-					main='Microblading'
-					linkTo='/services/microblading'
-					linkText='Learn more'>
-					<Descriptive
-						data={[
-							{
-								name: 'What is microblading?',
-								description:
-									'Microblading is a semi-permanent makeup procedure that dramatically corrects or fully construct/reconstruct lost eyebrow hairs. It looks so real, it is often referred to as 3D or hairstroke tattoo. It can help define, shape, and create fullness in the eyebrow area.'
-							},
-							{
-								name: 'Benefits of eyebrow microblading',
-								description:
-									'It gives you long-lasting results. Think of it like a tattoo that gives you the brows of your dreams. You will only need to get your brows microbladed once every one and a half to two years. It is an easy solution for people who have lost their brows due to over plucking, an illness, or chemotherapy.'
 							}
 						]}
 					/>
@@ -329,10 +228,80 @@ const Services = () => {
 
 			<Section>
 				<Informative
+					image={vitaminShotsImage}
+					main='Vitamin Shots: C, D, B12, and Biotin'
+					linkTo='/services/vitamin-shots'
+					linkText='Learn more'>
+					<Descriptive
+						data={[
+							{
+								name: 'What Are Vitamin Shots?',
+								description:
+									'Vitamin shots deliver essential nutrients directly into the bloodstream via intramuscular injection, typically in the arm.'
+							},
+							{
+								description:
+									'This method ensures fast absorption and bypasses the digestive system, making it more effective than oral supplements for individuals with nutrient deficiencies or absorption issues.'
+							}
+						]}
+					/>
+				</Informative>
+			</Section>
+
+			<Section>
+				<Informative
+					image={microbladingImage}
+					main='Microblading'
+					linkTo='/services/microblading'
+					linkText='Learn more'
+					reversed>
+					<Descriptive
+						data={[
+							{
+								name: 'What is microblading?',
+								description:
+									'Microblading is a semi-permanent makeup procedure that dramatically corrects or fully construct/reconstruct lost eyebrow hairs. It looks so real, it is often referred to as 3D or hairstroke tattoo. It can help define, shape, and create fullness in the eyebrow area.'
+							},
+							{
+								name: 'Benefits of eyebrow microblading',
+								description:
+									'It gives you long-lasting results. Think of it like a tattoo that gives you the brows of your dreams. You will only need to get your brows microbladed once every one and a half to two years. It is an easy solution for people who have lost their brows due to over plucking, an illness, or chemotherapy.'
+							}
+						]}
+					/>
+				</Informative>
+			</Section>
+
+			<Section background='#F8F8F8'>
+				<Informative
+					image={frecklesTatooImage}
+					main='Faux Freckles Tattoo'
+					linkTo='/services/faux-freckles-tattoo'
+					linkText='Learn more'>
+					<Descriptive
+						data={[
+							{
+								name: 'What is Faux Freckles Tattoo?',
+								description: [
+									"Faux freckle tattooing is a cosmetic procedure where semi-permanent freckles are tattooed onto the skin to create a natural freckled appearance. It's popular among individuals who desire a sun-kissed, youthful look or want to enhance their natural freckles."
+								]
+							},
+							{
+								description:
+									'Faux freckle treatments can be tailored to a wide range of customized colors and can be layered to achieve a natural appearance. The duration of the treatment varies, typically lasting between 1.5 to over 2 years, contingent upon factors such as immediate and long-term aftercare, skin type, lifestyle, and more.'
+							}
+						]}
+					/>
+				</Informative>
+			</Section>
+
+			<Section>
+				<Informative
 					image={browsAndLashImage}
 					main='Eyes & Brows'
 					linkTo='/services/eyes-and-brows'
-					linkText='Learn more'>
+					linkText='Learn more'
+					reversed>
 					<Descriptive
 						data={[
 							{
@@ -352,6 +321,37 @@ const Services = () => {
 								name: 'Lash Lift',
 								description:
 									'A lash lift is a bit like an eyelash perm and gives the same effect as using an eyelash curler. it lasts 8-12 week and is suitable for clients no matter what their lash length. It’s a very low maintenance lash service. It means you can also use your normal makeup, mascara and makeup remover.'
+							}
+						]}
+					/>
+				</Informative>
+			</Section>
+
+			<Section>
+				<Informative
+					image={laserTreatmentImage}
+					description={
+						<>
+							In partnership with{' '}
+							<a href='https://www.silkysmoothbeauty.com/' target='_blank' rel='noopener noreferrer'>
+								Silky Smooth
+							</a>
+						</>
+					}
+					main='Laser Treatment & Hair Removal'
+					linkTo='/services/laser-treatment-hair-removal'
+					linkText='Learn more'>
+					<Descriptive
+						data={[
+							{
+								name: 'Laser Treatment',
+								description:
+									'The Pulsar system can improve the appearance of many skin conditions, creating smoother and rejuvenated looking skin. The energy from the light source is taken up by the pigments (melanin and haemoglobin) in the skin, hairs and blood vessels.'
+							},
+							{
+								name: 'Hair Removal',
+								description:
+									'The number of treatments needed will depend on the skin condition that needs to be treated and the severity of each condition. More than 1 session for any area is usually needed to achieve a good result. '
 							}
 						]}
 					/>
