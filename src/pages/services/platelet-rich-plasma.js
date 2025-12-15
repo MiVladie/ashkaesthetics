@@ -182,8 +182,8 @@ const PlateletRichPlasma = () => {
 					<Catalog
 						data={[
 							{ name: 'Hair Loss [1 session]', price: 170 },
-							{ name: 'Hair Loss [2 sessions]', price: 450 },
-							{ name: 'Hair Loss [3 sessions]', price: 899 }
+							{ name: 'Hair Loss [3 sessions]', price: 450 },
+							{ name: 'Hair Loss [6 sessions]', price: 899 }
 						]}
 						maxVisible={6}
 					/>
